@@ -45,12 +45,41 @@ export default function Home() {
           <h2 className="text-center">Sign up for our mailing list!<br/> Why? Because!</h2>
         </div>
         <div className="mt-10 flex flex-row gap-6 justify-center items-center">
-          <p className="">orb</p>
+          <div className="bg-white w-12 h-12 rounded-full" />
           <input className="rounded-3xl input w-60 bg-white input-md text-center" placeholder="Your email here! please :)"/>
-          <p className="">orb</p>
+          <div className="bg-white w-12 h-12 rounded-full" />
         </div>
         <div>
           <button className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center">Subscribe!</button>
+        </div>
+      </section>
+      <section>
+        <div className="text-center mt-24 text-xl">
+          <h1>Here's some of our<br/>current news!
+          </h1>
+        </div>
+        <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-100 rounded-box">
+          <div className="carousel-item">
+            <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="rounded-box" />
+          </div>
         </div>
       </section>
     </main>
