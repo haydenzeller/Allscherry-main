@@ -133,6 +133,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Link to={SearchBar}></Link>
       <Footer />
     </main>
   );
