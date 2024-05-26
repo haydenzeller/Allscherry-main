@@ -13,8 +13,7 @@ export default function SubscribeBox({showOrbs = true}) {
             if (emailRegex.test(email)) {
                 setShowError(false);
                 setShowSuccess(true);
-                const response = mailchimpSubmit(email);
-                console.log(response)
+                mailchimpSubmit(email);
             } else {
                 setShowError(true);
                 setShowSuccess(false);
