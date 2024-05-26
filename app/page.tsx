@@ -12,7 +12,7 @@ export default function Home() {
       <SearchBar/>
       <section className="flex flex-row justify-center gap-5">
         <div className="ml-4 z-10 -mt-16">
-          <Image priority className=" w-36" src={allscherryLogo} alt="Allscherry Logo"/>
+          <Image priority={true} className="w-36" src={allscherryLogo} alt="Allscherry Logo"/>
         </div>
         <div className="flex flex-col mt-3 pr-8">
           <h1 className="mb-4 font-bold text-md text-center">Feel the wonder, crave adventure!</h1>
