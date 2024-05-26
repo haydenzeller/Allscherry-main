@@ -1,5 +1,6 @@
 'use client'
 import { use, useState } from "react"
+import mailchimpSubmit from "../api/mailchimpSubmit";
 export default function SubscribeBox({showOrbs = true}) {
     const [email, setEmail] = useState("");
     const [showError, setShowError] = useState(false);
@@ -12,7 +13,8 @@ export default function SubscribeBox({showOrbs = true}) {
             if (emailRegex.test(email)) {
                 setShowError(false);
                 setShowSuccess(true);
-                // Add further actions like sending the email to a server
+                const response = mailchimpSubmit(email);
+                console.log(response)
             } else {
                 setShowError(true);
                 setShowSuccess(false);
@@ -23,6 +25,7 @@ export default function SubscribeBox({showOrbs = true}) {
             setShowSuccess(false);
         }
     };
+
     return (
     <>
     <div className="mt-10 flex flex-row gap-6 justify-center items-center">
