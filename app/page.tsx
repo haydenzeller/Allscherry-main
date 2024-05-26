@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import allscherryLogo from "@/public/allscherry-logo.png"
+import allscherryLogo from "../public/allscherry-logo.png"
 import SearchBar from "./components/SearchBar";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <SearchBar/>
       <section className="flex flex-row justify-between">
         <div className="ml-4 z-10 -mt-16">
-          <Image className=" w-32" src={allscherryLogo} alt="Allscherry Logo"/>
+          <Image priority className=" w-32" src={allscherryLogo} alt="Allscherry Logo"/>
         </div>
         <div className="flex flex-col mt-3 pr-9">
           <h1 className="mb-4 font-bold text-l">Feel the wonder, crave adventure!</h1>
