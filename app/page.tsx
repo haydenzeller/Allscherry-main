@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import allscherryLogo from "../public/allscherry-logo.png"
 import SearchBar from "./components/SearchBar";
 import Footer from "./components/Footer";
 import SubscribeBox from "./components/SubscribeBox";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-base-100">
+    <main id="main" className="flex min-h-screen flex-col bg-base-100">
       <SearchBar/>
       <section className="flex flex-row justify-center gap-5">
         <div className="ml-4 z-10 -mt-16">
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Link to={SearchBar}></Link>
+      <ScrollToTop />
       <Footer />
     </main>
   );
