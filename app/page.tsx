@@ -55,7 +55,7 @@ export default function Home() {
       </section>
       <section>
         <div className="text-center mt-24 text-xl">
-          <h1>Here's some of our<br/>current news!
+          <h1>Here&apos;s some of our<br/>current news!
           </h1>
         </div>
         <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-100 rounded-box">
