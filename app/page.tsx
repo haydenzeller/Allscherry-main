@@ -4,6 +4,8 @@ import Image from "next/image";
 import allscherryLogo from "../public/allscherry-logo.png"
 import SearchBar from "./components/SearchBar";
 import Footer from "./components/Footer";
+import SubscribeBox from "./components/SubscribeBox";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-base-100">
@@ -17,22 +19,22 @@ export default function Home() {
           <div>
             <ul className="grid grid-cols-2 grid-rows-2 gap-7">
               <li className="flex justify-center">
-                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center" href="">
+                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0" href="">
                   Projects
                 </Link>
               </li>
               <li className="flex justify-center">
-                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center" href="">
+                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0" href="">
                   Shop
                 </Link>
               </li>
               <li className="flex justify-center">
-                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center" href="">
+                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0" href="">
                   Info
                 </Link>
               </li>
               <li className="flex justify-center">
-                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center" href="">
+                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0" href="">
                   Publishing
                 </Link>
               </li>
@@ -40,18 +42,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center mt-14">
-        <div className="bg-base-200 text-black rounded-3xl pt-3 pb-3 pr-8 pl-8">
-          <h2 className="text-center">Sign up for our mailing list!<br/> Why? Because!</h2>
+      <section className="flex flex-col items-center justify-center mt-14 relative">
+      <div className="bg-base-300 text-black rounded-2xl absolute pt-3 pb-3 pr-8 pl-8 h-[60px] w-[270px] mb-[110px] z-0"></div>
+        <div className="flex items-center justify-center bg-base-200 text-black rounded-2xl pt-3 pb-3 pr-8 pl-8 relative z-10">
+          <h2 className="text-center">
+            Sign up for our mailing list!
+            <br /> Why? Because!
+          </h2>
         </div>
-        <div className="mt-10 flex flex-row gap-6 justify-center items-center">
-          <div className="bg-white w-12 h-12 rounded-full" />
-          <input className="rounded-3xl input w-60 bg-white input-md text-center" placeholder="Your email here! please :)"/>
-          <div className="bg-white w-12 h-12 rounded-full" />
-        </div>
-        <div>
-          <button className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center">Subscribe!</button>
-        </div>
+        <SubscribeBox />
       </section>
       <section className="flex flex-col justify-center mt-14 items-center">
         <div className="text-center text-xl">
