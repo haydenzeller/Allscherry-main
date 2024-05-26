@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Metadata } from "next";
+import { Asap as GoogleAsap } from "next/font/google"; // Renamed Asap to GoogleAsap to avoid conflict
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const Asap = GoogleAsap({ 
+  weight: '600',
+  subsets: ["latin"] 
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={Asap.className}>
         {children}
       </body>
     </html>
