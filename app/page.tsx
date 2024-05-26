@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import allscherryLogo from "../public/allscherry-logo.png"
 import SearchBar from "./components/SearchBar";
+import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-base-100">
@@ -81,6 +82,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
