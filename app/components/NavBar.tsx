@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function NavBar() {
     return (
-        <section className="sticky bg-base-200 flex flex-row w-screen pt-2 justify-center items-center md:gap-5 lg:gap-10">
+        <section className="bg-base-200 flex flex-row w-screen pt-2 justify-center items-center md:gap-5 lg:gap-10">
             {/* LEFT */}
             <div className="flex flex-col w-full">
                 <div className="flex flex-row justify-end items-end mb-2">
