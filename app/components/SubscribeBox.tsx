@@ -5,9 +5,7 @@ export default function SubscribeBox({showOrbs = true}) {
     const [showError, setShowError] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-
     const handleSubscribe = async () => {
-        // Regular expression for validating an email address
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (email !== "") {
             if (emailRegex.test(email)) {
@@ -53,8 +51,6 @@ export default function SubscribeBox({showOrbs = true}) {
             setIsLoading(false);
         }
     };
-    
-
     return (
     <>
     <div className="mt-10 flex flex-row gap-6 justify-center items-center">

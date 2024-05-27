@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import allscherryLogo from "../../public/allscherry-logo.png"
 import Link from "next/link";
-
 export default function NavBar() {
     return (
         <section className="bg-base-200 flex flex-row w-screen pt-2 justify-center items-center md:gap-5 lg:gap-10">

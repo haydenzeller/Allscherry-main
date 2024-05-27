@@ -1,24 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
-import allscherryLogo from "../public/allscherry-logo.png"
-import SearchBar from "./components/SearchBar";
+// Componenets
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SubscribeBox from "./components/SubscribeBox";
 import ScrollToTop from "./components/ScrollToTop";
 import NavBar from "./components/NavBar";
+
+// Images
+import allscherryLogo from "../public/allscherry-landing.svg"
 
 export default function Home() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-base-100">
       {/* MOBILE */}
       <section className="md:hidden">
-        <SearchBar/>
-        <section className="flex flex-row justify-center gap-5">
-          <div className="ml-4 z-10 -mt-16">
+        <Header/>
+        <section className="flex flex-col justify-center items-center">
+          <div className=" z-10 -mt-16">
             <Image priority={true} className="w-36" src={allscherryLogo} alt="Allscherry Logo"/>
           </div>
-          <div className="flex flex-col mt-3 pr-8">
-            <h1 className="mb-4 font-bold text-md text-center">Feel the wonder, crave adventure!</h1>
+          <div className="flex flex-col justify-center items-center mt-3">
+            <h1 className="mb-2 font-bold text-2xl text-center">Feel the wonder,<br/>crave adventure!</h1>
+            <div className="h-2 rounded-3xl w-64 bg-white mb-7"></div>
             <div>
               <ul className="grid grid-cols-2 grid-rows-2 gap-7">
                 <li className="flex justify-center">

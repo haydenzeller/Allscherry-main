@@ -1,6 +1,4 @@
 import Link from "next/link";
-
-
 export default function Error404(){
     return (
         <section className="flex flex-col text-center justify-center items-center w-screen h-screen bg-base-200">
