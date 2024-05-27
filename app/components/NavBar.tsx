@@ -15,11 +15,11 @@ export default function NavBar() {
                 <div>
                     <div className="bg-base-100 h-3 w-full rounded-3xl"/>
                 </div>
-                <div className="flex flex-row-reverse pt-3 gap-14 lg:gap-24 pr-10">
-                    <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:translate-y-1 active:border-0" href="">
+                <div className="flex flex-row-reverse pt-5 gap-14 lg:gap-24 pr-10">
+                    <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:mt-1 active:border-0" href="">
                         Projects
                     </Link>
-                    <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:translate-y-1 active:border-0" href="">
+                    <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:mt-1 active:border-0" href="">
                         Shop
                     </Link>
                 </div>
@@ -44,11 +44,11 @@ export default function NavBar() {
                 <div>
                     <div className="bg-base-100 h-3 w-full rounded-3xl"/>
                 </div>
-                <div className="flex flex-row gap-14 lg:gap-24 pt-3 pl-10">
-                    <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:translate-y-1 active:border-0" href="">
+                <div className="flex flex-row gap-14 lg:gap-24 pt-5 pl-10">
+                    <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:mt-1 active:border-0" href="">
                         Publishing
                     </Link>
-                    <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:translate-y-1 active:border-0" href="">
+                    <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:mt-1 active:border-0" href="">
                         Info
                     </Link>
                 </div>

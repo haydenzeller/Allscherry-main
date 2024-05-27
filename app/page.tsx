@@ -22,22 +22,22 @@ export default function Home() {
             <div>
               <ul className="grid grid-cols-2 grid-rows-2 gap-7">
                 <li className="flex justify-center">
-                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0" href="">
+                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-xl block w-28 text-center active:mt-1 active:border-0" href="">
                     Projects
                   </Link>
                 </li>
                 <li className="flex justify-center">
-                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0" href="">
+                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
                     Shop
                   </Link>
                 </li>
                 <li className="flex justify-center">
-                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0" href="">
+                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
                     Info
                   </Link>
                 </li>
                 <li className="flex justify-center">
-                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0" href="">
+                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
                     Publishing
                   </Link>
                 </li>
@@ -57,8 +57,8 @@ export default function Home() {
         </section>
         <section className="flex flex-col justify-center mt-14 items-center">
           <div className="text-center text-xl">
-            <h1>Here&apos;s some of our<br/>current news!
-            </h1>
+            <h2>Here&apos;s some of our<br/>current news!
+            </h2>
           </div>
           <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-100 rounded-box">
             <div className="carousel-item">
@@ -86,7 +86,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col justify-center items-center mt-14">
           <div className="mb-5">
-            <h1 className="text-center text-xl">What even is an<br/><i>Allscherry</i>?<br/>Good question!</h1>
+            <h2 className="text-center text-xl">What even is an<br/><i>Allscherry</i>?<br/>Good question!</h2>
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="bg-base-300 text-black rounded-2xl absolute h-[90px] w-[340px] mt-[50px] z-0" />
@@ -107,7 +107,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col items-center justify-center mt-24">
           <div>
-            <h1 className="text-xl text-center">Our featured projects</h1>
+            <h2 className="text-xl text-center">Our featured projects</h2>
           </div>
           <div className="grid grid-cols-2 grid-rows-3 gap-24 mt-9 text-center">
             <div>

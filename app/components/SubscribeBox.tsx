@@ -33,7 +33,7 @@ export default function SubscribeBox({showOrbs = true}) {
         {showOrbs && <div className="bg-white w-12 h-12 rounded-full" /> }
     </div>
     <div className="flex flex-col justify-center items-center">
-        <button className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:translate-y-1 active:border-0 active:mb-1" onClick={handleSubscribe}>Subscribe!</button>
+        <button className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0 active:mb-1" onClick={handleSubscribe}>Subscribe!</button>
         <div className=" absolute mt-20">
             {showSuccess && <p className="text-success">Subscribed :) Thanks!</p>}
             {showError && <p className="text-error">Sorry, email is invalid!</p>}
