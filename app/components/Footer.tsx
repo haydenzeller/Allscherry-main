@@ -5,7 +5,9 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
         <section className="flex flex-col bg-base-200 mt-14">
-            <SubscribeBox showOrbs={false}/>
+            <div>
+               <SubscribeBox showOrbs={false}/>
+            </div>
             <div className="flex flex-row justify-center items-center gap-24">
                 <div className="flex flex-row items-center justify-center">
                     <Image src="" alt="Linktree Logo" width="20"/>

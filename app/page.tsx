@@ -22,7 +22,7 @@ export default function Home() {
             <div>
               <ul className="grid grid-cols-2 grid-rows-2 gap-7">
                 <li className="flex justify-center">
-                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-xl block w-28 text-center active:mt-1 active:border-0" href="">
+                  <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
                     Projects
                   </Link>
                 </li>

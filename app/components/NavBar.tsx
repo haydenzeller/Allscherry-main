@@ -6,16 +6,16 @@ import Link from "next/link";
 
 export default function NavBar() {
     return (
-        <section className="sticky bg-base-200 flex flex-row w-screen pt-2 justify-center items-center gap-10">
+        <section className="sticky bg-base-200 flex flex-row w-screen pt-2 justify-center items-center md:gap-5 lg:gap-10">
             {/* LEFT */}
             <div className="flex flex-col w-full">
                 <div className="flex flex-row justify-end items-end mb-2">
-                    <h1 className="text-sm text-base-100 lg:text-2xl">Feel the Wonder,</h1> 
+                    <h1 className="text-sm text-base-100 lg:text-xl">Feel the Wonder,</h1> 
                 </div>
                 <div>
                     <div className="bg-base-100 h-3 w-full rounded-3xl"/>
                 </div>
-                <div className="flex flex-row-reverse pt-5 gap-14 lg:gap-24 pr-10">
+                <div className="flex flex-row-reverse pt-5 gap-14 lg:gap-19 pr-10">
                     <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:mt-1 active:border-0" href="">
                         Projects
                     </Link>
@@ -34,7 +34,7 @@ export default function NavBar() {
             <div className="flex flex-col w-full">
                 <div className="flex flex-row justify-between items-center mb-2">
                     <div className="flex flex-row">
-                        <h1 className="text-sm text-base-100 lg:text-2xl">Crave Adventure!</h1> 
+                        <h1 className="text-sm text-base-100 lg:text-xl">Crave Adventure!</h1> 
                     </div>
                     <div className="flex w-52 lg:w-64 mr-3">
                         <FontAwesomeIcon icon={faSearch}  className='w-5 m-1.5 text-black absolute'/>
@@ -44,7 +44,7 @@ export default function NavBar() {
                 <div>
                     <div className="bg-base-100 h-3 w-full rounded-3xl"/>
                 </div>
-                <div className="flex flex-row gap-14 lg:gap-24 pt-5 pl-10">
+                <div className="flex flex-row gap-14 lg:gap-19 pt-5 pl-10">
                     <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-24 lg:w-36 text-center active:mt-1 active:border-0" href="">
                         Publishing
                     </Link>
