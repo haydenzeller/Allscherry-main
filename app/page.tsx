@@ -17,8 +17,8 @@ export default function Home() {
       <section className="md:hidden">
         <Header/>
         <section className="flex flex-col justify-center items-center">
-          <div className=" z-10 -mt-16">
-            <Image priority={true} className="w-36" src={allscherryLogo} alt="Allscherry Logo"/>
+          <div className=" z-10 -mt-28">
+            <Image priority={true} className="w-52" src={allscherryLogo} alt="Allscherry Logo"/>
           </div>
           <div className="flex flex-col justify-center items-center mt-3">
             <h1 className="mb-2 font-bold text-2xl text-center">Feel the wonder,<br/>crave adventure!</h1>
