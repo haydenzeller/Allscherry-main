@@ -1,8 +1,6 @@
 'use server'
-import type { NextApiRequest, NextApiResponse } from 'next'
-type ResponseData = {
-    message: string,
-}
-export default async (req:NextApiRequest, res:NextApiResponse<ResponseData>) => {
-    return res.status(404).json({message: 'Endpoint does not exist.'});
+import { NextRequest, NextResponse } from 'next/server'
+
+export async function OPTIONS(req:NextRequest) {
+    return NextResponse.json({message: "This API route does not exist"}, {status:404});
 }
