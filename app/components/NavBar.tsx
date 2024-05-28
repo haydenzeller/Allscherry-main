@@ -25,9 +25,11 @@ export default function NavBar() {
             </div>
             {/* CENTER IMAGE */}
             <div className="w-52">
-                <div className="w-24 lg:w-36 -mb-12">
-                    <Image src={allscherryLogo} alt="AllsCherry Logo"/>
-                </div>
+                <Link href="/">
+                    <div className="w-24 lg:w-36 -mb-12">
+                        <Image src={allscherryLogo} alt="AllsCherry Logo"/>
+                    </div>
+                </Link>
             </div>
             {/* RIGHT */}
             <div className="flex flex-col w-full">
