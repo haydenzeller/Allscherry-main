@@ -1,7 +1,6 @@
 import Image from "next/image";
 // Componenets
 import Footer from "./components/Footer";
-import SubscribeBox from "./components/SubscribeBox";
 import ScrollToTop from "./components/ScrollToTop";
 import NavBar from "./components/NavBar";
 import MobileHeader from "./components/MobileHeader";
