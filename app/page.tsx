@@ -4,6 +4,9 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import NavBar from "./components/NavBar";
 import MobileHeader from "./components/MobileHeader";
+import Link from "next/link";
+// images
+import mailLogo from "../public/mail.svg";
 
 export default function Home() {
   return (
@@ -38,64 +41,84 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col justify-center mt-14 items-center">
-          <div className="text-center text-xl">
-            <h2>Here&apos;s some of our<br/>current news!
-            </h2>
+          <div className="h-auto carousel rounded-box m-8">
+            <div className="carousel-item w-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="object-fit" alt="Tailwind CSS Carousel component" />
+            </div> 
+            <div className="carousel-item w-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            <div className="carousel-item w-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            <div className="carousel-item w-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            <div className="carousel-item w-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            <div className="carousel-item w-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            <div className="carousel-item w-full">
+              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+            </div>
           </div>
-          <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-100 rounded-box">
-            <div className="carousel-item">
-              <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="rounded-box" />
-            </div> 
-            <div className="carousel-item">
-              <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="rounded-box" />
-            </div> 
-            <div className="carousel-item">
-              <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="rounded-box" />
-            </div> 
-            <div className="carousel-item">
-              <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="rounded-box" />
-            </div> 
-            <div className="carousel-item">
-              <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="rounded-box" />
-            </div> 
-            <div className="carousel-item">
-              <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="rounded-box" />
-            </div> 
-            <div className="carousel-item">
-              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="rounded-box" />
+          <div className="flex flex-col items-center justify-center mt-5">
+            <Link href="" className="gap-3 flex flex-row items-center justify-center text-xl">
+              <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
+              Look fun? Email us to join in!
+            </Link>
+            <div className="h-3 my-14 px-14 w-full ">
+              <div className="bg-white h-full w-full rounded-3xl"></div>
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center justify-center mt-24">
-          <div>
-            <h2 className="text-xl text-center">Our featured projects</h2>
-          </div>
-          <div className="grid grid-cols-2 grid-rows-3 gap-24 mt-9 text-center">
-            <div>
-              {/* <Image /> */}
-              <p>Wendy and the Sprite</p>
+
+        <section className="flex flex-col items-center justify-center gap-16">
+
+          <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
+            <div className="">
+              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className=" image-full" />
             </div>
-            <div>
-              {/* <Image /> */}
-              <p>Overflow</p>
-            </div>
-            <div>
-              {/* <Image /> */}
-              <p>AllsCherry Anthology</p>
-            </div>
-            <div>
-              {/* <Image /> */}
-              <p>Printing and Publishing</p>
-            </div>
-            <div>
-              {/* <Image /> */}
-              <p>Prophets of Grey</p>
-            </div>
-            <div>
-              {/* <Image /> */}
-              <p>Crow on a Perch</p>
+            <div className="flex flex-col justify-center items-center gap-4 w-1/2">
+              <h2>We work with artists to make something original and special. New to books? here&apos;s a great way to start!</h2>
+              <div>
+                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
+                  Collab!
+                </Link>
+              </div>
             </div>
           </div>
+
+          <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
+            <div className="flex flex-col justify-center items-center gap-4 w-1/2">
+              <h2>Not sure how to produce a book? email us your questions or... We can do it for you, and, we can print it too!</h2>
+              <div>
+                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
+                  Publishing!
+                </Link>
+              </div>
+            </div>
+            <div className="">
+              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className=" image-full" />
+            </div>
+          </div>
+          
+          <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
+            <div className="">
+              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className=" image-full" />
+            </div>
+            <div className="flex flex-col justify-center items-center gap-4 w-1/2">
+              <h2>We do many shows throughout the year, click below to keep up!</h2>
+              <div>
+                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="/events">
+                  Events!
+                </Link>
+              </div>
+            </div>
+          </div>
+
         </section>
         <ScrollToTop />
         <Footer />
