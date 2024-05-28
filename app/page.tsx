@@ -39,7 +39,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className="flex flex-col justify-center mt-14 items-center">
           <div className="h-auto carousel rounded-box m-8">
             <div className="carousel-item w-full">
