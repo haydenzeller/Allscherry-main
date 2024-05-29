@@ -9,7 +9,7 @@ export default function ScrollToTop() {
     });
   };
   return (
-    <div className="bg-accent rounded-full fixed bottom-6 right-4 cursor-pointer w-12 h-12 flex justify-center items-center p-2 z-20 backdrop:blur-3xl opacity-50" onClick={handleClick}>
+    <div className="bg-accent rounded-full fixed bottom-24 right-4 cursor-pointer w-12 h-12 flex justify-center items-center p-2 z-20 backdrop:blur-3xl opacity-50" onClick={handleClick}>
       <FontAwesomeIcon className="w-full h-full" icon={faArrowUp} />
     </div>
   );
