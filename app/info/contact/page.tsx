@@ -1,8 +1,8 @@
-import ericHeadshot from "../../public/ericHeadshot.jpg"
+import ericHeadshot from "../../../public/ericHeadshot.jpg"
 import Image from "next/image"
-import Header from "../components/Header"
-import ContactForm from "../components/ContactForm"
-import Footer from "../components/Footer"
+import Header from "../../components/Header"
+import ContactForm from "../../components/ContactForm"
+import Footer from "../../components/Footer"
 export default function Contact() {
     return (
         <main className="flex min-h-screen flex-col bg-base-100">

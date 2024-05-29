@@ -9,7 +9,7 @@ import mailLogo from "../../public/mail.svg";
 import groupPhoto from "../../public/groupPhoto.jpg";
 import ericUVFS from "../../public/ericUVFS.jpg";
 
-export default function WhatIsAllscherry() {
+export default function Info() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-base-100">
       {/* MOBILE */}
@@ -89,7 +89,7 @@ export default function WhatIsAllscherry() {
             <div className="flex flex-col justify-center items-center gap-4 w-1/2">
               <h2>We do many shows throughout the year, click below to keep up!</h2>
               <div>
-                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="/events">
+                <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="/info/events">
                   Events!
                 </Link>
               </div>

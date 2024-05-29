@@ -52,9 +52,10 @@ export default function MobileHeader() {
                                 Info
                             </div>
                             <ul tabIndex={0} className="text-black dropdown-content mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom z-50 flex flex-col">
-                                <Link href="/what-is-allscherry" className="hover:bg-white p-2 rounded-2xl w-full">What is Allscherry?</Link>
-                                <Link href="/contact" className="hover:bg-white p-2 rounded-2xl w-full">Contact</Link>
-                                <Link href="/events" className="hover:bg-white p-2 rounded-2xl w-full">Events</Link>
+                                <Link href="/info" className="hover:bg-white p-2 rounded-2xl w-full">What is Allscherry?</Link>
+                                <Link href="/info/contact" className="hover:bg-white p-2 rounded-2xl w-full">Contact</Link>
+                                <Link href="/info/events" className="hover:bg-white p-2 rounded-2xl w-full">Events</Link>
+                                <Link href="/info/affiliates" className="hover:bg-white p-2 rounded-2xl w-full">Affiliates</Link>
                             </ul>
                         </div>
                     </li>

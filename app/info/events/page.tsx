@@ -1,6 +1,6 @@
-import EventList from "../components/EventList";
-import Header from "../components/Header";
-import ericBooth from "../../public/ericBooth.png"
+import EventList from "../../components/EventList";
+import Header from "../../components/Header";
+import ericBooth from "../../../public/ericBooth.png"
 import Image from "next/image";
 export default function Events() {
     return (
