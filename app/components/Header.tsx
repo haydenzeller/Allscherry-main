@@ -55,8 +55,8 @@ export default function MobileHeader() {
                                 Info
                             </div>
                             <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
+                                <li><Link href="/what-is-allscherry">What is Allscherry?</Link></li>
+                                <li><Link href="/events">Events</Link></li>
                             </ul>
                         </div>
                     </li>
