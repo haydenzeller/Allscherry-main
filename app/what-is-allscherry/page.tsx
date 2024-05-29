@@ -6,6 +6,8 @@ import Header from "../components/Header";
 import Link from "next/link";
 // images
 import mailLogo from "../../public/mail.svg";
+import groupPhoto from "../../public/groupPhoto.jpg";
+import ericUVFS from "../../public/ericUVFS.jpg";
 
 export default function WhatIsAllscherry() {
   return (
@@ -40,7 +42,7 @@ export default function WhatIsAllscherry() {
         </section>
         <section className="flex flex-col justify-center mt-14 items-center">
           <div className="flex flex-col items-center justify-center mt-5">
-            <Link href="" className="gap-3 flex flex-row items-center justify-center text-xl">
+            <Link href="/contact" className="gap-3 flex flex-row items-center justify-center text-xl">
               <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
               Look fun? Email us to join in!
             </Link>
@@ -54,7 +56,7 @@ export default function WhatIsAllscherry() {
 
           <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
             <div className="">
-              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className=" image-full" />
+              <Image src={groupPhoto} alt="Group photo" className="w-52" />
             </div>
             <div className="flex flex-col justify-center items-center gap-4 w-1/2">
               <h2>We work with artists to make something original and special. New to books? here&apos;s a great way to start!</h2>
@@ -82,7 +84,7 @@ export default function WhatIsAllscherry() {
           
           <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
             <div className="">
-              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className=" image-full" />
+              <Image src={ericUVFS} className="w-52" alt="Eric UVFS"/>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 w-1/2">
               <h2>We do many shows throughout the year, click below to keep up!</h2>

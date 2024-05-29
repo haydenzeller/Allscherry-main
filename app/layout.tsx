@@ -3,7 +3,7 @@ import { Asap as GoogleAsap } from "next/font/google"; // Renamed Asap to Google
 import "./globals.css";
 
 const Asap = GoogleAsap({ 
-  weight: '600',
+  weight: '500',
   subsets: ["latin"] 
 });
 
