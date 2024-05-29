@@ -11,7 +11,7 @@ export default function LandingCarousel() {
     useEffect(() => {
         const getProducts = async () => {
             try {
-                const res = await fetch('/api/landingCarouselImages', {
+                const res = await fetch('/api/getLandingCarouselImages', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

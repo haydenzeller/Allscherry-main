@@ -2,8 +2,7 @@ import Image from "next/image";
 // Componenets
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import NavBar from "./components/NavBar";
-import MobileHeader from "./components/MobileHeader";
+import Header from "./components/Header";
 import Link from "next/link";
 // images
 import mailLogo from "../public/mail.svg";
@@ -13,8 +12,8 @@ export default function Home() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-base-100">
       {/* MOBILE */}
-      <section className="md:hidden">
-        <MobileHeader />
+      <section className="">
+        <Header />
         <section className="flex flex-col justify-center items-center mt-14">
           <div className="mb-5">
             <h2 className="text-center text-xl">
@@ -100,10 +99,6 @@ export default function Home() {
         </section>
         <ScrollToTop />
         <Footer />
-      </section>
-      {/* TABLET || SMALL LAPTOP */}
-      <section className="hidden md:flex md:flex-col md:justify-center md:items-center">
-        <NavBar/>
       </section>
     </main>
   );
