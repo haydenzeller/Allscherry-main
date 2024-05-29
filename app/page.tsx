@@ -7,6 +7,7 @@ import MobileHeader from "./components/MobileHeader";
 import Link from "next/link";
 // images
 import mailLogo from "../public/mail.svg";
+import LandingCarousel from "./components/LandingCarousel";
 
 export default function Home() {
   return (
@@ -40,29 +41,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col justify-center mt-14 items-center">
-          <div className="h-auto carousel rounded-box m-8">
-            <div className="carousel-item w-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="object-fit" alt="Tailwind CSS Carousel component" />
-            </div> 
-            <div className="carousel-item w-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
-            </div> 
-            <div className="carousel-item w-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
-            </div> 
-            <div className="carousel-item w-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
-            </div> 
-            <div className="carousel-item w-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
-            </div> 
-            <div className="carousel-item w-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
-            </div> 
-            <div className="carousel-item w-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
-            </div>
-          </div>
+          <LandingCarousel />
           <div className="flex flex-col items-center justify-center mt-5">
             <Link href="" className="gap-3 flex flex-row items-center justify-center text-xl">
               <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
