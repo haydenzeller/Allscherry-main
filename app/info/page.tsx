@@ -5,8 +5,8 @@ import ScrollToTop from "@/app/components/ScrollToTop";
 import Header from "@/app/components/Header";
 import Link from "next/link";
 // images
-import mailLogo from "@public/mail.svg";
-import groupPhoto from "@public/groupPhoto.jpg";
+import mailLogo from "@/public/mail.svg";
+import groupPhoto from "@/public/groupPhoto.jpg";
 import ericUVFS from "@/public/ericUVFS.jpg";
 import PageTitle from "@/app/components/PageTitle";
 
