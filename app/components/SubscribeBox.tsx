@@ -60,9 +60,9 @@ export default function SubscribeBox({showOrbs = true}) {
     </div>
     <div className="flex flex-col justify-center items-center">
         <div>
-        <button className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-6" onClick={handleSubscribe}>Subscribe!</button>
+            <button className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-6" onClick={handleSubscribe}>Subscribe!</button>
         </div>
-        <div className="absolute mt-20">
+        <div className="absolute mt-24">
             {showSuccess && <p className="text-success">Subscribed :) Thanks!</p>}
             {showError && <p className="text-error">Sorry, email is invalid!</p>}
             {isLoading && <p className="loading loading-spinner bg-base-300"/>}

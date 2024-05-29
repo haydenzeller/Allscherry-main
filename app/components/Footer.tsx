@@ -10,7 +10,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
         <section className="flex flex-col bg-base-200 mt-14">
-            <div className="mb-3">
+            <div className="mb-10">
                <SubscribeBox showOrbs={true}/>
             </div>
             <div className="flex flex-row justify-center items-center gap-24 mb-3">
