@@ -8,6 +8,7 @@ import Link from "next/link";
 import mailLogo from "../../public/mail.svg";
 import groupPhoto from "../../public/groupPhoto.jpg";
 import ericUVFS from "../../public/ericUVFS.jpg";
+import PageTitle from "../components/PageTitle";
 
 export default function Info() {
   return (
@@ -15,6 +16,7 @@ export default function Info() {
       {/* MOBILE */}
       <section className="">
         <Header />
+        <PageTitle title="So what is an Allscherry anyway?" />
         <section className="flex flex-col justify-center items-center mt-14">
           <div className="mb-5">
             <h2 className="text-center text-xl">

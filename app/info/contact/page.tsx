@@ -3,10 +3,12 @@ import Image from "next/image"
 import Header from "../../components/Header"
 import ContactForm from "../../components/ContactForm"
 import Footer from "../../components/Footer"
+import PageTitle from "@/app/components/PageTitle"
 export default function Contact() {
     return (
         <main className="flex min-h-screen flex-col bg-base-100">
             <Header/>
+            <PageTitle title="Questions? Email us! but who is us?"/>
             <div className="flex flex-col text-center mt-14 ml-12 mr-12 items-center justify-center">
                 <h1 className="text-xl">Allscherry was founded by Eric Olcsvary, as a way to bring artists together, and to... well, make art!</h1>
                 <div className="mt-4 rounded-xl">

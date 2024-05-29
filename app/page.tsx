@@ -5,6 +5,7 @@ import Header from "./components/Header";
 // images
 import LandingCarousel from "./components/LandingCarousel";
 import SubscribeBox from "./components/SubscribeBox";
+import PageTitle from "./components/PageTitle";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       {/* MOBILE */}
       <section className="">
         <Header />
+        <PageTitle title={"Welcome to AllsCherry! Take a look around!"}/>
         <section className="mt-24">
           <SubscribeBox />
         </section>

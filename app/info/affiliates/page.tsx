@@ -1,9 +1,11 @@
+import PageTitle from "@/app/components/PageTitle";
 import AffiliateList from "../../components/AffiliateList";
 import Header from "../../components/Header";
 export default function affiliates() {
     return (
         <main className="flex min-h-screen flex-col bg-base-100">
             <Header />
+            <PageTitle title="Who helps out around AllsCherry?"/>
             <section className="flex flex-col text-center mt-14 ml-12 mr-12 items-center justify-center">
                 <div className="relative flex items-center justify-center  text-black rounded-2xl shadow-xl mt-12">
                     <div className="absolute -inset-2 z-0 bg-base-300 rounded-2xl transform scale-105 mt-24"></div>
