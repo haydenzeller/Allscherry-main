@@ -11,7 +11,7 @@ export default function SubscribeBox({showOrbs = true}) {
             if (emailRegex.test(email)) {
                 try {
                     setIsLoading(true);
-                    const res = await fetch('/api/newsletterSubscribe', {
+                    const res = await fetch('api/newsletterSubscribe', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

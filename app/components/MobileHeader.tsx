@@ -1,22 +1,12 @@
-'use client'
 import Image from "next/image";
 import Link from "next/link";
 import allscherryLogo from "../../public/allscherry-landing.svg"
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
-import Modal from "./Modal";
 
 
 
 export default function MobileHeader() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const openModal = () => {
-      setIsModalOpen(true);
-    };
-    const closeModal = () => {
-      setIsModalOpen(false);
-    };
     return (
         <section className="flex flex-col justify-center items-center">
             <section className="h-32 w-screen bg-base-200 flex flex-row-reverse">
@@ -38,31 +28,48 @@ export default function MobileHeader() {
                 <div>
                     <ul className="grid grid-cols-2 grid-rows-2 gap-7">
                     <li className="flex justify-center ">
-                        <div className="dropdown">
+                        <div className="dropdown gap-4">
                             <div tabIndex={0} role="button" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
                                 Projects
                             </div>
-                            <ul tabIndex={0} className="dropdown-content absolute z-[1] menu p-2 shadow  bg-base-200 border-4 border-base-300 rounded-box w-52">
+                            <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
                                 <li><a>Item 1</a></li>
                                 <li><a>Item 2</a></li>
                             </ul>
                         </div>
                     </li>
                     <li className="flex justify-center">
-                        <div onClick={openModal} className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
-                        Shop
+                        <div className="dropdown dropdown-end gap-4">
+                            <div tabIndex={0} role="button" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
+                                Shop
+                            </div>
+                            <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
                         </div>
-                        <Modal isOpen={isModalOpen} onClose={closeModal}></Modal>
                     </li>
                     <li className="flex justify-center">
-                        <div className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
-                        Info
+                        <div className="dropdown gap-4">
+                            <div tabIndex={0} role="button" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
+                                Info
+                            </div>
+                            <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
                         </div>
                     </li>
                     <li className="flex justify-center">
-                        <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
-                        Publishing
-                        </Link>
+                        <div className="dropdown dropdown-end gap-4">
+                            <div tabIndex={0} role="button" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
+                                Publishing
+                            </div>
+                            <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
+                        </div>
                     </li>
                     </ul>
                 </div>
