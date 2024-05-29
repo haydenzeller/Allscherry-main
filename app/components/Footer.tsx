@@ -1,11 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import SubscribeBox from "./SubscribeBox";
-
 import mailLogo from "../../public/mail.svg"
 import linktreeLogo from "../../public/linktree.svg"
-
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (

@@ -1,11 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import allscherryLogo from "../../public/allscherry-landing.svg"
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
-
+// import { faSearch } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function MobileHeader() {
     return (
         <section className="flex flex-col justify-center items-center">

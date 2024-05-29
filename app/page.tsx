@@ -1,11 +1,8 @@
-import Image from "next/image";
 // Componenets
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
-import Link from "next/link";
 // images
-import mailLogo from "../public/mail.svg";
 import LandingCarousel from "./components/LandingCarousel";
 
 export default function Home() {
