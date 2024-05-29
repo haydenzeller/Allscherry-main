@@ -1,11 +1,11 @@
 // Componenets
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
-import Header from "./components/Header";
+import Footer from "@/app/components/Footer";
+import ScrollToTop from "@/app/components/ScrollToTop";
+import Header from "@/app/components/Header";
 // images
-import LandingCarousel from "./components/LandingCarousel";
-import SubscribeBox from "./components/SubscribeBox";
-import PageTitle from "./components/PageTitle";
+import LandingCarousel from "@/app/components/LandingCarousel";
+import SubscribeBox from "@/app/components/SubscribeBox";
+import PageTitle from "@/app/components/PageTitle";
 
 export default function Home() {
   return (

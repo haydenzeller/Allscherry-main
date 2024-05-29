@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import allscherryLogo from "../../public/allscherry-landing.svg"
+import allscherryLogo from "@/public/allscherry-landing.svg"
 // import { faSearch } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function MobileHeader() {
@@ -52,7 +52,7 @@ export default function MobileHeader() {
                                 Info
                             </div>
                             <ul tabIndex={0} className="text-black dropdown-content mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom z-50 flex flex-col">
-                                <Link href="/info" className="hover:bg-white p-2 rounded-2xl w-full">What is Allscherry?</Link>
+                                <Link href="/info" className="hover:bg-white p-2 rounded-2xl w-full">What is AllsCherry?</Link>
                                 <Link href="/info/contact" className="hover:bg-white p-2 rounded-2xl w-full">Contact</Link>
                                 <Link href="/info/events" className="hover:bg-white p-2 rounded-2xl w-full">Events</Link>
                                 <Link href="/info/affiliates" className="hover:bg-white p-2 rounded-2xl w-full">Affiliates</Link>

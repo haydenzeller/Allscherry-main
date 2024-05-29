@@ -1,6 +1,8 @@
 import PageTitle from "@/app/components/PageTitle";
-import AffiliateList from "../../components/AffiliateList";
-import Header from "../../components/Header";
+import AffiliateList from "@/app/components/AffiliateList";
+import Header from "@/app/components/Header";
+import ScrollToTop from "@/app/components/ScrollToTop";
+import Footer from "@/app/components/Footer";
 export default function affiliates() {
     return (
         <main className="flex min-h-screen flex-col bg-base-100">
@@ -17,6 +19,8 @@ export default function affiliates() {
             <section className="felx flex-col justify-center items-center mt-24 text-center">
                 <AffiliateList/>
             </section>
+            <Footer/>
+            <ScrollToTop/>
         </main>
     )
 }

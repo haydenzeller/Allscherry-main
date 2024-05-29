@@ -1,5 +1,5 @@
 import Image from "next/image";
-import titleBubble from "../../public/page-title-bubbles.svg";
+import titleBubble from "@/public/page-title-bubbles.svg";
 
 export default function PageTitle({ title = "" }) {
     return (

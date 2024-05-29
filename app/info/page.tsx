@@ -1,14 +1,14 @@
 import Image from "next/image";
 // Componenets
-import Footer from "../components/Footer";
-import ScrollToTop from "../components/ScrollToTop";
-import Header from "../components/Header";
+import Footer from "@/app/components/Footer";
+import ScrollToTop from "@/app/components/ScrollToTop";
+import Header from "@/app/components/Header";
 import Link from "next/link";
 // images
-import mailLogo from "../../public/mail.svg";
-import groupPhoto from "../../public/groupPhoto.jpg";
-import ericUVFS from "../../public/ericUVFS.jpg";
-import PageTitle from "../components/PageTitle";
+import mailLogo from "@public/mail.svg";
+import groupPhoto from "@public/groupPhoto.jpg";
+import ericUVFS from "@/public/ericUVFS.jpg";
+import PageTitle from "@/app/components/PageTitle";
 
 export default function Info() {
   return (
@@ -16,7 +16,7 @@ export default function Info() {
       {/* MOBILE */}
       <section className="">
         <Header />
-        <PageTitle title="So what is an Allscherry anyway?" />
+        <PageTitle title="So what is an AllsCherry anyway?" />
         <section className="flex flex-col justify-center items-center mt-14">
           <div className="mb-5">
             <h2 className="text-center text-xl">
@@ -102,6 +102,7 @@ export default function Info() {
         <ScrollToTop />
         <Footer />
       </section>
+      <ScrollToTop/>
     </main>
   );
 }
