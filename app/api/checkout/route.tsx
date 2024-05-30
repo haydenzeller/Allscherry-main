@@ -1,3 +1,4 @@
+'use server'
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
@@ -13,21 +14,24 @@ const stripe = new Stripe(stripeSecretKey, {
 export async function POST(request: NextRequest, response: NextResponse) {
   if (request.method === 'POST') {
     try {
+      const body = await request.json(); // Parse JSON body
+      const { priceId } = body; // Extract priceId from the parsed body
+
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         line_items: [
           {
-            price: 'price_1PMCqaFb3UXoe2kDsjH28qlJ', // Replace with your price ID
+            price: priceId, // Replace with your price ID
             quantity: 1,
           },
         ],
         mode: "payment",
         billing_address_collection: "required",
         shipping_address_collection: {
-            allowed_countries: ['US', 'CA'],
+          allowed_countries: ['US', 'CA'],
         },
-        success_url: `http://localhost:3000/checkout?success=true`,
-        cancel_url: `http://localhost:3000/checkout?success=true`,
+        success_url: `https://alpha.allscherry.com/checkout?success=true`,
+        cancel_url: `https://alpha.allscherry.com/checkout?canceled=true`,
         automatic_tax: { enabled: true },
       });
 
@@ -37,16 +41,11 @@ export async function POST(request: NextRequest, response: NextResponse) {
       }
 
       // Set the appropriate response headers for redirect
-      return new Response(null, {
-        status: 303,
-        headers: {
-          'Location': session.url,
-        },
-      });
+      return NextResponse.json({redirectUrl:JSON.stringify(session.url)}, { status: 200 });
     } catch (err: any) {
       return NextResponse.json({ error: err.message }, { status: err.statusCode || 500 });
     }
   } else {
-    return NextResponse.json({ status: 405, Message: "Not allowed" });
+    return NextResponse.json({ status: 405, message: "Not allowed" });
   }
 }
