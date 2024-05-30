@@ -5,7 +5,7 @@ import Header from "@/app/components/Header";
 import LandingCarousel from "@/app/components/LandingCarousel";
 import SubscribeBox from "@/app/components/SubscribeBox";
 import PageTitle from "@/app/components/PageTitle";
-import FeaturedProjectsList from "./components/FeaturedProjectsList";
+import FeaturedProjectsList from "@/app/components/FeaturedProjectsList";
 
 export default function Home() {
   return (

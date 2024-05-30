@@ -1,0 +1,66 @@
+
+import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
+import mailLogo from "@/public/mail.svg"
+import PageTitle from "@/app/components/PageTitle";
+import Link from "next/link";
+import Image from "next/image";
+import AnthologyCarousel from "@/app/components/AnthologyCarousel";
+
+export default function Home() {
+  return (
+    <main id="main" className="flex min-h-screen flex-col bg-base-100">
+      {/* MOBILE */}
+      <section className="">
+        <Header />
+        <PageTitle title={"We make annual Anthologies!"}/>
+        <section className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center w-full mt-14">
+                <h2 className="text-xl pr-24 pl-24 text-center w-full">Are you a writer? or illustrator?<br/><br/>Well we have got a deal for you!</h2>
+            </div>
+        </section>
+        <section className="flex flex-col justify-center items-center mb-14 mt-14">
+            <div className="relative flex items-center justify-center mr-4 ml-4 text-black rounded-2xl">
+                <div className="absolute -inset-2 z-0 bg-base-300 rounded-2xl transform scale-105 mt-24"></div>
+                <div className="text-center text-xl relative z-10 bg-base-200 rounded-2xl p-5">
+                    <h1>The AllsCherry Anthology has one goal, make something awesome with local artists!<br/><br/>Every year we gather 6 to 10 artists and create a collaborative book, release it within the year, and throw a dinner party to celebrate!<br/><br/>Wanna join in? Fill out our form below so we can see what you&apos;ve got!</h1>
+                </div>
+            </div>
+            <div>
+                <button className="bg-primary mt-10 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-56 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-11">Anthology Application!</button>
+            </div>
+        </section>
+        <section className="flex flex-row justify-center items-center gap-20">
+            <div>
+                img
+                <Image src="" alt=""/>
+            </div>
+            <div>
+                img
+                <Image src="" alt=""/>
+            </div>
+        </section>
+        <section className="flex flex-row items-center justify-center text-center mt-14">
+            <div className="w-1/2">
+                <h2>Here&apos;s just some of what we&apos;ve accomplished with the local talent!</h2>
+            </div>
+        </section>
+        <section className="flex flex-col items-center justify-center">
+            <AnthologyCarousel/>
+        </section>
+        <section className="flex flex-col justify-center mt-14 items-center">
+                <div className="flex flex-col items-center justify-center mt-5">
+                    <Link href="/info/contact" className="gap-3 flex flex-row items-center justify-center text-xl">
+                    <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
+                    Questions? Email us!
+                    </Link>
+                    <div className="h-3 my-5 w-full ">
+                        <div className="bg-white h-full w-full rounded-3xl"></div>
+                    </div>
+                </div>
+            </section>
+        <Footer />
+      </section>
+    </main>
+  );
+}
