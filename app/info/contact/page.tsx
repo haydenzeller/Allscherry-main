@@ -4,7 +4,6 @@ import Header from "@/app/components/Header"
 import ContactForm from "@/app/components/ContactForm"
 import Footer from "@/app/components/Footer"
 import PageTitle from "@/app/components/PageTitle"
-import ScrollToTop from "@/app/components/ScrollToTop"
 export default function Contact() {
     return (
         <main className="flex min-h-screen flex-col bg-base-100">
@@ -29,7 +28,6 @@ export default function Contact() {
                 </section>
             </div>
             <Footer/>
-            <ScrollToTop/>
         </main>
     )
 }

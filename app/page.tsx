@@ -1,6 +1,5 @@
 // Componenets
 import Footer from "@/app/components/Footer";
-import ScrollToTop from "@/app/components/ScrollToTop";
 import Header from "@/app/components/Header";
 // images
 import LandingCarousel from "@/app/components/LandingCarousel";
@@ -25,7 +24,6 @@ export default function Home() {
           </div>
           <LandingCarousel />
         </section>
-        <ScrollToTop />
         <Footer />
       </section>
     </main>

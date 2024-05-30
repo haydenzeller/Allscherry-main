@@ -1,7 +1,6 @@
 import Image from "next/image";
 // Componenets
 import Footer from "@/app/components/Footer";
-import ScrollToTop from "@/app/components/ScrollToTop";
 import Header from "@/app/components/Header";
 import Link from "next/link";
 // images
@@ -99,10 +98,8 @@ export default function Info() {
           </div>
 
         </section>
-        <ScrollToTop />
         <Footer />
       </section>
-      <ScrollToTop/>
     </main>
   );
 }

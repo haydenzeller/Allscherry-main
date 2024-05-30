@@ -1,7 +1,6 @@
 import PageTitle from "@/app/components/PageTitle";
 import AffiliateList from "@/app/components/AffiliateList";
 import Header from "@/app/components/Header";
-import ScrollToTop from "@/app/components/ScrollToTop";
 import Footer from "@/app/components/Footer";
 export default function affiliates() {
     return (
@@ -20,7 +19,6 @@ export default function affiliates() {
                 <AffiliateList/>
             </section>
             <Footer/>
-            <ScrollToTop/>
         </main>
     )
 }

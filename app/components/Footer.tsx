@@ -1,14 +1,29 @@
+'use client'
 import Link from "next/link";
 import Image from "next/image";
 import SubscribeBox from "@/app/components/SubscribeBox";
 import mailLogo from "@/public/mail.svg"
 import linktreeLogo from "@/public/linktree.svg"
+import goingUp from "@/public/going-up-arrow.svg"
 export default function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth" // Smooth scrolling behavior
+        });
+      };
     const currentYear = new Date().getFullYear();
     return (
-        <section className="flex flex-col bg-base-200 mt-14">
+        <>
+        <section className="flex flex-col justify-center items-center">
+            <div onClick={scrollToTop} className="flex flex-col justify-center items-center">
+                <p className="text-l">Going Up?</p>
+                <Image src={goingUp} alt="Going Up?" className="-rotate-90 w-12"></Image>
+            </div>
+        </section>
+        <section className="flex flex-col bg-base-200">
             <div className="mb-10">
-               <SubscribeBox showOrbs={true}/>
+            <SubscribeBox showOrbs={true}/>
             </div>
             <div className="flex flex-row justify-center items-center gap-24 mb-3">
                 <div className="flex flex-row items-center justify-center">
@@ -28,5 +43,6 @@ export default function Footer() {
                 <p className="opacity-70 text-sm">Copywrite &copy; 2022-{currentYear}, Allscherry. All Rights Reserved.</p>
             </div>
         </section>
+        </>
     )
 }
