@@ -64,9 +64,8 @@ export default function MobileHeader() {
                             <div tabIndex={0} role="button" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
                                 Publishing
                             </div>
-                            <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
+                            <ul tabIndex={0} className="text-black dropdown-content mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom z-50 flex flex-col">
+                                <Link href="/publishing" className="hover:bg-white p-2 rounded-2xl w-full">AllsCherry Publishing</Link>
                             </ul>
                         </div>
                     </li>

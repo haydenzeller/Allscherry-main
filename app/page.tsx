@@ -18,7 +18,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col justify-center items-center mt-24">
           <div>
-            <h1 className="text-2xl">
+            <h1 className="text-2xl text-center">
               Here&apos;s some of out current news!
             </h1>
           </div>

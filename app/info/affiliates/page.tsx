@@ -2,7 +2,7 @@ import PageTitle from "@/app/components/PageTitle";
 import AffiliateList from "@/app/components/AffiliateList";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
-export default function affiliates() {
+export default function Affiliates() {
     return (
         <main className="flex min-h-screen flex-col bg-base-100">
             <Header />

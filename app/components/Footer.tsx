@@ -16,7 +16,7 @@ export default function Footer() {
     return (
         <>
         <section className="flex flex-col justify-center items-center">
-            <div onClick={scrollToTop} className="flex flex-col justify-center items-center">
+            <div onClick={scrollToTop} className="flex flex-col justify-center items-center hover:cursor-pointer">
                 <p className="text-l">Going Up?</p>
                 <Image src={goingUp} alt="Going Up?" className="-rotate-90 w-12"></Image>
             </div>
