@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AnthologyCarousel from "@/app/components/AnthologyCarousel";
 
-export default function Home() {
+export default function Anthology() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-base-100">
       {/* MOBILE */}
