@@ -2,6 +2,7 @@
   <img width="150" src="https://github.com/haydenzeller/Allscherry-main/blob/72a3bc2fa46143ff182152f7d58bbf982ae2f4d3/public/allscherry-logo.png" alt="Allscherry Logo">
 </p>
 
+[![CodeQL](https://github.com/haydenzeller/Allscherry-main/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/haydenzeller/Allscherry-main/actions/workflows/github-code-scanning/codeql)
 
 # License
 
