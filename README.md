@@ -1,3 +1,4 @@
+<div style="text-align:center"><img src="https://github.com/haydenzeller/Allscherry-main/blob/72a3bc2fa46143ff182152f7d58bbf982ae2f4d3/public/allscherry-logo.png"/></div>
 # License
 
 ## Code
