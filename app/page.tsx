@@ -5,6 +5,7 @@ import Header from "@/app/components/Header";
 import LandingCarousel from "@/app/components/LandingCarousel";
 import SubscribeBox from "@/app/components/SubscribeBox";
 import PageTitle from "@/app/components/PageTitle";
+import FeaturedProductsList from "./components/FeaturedProductsList";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
             </h1>
           </div>
           <LandingCarousel />
+        </section>
+        <section className="text-center mt-14">
+          <FeaturedProductsList/>
         </section>
         <Footer />
       </section>
