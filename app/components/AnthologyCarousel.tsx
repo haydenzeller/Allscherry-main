@@ -41,7 +41,7 @@ export default function LandingCarousel() {
                     images.map((image) => (
                         <div key={image.id} className="carousel-item w-full">
                             <Image
-                                
+                                priority
                                 src={'https://api.allscherry.com/assets/' + image.image}
                                 alt="Carousel Image"
                                 width={1000}
