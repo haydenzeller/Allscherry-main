@@ -9,18 +9,12 @@ if (!stripeSecretKey) {
 const stripe = new Stripe(stripeSecretKey, {
   apiVersion: "2024-04-10", // Adjust the API version as needed
 });
-
 export async function GET(request: NextRequest, response: NextResponse) {
     try {
-        const products = await stripe.products.list({
-            limit: 100,
-        });
-        // Sending the list of products back to the caller
-        return NextResponse.json(products);
+        const products = await stripe.products.list();
+        return(products);
     } catch (error) {
         // Handle errors
-        console.log("error!!! in api")
-        console.error('Error fetching products:', error);
         return NextResponse.json({ error: 'Error fetching products' }, {status:500});
     }
 }

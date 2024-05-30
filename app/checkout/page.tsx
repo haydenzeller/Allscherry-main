@@ -18,6 +18,7 @@ export default function PreviewPage() {
           throw new Error('Failed to fetch products');
         }
         const data = await response.json();
+        console.log(data);
         console.log('Received products data:', data.data); // Log received data
 
         // Check if the received data is an array
