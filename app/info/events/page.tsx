@@ -3,7 +3,6 @@ import Header from "@/app/components/Header";
 import ericBooth from "@/public/ericBooth.png"
 import Image from "next/image";
 import PageTitle from "@/app/components/PageTitle";
-import ScrollToTop from "@/app/components/ScrollToTop";
 import Footer from "@/app/components/Footer";
 export default function Events() {
     return (
@@ -20,7 +19,6 @@ export default function Events() {
                 </section>
             </section>
             <Footer/>
-            <ScrollToTop/>
         </main>
     )
 }
