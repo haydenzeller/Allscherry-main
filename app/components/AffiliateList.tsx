@@ -51,9 +51,10 @@ export default function AffiliateList() {
                                     <Image
                                         src={"https://api.allscherry.com/assets/"+affiliate.image}
                                         alt={affiliate.name}
-                                        width={1000}
-                                        height={1000}
-                                        className="rounded-lg"
+                                        fill
+                                        sizes="(max-width: 600px) 480px, 800px"
+                                        style={{ objectFit: 'cover' }}  // Instead of objectFit prop
+                                        className="rounded-box"
                                     />
                                 </div>
                                 <div>
