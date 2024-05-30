@@ -51,8 +51,8 @@ export default function AffiliateList() {
                                     <Image
                                         src={"https://api.allscherry.com/assets/"+affiliate.image}
                                         alt={affiliate.name}
-                                        layout="fill"
-                                        objectFit="cover"
+                                        width={1000}
+                                        height={1000}
                                         className="rounded-lg"
                                     />
                                 </div>

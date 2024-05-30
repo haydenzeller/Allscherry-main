@@ -5,7 +5,7 @@ import Header from "@/app/components/Header";
 import LandingCarousel from "@/app/components/LandingCarousel";
 import SubscribeBox from "@/app/components/SubscribeBox";
 import PageTitle from "@/app/components/PageTitle";
-import FeaturedProductsList from "./components/FeaturedProductsList";
+import FeaturedProjectsList from "./components/FeaturedProjectsList";
 
 export default function Home() {
   return (
@@ -26,7 +26,8 @@ export default function Home() {
           <LandingCarousel />
         </section>
         <section className="text-center mt-14">
-          <FeaturedProductsList/>
+          <h2>Our featured projects</h2>
+          <FeaturedProjectsList/>
         </section>
         <Footer />
       </section>
