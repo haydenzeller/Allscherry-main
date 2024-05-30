@@ -21,7 +21,11 @@ export async function POST(request: NextRequest, response: NextResponse) {
             quantity: 1,
           },
         ],
-        mode: 'payment',
+        mode: "payment",
+        billing_address_collection: "required",
+        shipping_address_collection: {
+            allowed_countries: ['US', 'CA'],
+        },
         success_url: `http://localhost:3000/checkout?success=true`,
         cancel_url: `http://localhost:3000/checkout?success=true`,
         automatic_tax: { enabled: true },
