@@ -1,11 +1,8 @@
 
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
-import mailLogo from "@/public/mail.svg"
 import PageTitle from "@/app/components/PageTitle";
-import Link from "next/link";
-import Image from "next/image";
-import AnthologyCarousel from "@/app/components/AnthologyCarousel";
+
 
 export default function Anthology() {
   return (
