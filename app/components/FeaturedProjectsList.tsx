@@ -56,7 +56,7 @@ export default function FeaturedProjectsList() {
                                     />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold">{project.name}</h3>
+                                    <h3>{project.name}</h3>
                                 </div>
                             </li>
                         ))}
