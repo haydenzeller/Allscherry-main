@@ -9,7 +9,7 @@ import FeaturedProjectsList from "@/app/components/FeaturedProjectsList";
 
 export default function Home() {
   return (
-    <main id="main" className="flex min-h-screen flex-col bg-base-100">
+    <main id="main" className="flex flex-col bg-base-100 min-h-[100dvh]">
       {/* MOBILE */}
       <section className="">
         <Header />
