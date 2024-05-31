@@ -6,7 +6,7 @@ import allscherryLogo from "@/public/allscherry-landing.svg"
 export default function MobileHeader() {
     return (
         <section className="flex flex-col justify-center items-center">
-            <section className="h-32 w-full bg-base-200 flex flex-row-reverse">
+            <section className="h-52 w-full bg-base-200 ">
                 {/* <div className="flex flex-row-reverse w-full pt-9">
                     <div className="z-30 flex flex-row justify-center pr-4 pt-2">
                         <FontAwesomeIcon icon={faSearch}  className='text-black absolute mr-8 pointer-events-none'/>
