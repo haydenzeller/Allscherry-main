@@ -5,6 +5,7 @@ import PageTitle from "@/app/components/PageTitle";
 import Image from "next/image";
 import Link from "next/link";
 import mailLogo from "@/public/mail.svg"
+import DesignImages from "@/app/components/DesignImages";
 export default function Anthology() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-base-100">
@@ -38,11 +39,9 @@ export default function Anthology() {
                     </div>
                 </div>
         </section> 
-        <section className="flex flex-col justify-center items-center text-center">
-            <h2 className="text-xl">Our design examples</h2>
-            <div className="mt-5">
-                imgimgimgimgimg
-            </div>
+        <section className="flex flex-col items-center jsutify-center mt-14 mb-14 text-center">
+            <h2 className="text-xl mb-5">Our design examples</h2>
+            <DesignImages/>
         </section>
         <section className="flex flex-col justify-center mt-14 items-center">
                 <div className="flex flex-col items-center justify-center mt-5">
@@ -55,8 +54,8 @@ export default function Anthology() {
                     </div>
                 </div>
             </section>
-        <Footer />
-      </section>
+        </section>
+      <Footer/>
     </main>
   );
 }

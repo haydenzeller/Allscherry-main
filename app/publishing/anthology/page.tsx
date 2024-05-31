@@ -6,7 +6,8 @@ import PageTitle from "@/app/components/PageTitle";
 import Link from "next/link";
 import Image from "next/image";
 import AnthologyCarousel from "@/app/components/AnthologyCarousel";
-
+import anth1 from "@/public/allscherry-anth1.png"
+import anth2 from "@/public/anth-vol2-cover.jpg"
 export default function Anthology() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-base-100">
@@ -30,14 +31,12 @@ export default function Anthology() {
                 <button className="bg-primary mt-10 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-56 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-11">Anthology Application!</button>
             </div>
         </section>
-        <section className="flex flex-row justify-center items-center gap-20">
+        <section className="flex flex-row justify-center items-center gap-0">
             <div>
-                img
-                <Image src="" alt=""/>
+                <Image src={anth1} alt="Anthology 1" className="rounded-box" width={225} height={250}/>
             </div>
             <div>
-                img
-                <Image src="" alt=""/>
+                <Image src={anth2} alt="Anthology 2" className="rounded-box" width={225} height={225}/>
             </div>
         </section>
         <section className="flex flex-row items-center justify-center text-center mt-14">
