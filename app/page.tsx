@@ -23,7 +23,9 @@ export default function Home() {
               Here&apos;s some of out current news!
             </h1>
           </div>
-          <LandingCarousel />
+          <div className="overflow-hidden">
+            <LandingCarousel />
+          </div>
         </section>
         <section className="text-center mt-14">
           <h2>Our featured projects</h2>

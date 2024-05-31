@@ -63,7 +63,7 @@ export default function Publishing() {
                 </div>
             </section>
             <section className="flex flex-col items-center justify-center text-center mt-14">
-                <div>
+                <div className="w-1/2">
                     <h2>Don&apos;t know where to start? We can help you design something!<br/><br/>Or maybe you want to start in one of our Anthologies?</h2>
                 </div>
                 <div className="flex flex-row mt-14 mb-14 gap-10">
@@ -73,7 +73,7 @@ export default function Publishing() {
                         </Link>
                     </div>
                     <div>
-                        <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
+                        <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="/publishing/design">
                             Design Help
                         </Link>
                     </div>
