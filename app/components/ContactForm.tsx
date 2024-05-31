@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import { Turnstile } from '@marsidev/react-turnstile'
+import React from 'react';
 
 export default function ContactForm() {
     const [name, setName] = useState('');
@@ -63,6 +64,7 @@ export default function ContactForm() {
         }
     };
     const key = process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY || "";
+
     return (
         <form 
             onSubmit={handleSubmit} 
@@ -91,7 +93,8 @@ export default function ContactForm() {
                 onChange={(e) => setMessage(e.target.value)}
                 className="textarea bg-white w-full m-5 rounded-2xl h-32"
             />
-            <Turnstile siteKey={key} onSuccess={() => setCloudflareStatus('solved')}/>
+
+            <Turnstile  className="cf-turnstile" siteKey={key} onSuccess={() => setCloudflareStatus('solved')}  />
             {cloudflareStatus == 'solved' && 
                 <div>
                     <button 
