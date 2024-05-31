@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         </section>
         <section className="text-center mt-14">
-          <h2>Our featured projects</h2>
+          <h2 className="text-xl mb-5">Our featured projects</h2>
           <FeaturedProjectsList/>
         </section>
         <Footer />

@@ -2,8 +2,9 @@
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import PageTitle from "@/app/components/PageTitle";
-
-
+import Image from "next/image";
+import Link from "next/link";
+import mailLogo from "@/public/mail.svg"
 export default function Anthology() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-base-100">
@@ -43,6 +44,17 @@ export default function Anthology() {
                 imgimgimgimgimg
             </div>
         </section>
+        <section className="flex flex-col justify-center mt-14 items-center">
+                <div className="flex flex-col items-center justify-center mt-5">
+                    <Link href="/info/contact#contactForm" className="gap-3 flex flex-row items-center justify-center text-xl">
+                    <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
+                    Email us for a quote!
+                    </Link>
+                    <div className="h-3 my-5 w-full ">
+                        <div className="bg-white h-full w-full rounded-3xl"></div>
+                    </div>
+                </div>
+            </section>
         <Footer />
       </section>
     </main>

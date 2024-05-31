@@ -63,6 +63,7 @@ export default function ContactForm() {
         <form 
             onSubmit={handleSubmit} 
             className="flex flex-col justify-center items-center w-full text-black"
+            id="contactForm"
         >
             <input 
                 type="text"

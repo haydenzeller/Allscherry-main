@@ -27,15 +27,15 @@ export default function Footer() {
             </div>
             <div className="flex flex-row justify-center items-center gap-24 mb-3">
                 <div className="flex flex-row items-center justify-center">
-                    <Link href="" className="gap-3 flex flex-row-reverse items-center jsutify-center">
+                    <Link href="" className="gap-3 flex flex-row-reverse items-center jsutify-center text-lg">
                         Linktree!
-                        <Image className="bg-white rounded-full p-1" src={linktreeLogo} alt="Email Logo" width="30"/>
+                        <Image className="bg-white rounded-full p-1" src={linktreeLogo} alt="Email Logo" width="50"/>
                     </Link>
                 </div>
                 <div className="flex flex-row items-center justify-center">
-                    <Link href="" className="gap-3 flex flex-row items-center jsutify-center">
+                    <Link href="/info/contact#contactForm" className="gap-3 flex flex-row items-center jsutify-center text-lg">
                         Email Us!
-                        <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="30"/>
+                        <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
                     </Link>
                 </div>
             </div>

@@ -53,7 +53,7 @@ export default function Publishing() {
             </section>
             <section className="flex flex-col justify-center mt-14 items-center">
                 <div className="flex flex-col items-center justify-center mt-5">
-                    <Link href="/info/contact" className="gap-3 flex flex-row items-center justify-center text-xl">
+                    <Link href="/info/contact#contactForm" className="gap-3 flex flex-row items-center justify-center text-xl">
                     <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
                     Email us for a quote!
                     </Link>
