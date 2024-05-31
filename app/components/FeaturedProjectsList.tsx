@@ -45,13 +45,14 @@ export default function FeaturedProjectsList() {
                     <ul className="grid grid-cols-2 gap-4">
                         {featuredProjects.map((project, index) => (
                             <li key={index} className="flex flex-col items-center space-y-4">
-                                <div className="w-48 h-48 relative">
+                                <div className="w-48 h-48 relative object-contain">
                                     <Image
                                         src={"https://api.allscherry.com/assets/"+project.image}
                                         alt={project.name}
-                                        width={1000}
-                                        height={1000}
-                                        className="rounded-lg"
+                                        fill
+                                        sizes="(max-width: 600px) 480px, 800px"
+                                        style={{ objectFit: 'cover' }}  // Instead of objectFit prop
+                                        className="rounded-box"
                                     />
                                 </div>
                                 <div>
