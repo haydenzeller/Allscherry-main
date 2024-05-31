@@ -1,5 +1,7 @@
 'use client'
 import { useState } from 'react';
+import { Turnstile } from '@marsidev/react-turnstile'
+
 export default function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -8,6 +10,8 @@ export default function ContactForm() {
     const [showSuccess, setShowSuccess] = useState(false);
     const [showError, setShowError] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
+
+    const [cloudflareStatus, setCloudflareStatus] = useState("")
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
@@ -58,12 +62,11 @@ export default function ContactForm() {
             setShowSuccess(false);
         }
     };
-
+    const key = process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY || "";
     return (
         <form 
             onSubmit={handleSubmit} 
             className="flex flex-col justify-center items-center w-full text-black"
-            id="contactForm"
         >
             <input 
                 type="text"
@@ -88,14 +91,17 @@ export default function ContactForm() {
                 onChange={(e) => setMessage(e.target.value)}
                 className="textarea bg-white w-full m-5 rounded-2xl h-32"
             />
-            <div>
-                <button 
-                    type="submit"
-                    className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-6"
-                >
-                    Submit!
-                </button>
-            </div>
+            <Turnstile siteKey={key} onSuccess={() => setCloudflareStatus('solved')}/>
+            {cloudflareStatus == 'solved' && 
+                <div>
+                    <button 
+                        type="submit"
+                        className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-6"
+                    >
+                        Submit!
+                    </button>
+                </div>
+            }
             <div className="flex flex-col justify-center items-center mt-0 mb-2">
                 <div className="absolute mt-20">
                     {showSuccess && <p className="text-success">Submitted successfully! Thank you :)</p>}
