@@ -65,7 +65,7 @@ export default function LandingCarousel() {
         <div className="relative">
             <div
                 ref={containerRef}
-                className="relative flex items-center justify-center w-full h-80 overflow-hidden" // Set a fixed height here (e.g., h-80)
+                className="relative flex items-center justify-center w-full h-96 overflow-hidden" // Set a fixed height here (e.g., h-80)
                 onTouchStart={handleTouchStart}
                 onTouchMove={handleTouchMove}
             >
@@ -79,7 +79,7 @@ export default function LandingCarousel() {
                     images.map((image, index) => (
                         <div
                             key={image.id}
-                            className={`absolute inset-0 transition-opacity duration-500 ${
+                            className={`transition-opacity duration-500 ${
                                 index === activeIndex ? "opacity-100" : "opacity-0"
                             }`}
                             style={{ zIndex: index === activeIndex ? 1 : 0 }}
@@ -88,7 +88,7 @@ export default function LandingCarousel() {
                                 src={`https://api.allscherry.com/assets/${image.image}`}
                                 alt="Anthology Image"
                                 layout="fill"
-                                objectFit="cover"
+                                objectFit="contain" // Adjust objectFit value here
                             />
                         </div>
                     ))
