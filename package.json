@@ -18,6 +18,8 @@
     "@marsidev/react-turnstile": "^0.6.1",
     "@stripe/react-stripe-js": "^2.7.1",
     "@stripe/stripe-js": "^3.4.1",
+    "@vercel/analytics": "^1.3.1",
+    "@vercel/speed-insights": "^1.0.11",
     "autoprefixer": "^10.4.19",
     "axios": "^1.7.2",
     "glob": "^10.4.1",

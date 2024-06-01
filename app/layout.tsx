@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { Asap as GoogleAsap } from "next/font/google"; // Renamed Asap to GoogleAsap to avoid conflict
 import "./globals.css";
 import { Viewport } from "next";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const Asap = GoogleAsap({ 
   weight: '500',
   subsets: ["latin"] 
@@ -32,6 +34,8 @@ export default function RootLayout({
       </head>
       <body className={Asap.className}>
         {children}
+        <Analytics/>
+        <SpeedInsights/>
       </body>
     </html>
   );

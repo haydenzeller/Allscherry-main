@@ -22,7 +22,7 @@
 'use server'
 import { NextResponse } from 'next/server'
 export async function GET() {
-    const apiUrl = 'https://api.allscherry.com/items/products';
+    const apiUrl = process.env.ALLSCHERRY_BACKEND_ENDPOINT || "";
     const API_KEY = process.env.ALLSCHERRY_BACKEND_KEY;
     try {
         const res = await fetch(apiUrl, 

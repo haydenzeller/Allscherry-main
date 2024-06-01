@@ -3,7 +3,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
-    const apiUrl = 'https://api.allscherry.com/items/contact_submissions';
+    const apiUrl = process.env.ALLSCHERRY_BACKEND_ENDPOINT || "";
     const API_KEY = process.env.ALLSCHERRY_BACKEND_KEY;
     try {
         const body = await req.json();
