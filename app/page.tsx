@@ -23,10 +23,8 @@ export default function Home() {
               Here&apos;s some of out current news!
             </h1>
           </div>
-          <div className="overflow-hidden">
-            <LandingCarousel />
-          </div>
         </section>
+        <LandingCarousel/>
         <section className="text-center mt-14">
           <h2 className="text-xl mb-5">Our featured projects</h2>
           <FeaturedProjectsList/>
