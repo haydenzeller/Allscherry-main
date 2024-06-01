@@ -1,14 +1,14 @@
 'use server'
 import { NextResponse } from 'next/server'
 export async function GET() {
-    const apiUrl = process.env.ALLSCHERRY_BACKEND_ENDPOINT || "";
-    const API_KEY = process.env.ALLSCHERRY_BACKEND_KEY;
+    const apiUrl = process.env.ALLSCHERRY_BACKEND_ENDPOINT + "items/affiliates" || "";
+    const API_KEY = process.env.ALLSCHERRY_BACKEND_KEY || '';
     try {
         const res = await fetch(apiUrl, 
         {
             method: 'GET',
             headers: {
-                Authorization: `Bearer ${API_KEY}`
+                Authentication: 'Bearer Qnb-0bAj3aXaOYuA4fawMhhBid_l-Pv8-gkNhs1kqlE',
             },
             cache: 'no-store'
         }

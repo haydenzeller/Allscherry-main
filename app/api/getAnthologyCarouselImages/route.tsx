@@ -1,14 +1,14 @@
 'use server'
 import { NextResponse } from 'next/server'
 export async function GET() {
-    const apiUrl = process.env.ALLSCHERRY_BACKEND_ENDPOINT || "";
+    const apiUrl = process.env.ALLSCHERRY_BACKEND_ENDPOINT + "items/anthology_carousel_images" || "";
     const API_KEY = process.env.ALLSCHERRY_BACKEND_KEY;
+    console.log(apiUrl)
     try {
         const res = await fetch(apiUrl, 
         {
             method: 'GET',
             headers: {
-                Authorization: `Bearer ${API_KEY}`
             },
             cache: 'no-store'
         }

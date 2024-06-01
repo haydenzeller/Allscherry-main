@@ -24,7 +24,9 @@ export default function Home() {
             </h1>
           </div>
         </section>
-        <LandingCarousel/>
+        <section className="relative">
+          <LandingCarousel/>
+        </section>
         <section className="text-center mt-14">
           <h2 className="text-xl mb-5">Our featured projects</h2>
           <FeaturedProjectsList/>
