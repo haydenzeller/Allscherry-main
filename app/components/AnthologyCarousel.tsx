@@ -43,7 +43,7 @@ export default function CarouselIndicatorsOutside() {
         type: "carousel",
         focusAt: "center",
         perView: 3,
-        autoplay: 3000,
+        autoplay: false, // Disable auto scroll
         animationDuration: 700,
         gap: 24,
         classes: {
@@ -77,7 +77,7 @@ export default function CarouselIndicatorsOutside() {
           },
         },
       }).mount();
-
+  
       return () => {
         slider.destroy();
       };
