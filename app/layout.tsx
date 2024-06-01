@@ -10,6 +10,10 @@ const Asap = GoogleAsap({
 export const metadata: Metadata = {
   title: "Allscherry!",
   description: "",
+  appleWebApp: {
+    title: 'Allscherry!',
+    statusBarStyle: 'black-translucent',
+  },
 };
 
 export default function RootLayout({
