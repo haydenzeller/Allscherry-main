@@ -24,7 +24,7 @@ export default function Home() {
             </h1>
           </div>
         </section>
-        <section className="flex flex-col w-full">
+        <section className="flex flex-col items-center justify-center w-full h-auto">
           <LandingCarousel/>
         </section>
         <section className="text-center mt-14">
