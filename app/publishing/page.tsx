@@ -5,33 +5,36 @@ import Image from "next/image";
 import goingUp from "@/public/going-up-arrow.svg"
 import Link from "next/link";
 import mailLogo from "@/public/mail.svg"
+import indieSign from "@/public/indie-sign-square.jpg"
+import comicsPublishing from "@/public/allscherry-comics-publishing.jpg"
+import prints from "@/public/print-carousel.jpg"
 export default function Publishing() {
     return (
         <main className="flex min-h-screen flex-col bg-base-100">
             <Header />
             <PageTitle title="AllsCherry is primarily a comic book brand!"/>
-            <section className="flex flex-col justify-center items-center text-center ml-3 mr-3 text-sm mt-14">
-                <div className="flex flex-row items-center justify-center">
+            <section className="flex flex-col justify-center items-center text-center ml-3 mr-3 text-sm mt-14 gap-4">
+                <div className="flex flex-row items-center justify-center gap-1">
                     <div>
-                        <Image src="https://api.allscherry.com/assets/12e6ddb7-dd87-474c-a107-7ac6cd17d7c6?key=system-medium-cover&modified=2024-05-29T17:15:17" alt="" width={1000} height={500}/>
+                        <Image src={comicsPublishing} alt="Comics Publishing" width={700} height={700} className="rounded-box"/>
                     </div>
                     <div>
                         <p>AllsCherry has it&apos;s own label, used to collaborate with artists, distribute and sell it&apos;s books while staying independent and local!</p>
                     </div>
                 </div>
-                <div className="flex flex-row-reverse items-center justify-center ">
+                <div className="flex flex-row-reverse items-center justify-center gap-1">
                     <div>
-                        <Image src="https://api.allscherry.com/assets/12e6ddb7-dd87-474c-a107-7ac6cd17d7c6?key=system-medium-cover&modified=2024-05-29T17:15:17" alt="" width={1000} height={500}/>
+                        <Image src={indieSign} alt="Indie Sign" width={700} height={700} className="rounded-box"/>
                     </div>
                     <div>
                         <p>We strive to keep the artist&apos;s work their own, leaving the creativity to them, and the heavy lifting for us!</p>
                     </div>
                 </div>
             </section>
-            <section className="flex flex-col items-center justify-center text-center m-14">
+            <section className="flex flex-col items-center justify-center text-center m-10">
                 <h2>Want to publish yourself, but don&apos;t have a printer? Need some business cards? A poster? Brochures?!<br/><br/>Don&apos;t worry, we know a guy ;)</h2>
-                <Image className="mt-10" src="https://api.allscherry.com/assets/12e6ddb7-dd87-474c-a107-7ac6cd17d7c6?key=system-medium-cover&modified=2024-05-29T17:15:17" alt="" width={1000} height={500}/>
-                <Image src={goingUp} alt="Going Up?" className="w-12 filter grayscale rotate-90 mt-16"></Image>
+                <Image className="mt-10 rounded-box" src={prints} alt="Printing" width={300} height={300}/>
+                <Image src={goingUp} alt="Going Up?" className="w-12 filter grayscale rotate-90 "></Image>
             </section>
             <section className="flex flex-col justify-center items-center text-center mr-14 ml-14">
                 <h2>We print with a local printer, StudioComix Press, located in Kitchener, Ontario!<br/><br/>The Process is simple!<br/><br/>Send us an email with these requirements in mind...</h2>

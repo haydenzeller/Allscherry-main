@@ -30,7 +30,7 @@ export default function Copywrite() {
             </p>
             <p>
                 Permission is hereby granted, free of charge, to any person obtaining a copy
-                of this software and associated documentation files (the "Software"), to deal
+                of this software and associated documentation files (the &quot;Software&quot;), to deal
                 in the Software without restriction, including without limitation the rights
                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
                 copies of the Software, and to permit persons to whom the Software is
@@ -44,7 +44,7 @@ export default function Copywrite() {
 
             <p>
                 The following assets, including but not limited to brand names, logos, and images
-                (collectively, the "Brand Assets"), included in this project are not covered under
+                (collectively, the &quot;Brand Assets&quot;), included in this project are not covered under
                 this MIT License. The Brand Assets are protected by copyright and trademark laws
                 and are licensed under the Creative Commons Attribution-NonCommercial 4.0 International
                 License. You may use these Brand Assets according to the terms of the Creative Commons
@@ -52,7 +52,7 @@ export default function Copywrite() {
             </p>
 
             <p>
-                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
                 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
                 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
                 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
