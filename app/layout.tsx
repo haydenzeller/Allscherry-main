@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  width: "device-width",
   initialScale: 1.0,
   viewportFit: "cover",
   themeColor:"#FFB7B7",
@@ -28,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <head>
 
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
