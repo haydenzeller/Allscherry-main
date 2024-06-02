@@ -15,7 +15,7 @@ export default function Anthology() {
         <PageTitle title={"Need some design help?"}/>
         <section className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center w-full mt-14">
-                <h2 className="text-xl pr-24 pl-24 text-center w-full">In the process of making a book, poster, banner, or something similar?</h2>
+                <h2 className="text-lg w-3/4 text-center border border-base-200 rounded-3xl p-3">In the process of making a book, poster, banner, or something similar?</h2>
             </div>
         </section>
         <section className="flex flex-col justify-center items-center mb-14 mt-14">
@@ -23,7 +23,7 @@ export default function Anthology() {
                 <div className="absolute -inset-2 z-0 bg-base-300 rounded-2xl transform scale-105 mt-24"></div>
                     <div className="text-center text-xl relative z-10 bg-base-200 rounded-2xl p-5">
                         <h2 className=" text-center text-xl">AllsCherry could help with...<br/><br/></h2>
-                        <ul className="pl-5">
+                        <ul className="pl-8">
                             <li className="list-disc text-left text-lg">General Design Advice<br/><br/></li>
                             <li className="list-disc text-left text-lg">Logo creation / advice<br/><br/></li>
                             <li className="list-disc text-left text-lg">Branding / marketing (such as business cards, posters, or ads)<br/><br/></li>
@@ -40,7 +40,7 @@ export default function Anthology() {
                 </div>
         </section> 
         <section className="flex flex-col items-center jsutify-center mt-14 mb-14 text-center">
-            <h2 className="text-xl mb-5">Our design examples</h2>
+            <h2 className="text-lg w-1/2 text-center border border-base-200 rounded-3xl p-3 mb-5">Our design examples</h2>
             <DesignImages/>
         </section>
         <section className="flex flex-col justify-center mt-14 items-center">

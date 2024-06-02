@@ -17,7 +17,7 @@ export default function Anthology() {
         <PageTitle title={"We make annual Anthologies!"}/>
         <section className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center w-full mt-14">
-                <h2 className="text-xl pr-24 pl-24 text-center w-full">Are you a writer? or illustrator?<br/><br/>Well we have got a deal for you!</h2>
+                <h2 className="text-lg w-1/2 text-center border border-base-200 rounded-3xl p-3">Are you a writer? or illustrator?<br/><br/>Well we have got a deal for you!</h2>
             </div>
         </section>
         <section className="flex flex-col justify-center items-center mb-14 mt-14">
@@ -40,8 +40,8 @@ export default function Anthology() {
             </div>
         </section>
         <section className="flex flex-row items-center justify-center text-center mt-14">
-            <div className="w-1/2">
-                <h2>Here&apos;s just some of what we&apos;ve accomplished with the local talent!</h2>
+            <div className="flex justify-center">
+                <h2 className="text-lg w-1/2 text-center border border-base-200 rounded-3xl p-3">Here&apos;s just some of what we&apos;ve accomplished with the local talent!</h2>
             </div>
         </section>
         <section className="flex flex-col items-center justify-center w-full h-auto">

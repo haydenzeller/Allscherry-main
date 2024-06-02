@@ -18,8 +18,8 @@ export default function Home() {
           <SubscribeBox />
         </section>
         <section className="flex flex-col justify-center items-center mt-24">
-          <div>
-            <h1 className="text-2xl text-center">
+          <div className="flex justify-center items-center">
+            <h1 className="text-2xl text-center border border-base-200 rounded-full p-3">
               Here&apos;s some of out current news!
             </h1>
           </div>
@@ -28,7 +28,9 @@ export default function Home() {
           <LandingCarousel/>
         </section>
         <section className="text-center mt-14">
-          <h2 className="text-xl mb-5">Our featured projects</h2>
+          <div className="mb-5 flex items-center justify-center">
+            <h2 className="text-2xl border border-base-200 rounded-full p-3">Our featured projects</h2>
+          </div>
           <FeaturedProjectsList/>
         </section>
         <Footer />
