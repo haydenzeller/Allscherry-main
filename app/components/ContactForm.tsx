@@ -94,8 +94,8 @@ export default function ContactForm() {
                 className="textarea bg-white w-full m-5 rounded-2xl h-32"
             />
 
-            <Turnstile  className="cf-turnstile" siteKey={key} onSuccess={() => setCloudflareStatus('solved')}  />
-            {cloudflareStatus == 'solved' && 
+            {/* <Turnstile  className="cf-turnstile" siteKey={key} onSuccess={() => setCloudflareStatus('solved')}  /> */}
+            {/* {cloudflareStatus == 'solved' &&  */}
                 <div>
                     <button 
                         type="submit"
@@ -104,7 +104,7 @@ export default function ContactForm() {
                         Submit!
                     </button>
                 </div>
-            }
+            {/* } */}
             <div className="flex flex-col justify-center items-center mt-0 mb-4">
                 <div className="absolute mt-20">
                     {showSuccess && <p className="text-success">Submitted successfully! Thank you :)</p>}

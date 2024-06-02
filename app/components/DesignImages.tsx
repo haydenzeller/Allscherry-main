@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 interface Design {
+    id:string;
     name: string;
     image: string;
 }
@@ -49,7 +50,7 @@ export default function AffiliateList() {
                                 <div className="w-48 h-48 relative">
                                     <Image
                                         src={"https://api.allscherry.com/assets/"+design.image}
-                                        alt={design.name}
+                                        alt={design.name || design.id}
                                         fill
                                         sizes="(max-width: 600px) 480px, 800px"
                                         style={{ objectFit: 'cover' }}  // Instead of objectFit prop
