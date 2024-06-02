@@ -71,6 +71,7 @@ export default function CarouselIndicatorsOutside() {
 
   return (
     <>
+      {loading && <div className="loading spinner bg-base-200"></div>}
       <div ref={carouselRef} className=" carousel w-auto h-auto rounded-box my-5 overflow-x-scroll scroll-smooth ">
         {images.map((img, index) => (
           <div key={img.id} id={`item${index + 1}`} className="carousel-item w-full justify-center items-center h-full">

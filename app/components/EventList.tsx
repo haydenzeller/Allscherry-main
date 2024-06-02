@@ -61,22 +61,24 @@ export default function LandingCarousel() {
     };
 
     return (
-        <div className="timeline-container">
+        <div>
             {loading ? (
                 <div className="flex flex-col justify-center items-center">
                     <div className="loading spinner bg-base-200"></div>
                 </div>
             ) : (
                 events.length > 0 ? (
-                    <ul className="timeline timeline-vertical">
+                    <ul className="timeline timeline-vertical timeline-snap-icon">
                         {events.map((event, index) => (
                             <li key={index}>
+                                {index !== 0 && <hr/> }
+                                <div className="timeline-middle w-2 h-2 bg-white rounded-full"></div>
                                 <div className={`timeline-box ${index % 2 === 0 ? 'timeline-start' : 'timeline-end'}`}>
                                     <h3>{event.title}</h3>
                                     <p>{event.description}</p>
                                     <p>{renderEventTime(event.start, event.end)}</p>
                                 </div>
-                                {index < events.length - 1 && <hr />}
+                                {index !== events.length - 1 && <hr/>}
                             </li>
                         ))}
                     </ul>
