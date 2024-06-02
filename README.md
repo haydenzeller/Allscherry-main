@@ -3,6 +3,7 @@
 </p>
 
 [![CodeQL](https://github.com/haydenzeller/Allscherry-main/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/haydenzeller/Allscherry-main/actions/workflows/github-code-scanning/codeql)
+[![Dependabot Updates](https://github.com/haydenzeller/Allscherry-main/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/haydenzeller/Allscherry-main/actions/workflows/dependabot/dependabot-updates)
 
 # Legal
 
