@@ -10,7 +10,7 @@ export default function Contact() {
             <Header/>
             <PageTitle title="Questions? Email us! But who is us?"/>
             <div className="flex flex-col text-center mt-14 ml-12 mr-12 items-center justify-center">
-                <h1 className="text-xl text-center border border-base-200 rounded-full p-3">Allscherry was founded by Eric Olcsvary, as a way to bring artists together, and to... well, make art!</h1>
+                <h1 className="text-md text-center border border-base-200 rounded-full px-10 py-4">Allscherry was founded by Eric Olcsvary, as a way to bring artists together, and to... well, make art!</h1>
                 <div className="mt-4 rounded-xl">
                     <Image src={ericHeadshot} alt="Eric Headshot" className="w-96 rounded-xl"/>
                 </div>
