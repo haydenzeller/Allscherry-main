@@ -1,24 +1,15 @@
 'use server'
-import { NextResponse } from 'next/server'
+import { createDirectus, rest, readItems, withToken } from '@directus/sdk';
+import { NextResponse } from 'next/server';
+
 export async function GET() {
-    const apiUrl = process.env.ALLSCHERRY_BACKEND_ENDPOINT + "items/landing_carousel_images" || "";
-    const API_KEY = process.env.ALLSCHERRY_BACKEND_KEY;
     try {
-        const res = await fetch(apiUrl, 
-        {
-            method: 'GET',
-            headers: {
-                Authorization: `Bearer ${API_KEY}`,
-            },
-            cache: 'no-store'
-        }
-        );
-        if (res.status >= 400) {
-            return NextResponse.json({ message: "API error: " }, {status: res.status})
-        }
-        const data = await res.json();
-        return NextResponse.json(data, {status: 200})
-    } catch(error: any) {
-        return NextResponse.json({ message: error.message }, {status: 500}) 
+        const ENDPOINT = process.env.ALLSCHERRY_BACKEND_ENDPOINT || "";
+        const KEY = process.env.ALLSCHERRY_BACKEND_KEY || "";
+        const client = createDirectus(ENDPOINT).with(rest());
+        const result = await client.request(withToken(KEY, readItems('landing_carousel_images')));
+        return NextResponse.json({ data: result });
+    } catch (error:any) {
+        return NextResponse.json({ message: error.message }, { status: 500 });
     }
 }

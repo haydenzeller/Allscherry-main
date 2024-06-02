@@ -1,10 +1,15 @@
 'use server';
 
 import { NextRequest, NextResponse } from 'next/server';
+import { createDirectus, rest, readItem } from '@directus/sdk';
+
 
 export async function POST(req: NextRequest) {
     const apiUrl = process.env.ALLSCHERRY_BACKEND_ENDPOINT + "items/contact_submissions" || "";
     const API_KEY = process.env.ALLSCHERRY_BACKEND_KEY;
+    const client = createDirectus(apiUrl);
+
+    
     try {
         const body = await req.json();
 
