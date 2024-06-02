@@ -8,6 +8,7 @@ export async function GET() {
         {
             method: 'GET',
             headers: {
+                Authorization: `Bearer ${API_KEY}`,
             },
             cache: 'no-store'
         }

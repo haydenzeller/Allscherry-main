@@ -52,22 +52,22 @@ export default function SubscribeBox({showOrbs = true}) {
         }
     };
     return (
-    <>
-    <div className="mt-10 flex flex-row gap-6 justify-center items-center">
-        {showOrbs && <div className="bg-white w-12 h-12 rounded-full" /> }
-        <input className="rounded-2xl input w-60 bg-white input-md text-black text-center" placeholder="Your email here! please :)" onChange={e => {setEmail(e.target.value); setShowError(false); setShowSuccess(false)}}/>
-        {showOrbs && <div className="bg-white w-12 h-12 rounded-full" /> }
-    </div>
-    <div className="flex flex-col justify-center items-center">
-        <div>
-            <button className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-6" onClick={handleSubscribe}>Subscribe!</button>
+    <section>
+        <div className="mt-10 flex flex-row gap-6 justify-center items-center">
+            {showOrbs && <div className="bg-white w-12 h-12 rounded-full" /> }
+            <input className="rounded-2xl input w-60 bg-white input-md text-black text-center" placeholder="Your email here! please :)" onChange={e => {setEmail(e.target.value); setShowError(false); setShowSuccess(false)}}/>
+            {showOrbs && <div className="bg-white w-12 h-12 rounded-full" /> }
         </div>
-        <div className="absolute mt-24">
-            {showSuccess && <p className="text-success">Subscribed :) Thanks!</p>}
-            {showError && <p className="text-error">Sorry, email is invalid!</p>}
-            {isLoading && <p className="loading loading-spinner bg-base-300"/>}
+        <div className="flex flex-col justify-center items-center">
+            <div>
+                <button className="bg-primary mt-5 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-6" onClick={handleSubscribe}>Subscribe!</button>
+            </div>
+            <div className="absolute mt-24">
+                {showSuccess && <p className="text-success">Subscribed :) Thanks!</p>}
+                {showError && <p className="text-error">Sorry, email is invalid!</p>}
+                {isLoading && <p className="loading loading-spinner bg-base-300"/>}
+            </div>
         </div>
-    </div>
-    </>
+    </section>
     )
 }
