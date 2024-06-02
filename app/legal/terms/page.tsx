@@ -44,7 +44,7 @@ export default function TermsAndConditions() {
                     In these Website Standard Terms and Conditions, &quot;Your Content&quot; shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant AllsCherry a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.
                 </p>
                 <p>
-                    Your Content must be your own and must not be invading any third-party's rights. AllsCherry reserves the right to remove any of Your Content from this Website at any time without notice.
+                    Your Content must be your own and must not be invading any third-party&apos;s rights. AllsCherry reserves the right to remove any of Your Content from this Website at any time without notice.
                 </p>
 
                 <h2>5. No warranties</h2>

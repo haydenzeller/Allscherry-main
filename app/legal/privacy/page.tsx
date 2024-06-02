@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
           <section className="items-center justify-center gap-3 flex flex-col m-5">
             <p>Last updated: June 2, 2024</p>
             <p>
-                Welcome to AllsCherry! We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, AllsCherry.com (the "Site"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+                Welcome to AllsCherry! We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, AllsCherry.com (the &quot;Site&quot;). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
             </p>
 
             <h2>Information We Collect</h2>
