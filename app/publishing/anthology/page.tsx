@@ -44,7 +44,7 @@ export default function Anthology() {
                 <h2>Here&apos;s just some of what we&apos;ve accomplished with the local talent!</h2>
             </div>
         </section>
-        <section className="w-full flex flex-col justify-center item-center ">
+        <section className="flex flex-col w-full">
             <AnthologyCarousel/>
         </section>
         <section className="flex flex-col justify-center mt-14 items-center">

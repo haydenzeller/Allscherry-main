@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Glide from "@glidejs/glide";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 interface Images {
@@ -12,6 +11,8 @@ interface Images {
 export default function CarouselIndicatorsOutside() {
   const [images, setImages] = useState<Images[]>([]);
   const [loading, setLoading] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const getProducts = async () => {
@@ -38,97 +39,56 @@ export default function CarouselIndicatorsOutside() {
   }, []);
 
   useEffect(() => {
-    if (!loading && images.length > 0) {
-      const slider = new Glide(".glide-05", {
-        type: "carousel",
-        focusAt: "center",
-        perView: 3,
-        autoplay: false, // Disable auto scroll
-        animationDuration: 700,
-        gap: 24,
-        classes: {
-          swipeable: "glide--swipeable",
-          dragging: "glide--dragging",
-          direction: {
-            ltr: "glide--ltr",
-            rtl: "glide--rtl",
-          },
-          type: {
-            slider: "glide--slider",
-            carousel: "glide--carousel",
-          },
-          slide: {
-            active: "glide--slide--active",
-            clone: "glide--slide--clone",
-          },
-          arrow: {
-            disabled: "glide--arrow--disabled",
-          },
-          nav: {
-            active: "glide__bullet--active",
-          },
-        },
-        breakpoints: {
-          1024: {
-            perView: 2,
-          },
-          640: {
-            perView: 1,
-          },
-        },
-      }).mount();
-  
-      return () => {
-        slider.destroy();
-      };
+    const handleScroll = () => {
+      if (carouselRef.current) {
+        const scrollLeft = carouselRef.current.scrollLeft;
+        const itemWidth = carouselRef.current.offsetWidth;
+        const index = Math.round(scrollLeft / itemWidth);
+        setCurrentIndex(index);
+      }
+    };
+
+    if (carouselRef.current) {
+      carouselRef.current.addEventListener("scroll", handleScroll);
     }
-  }, [loading, images]);
+
+    return () => {
+      if (carouselRef.current) {
+        carouselRef.current.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
+
+  const handleIndicatorClick = (index: number) => {
+    if (carouselRef.current) {
+      const itemWidth = carouselRef.current.offsetWidth;
+      carouselRef.current.scrollTo({
+        left: itemWidth * index,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <>
-      <div className="glide-05 relative w-full">
-        {loading ? (
-          <div className="loading spinner bg-base-200"></div>
-        ) : (
-          <>
-            <div className="overflow-hidden" data-glide-el="track">
-              <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-                {images.map((image) => (
-                  <li key={image.id} className="flex justify-center items-center p-2">
-                    <Image
-                      src={`https://api.allscherry.com/assets/${image.image}`}
-                      alt="Carousel Image"
-                      width={500}
-                      height={500}
-                      className="object-cover w-[500px] h-[500px] m-auto rounded-lg"
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div
-              className="flex w-full items-center justify-center gap-2 mt-4"
-              data-glide-el="controls[nav]"
-            >
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  className="group p-4"
-                  data-glide-dir={`=${index}`}
-                  aria-label={`goto slide ${index + 1}`}
-                >
-                  <span className="indicator block h-2 w-2 rounded-full bg-white ring-1 ring-slate-700 transition-colors duration-300"></span>
-                </button>
-              ))}
-            </div>
-          </>
-        )}
+      <div ref={carouselRef} className="h-80 carousel rounded-box mx-8 my-5 overflow-x-scroll scroll-smooth">
+        {images.map((img, index) => (
+          <div key={img.id} id={`item${index + 1}`} className="carousel-item w-full">
+            <Image priority src={"http://api.allscherry.com/assets/" + img.image} alt={`Image ${index + 1}`} height={250} width={500} className="object-cover"/>
+          </div>
+        ))}
       </div>
-      <style jsx global>{`
-        .glide__bullet--active .indicator {
-          background-color: #AB7070; /* Pink color */
-        }
-      `}</style>
+      <div className="w-full flex justify-center gap-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => handleIndicatorClick(index)}
+            className={`rounded-full w-3 h-5 border border-base-200 ${currentIndex === index ? 'bg-base-200 text-black' : 'bg-base-100'}`}
+          >
+
+          </button>
+        ))}
+      </div>
     </>
   );
 }
