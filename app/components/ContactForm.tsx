@@ -105,7 +105,7 @@ export default function ContactForm() {
                     </button>
                 </div>
             }
-            <div className="flex flex-col justify-center items-center mt-0 mb-2">
+            <div className="flex flex-col justify-center items-center mt-0 mb-4">
                 <div className="absolute mt-20">
                     {showSuccess && <p className="text-success">Submitted successfully! Thank you :)</p>}
                     {showError && <p className="text-error">{errorMessage}</p>}
