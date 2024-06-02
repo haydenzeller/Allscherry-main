@@ -8,7 +8,7 @@ import mailLogo from "@/public/mail.svg";
 import groupPhoto from "@/public/groupPhoto.jpg";
 import ericUVFS from "@/public/ericUVFS.jpg";
 import PageTitle from "@/app/components/PageTitle";
-
+import printBundle from "@/public/print-bundle-example.webp"
 export default function Info() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-base-100">
@@ -57,7 +57,7 @@ export default function Info() {
 
           <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
             <div className="">
-              <Image src={groupPhoto} alt="Group photo" className="w-52" />
+              <Image src={groupPhoto} alt="Group photo" className="w-52 h-auto rounded-box" />
             </div>
             <div className="flex flex-col justify-center items-center gap-4 w-1/2">
               <h2>We work with artists to make something original and special. New to books? here&apos;s a great way to start!</h2>
@@ -79,13 +79,13 @@ export default function Info() {
               </div>
             </div>
             <div className="">
-              <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className=" image-full" />
+              <Image src={printBundle} className="w-52 rounded-box" alt="Eric UVFS"/>
             </div>
           </div>
           
           <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
             <div className="">
-              <Image src={ericUVFS} className="w-52" alt="Eric UVFS"/>
+              <Image src={ericUVFS} className="w-52 rounded-box" alt="Eric UVFS"/>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 w-1/2">
               <h2>We do many shows throughout the year, click below to keep up!</h2>

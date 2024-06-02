@@ -39,7 +39,12 @@ export default function Footer() {
                     </Link>
                 </div>
             </div>
-            <div className="flex justify-center items-center m-1">
+            <div className="flex flex-row justify-center items-center m-1 gap-5">
+                <Link href="/legal/privacy" className="underline">Privacy</Link>
+                <Link href="/legal/terms" className="underline">Terms</Link>
+                <Link href="/legal/copyright" className="underline">Copyright</Link>
+            </div>
+            <div className="flex justify-center items-center my-4">
                 <p className="opacity-70 text-sm">Copywrite &copy; 2022-{currentYear}, Allscherry. All Rights Reserved.</p>
             </div>
         </section>
