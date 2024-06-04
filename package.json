@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap --config next-sitemap.cjs"
+    "postbuild": "next-sitemap --config next-sitemap.config.cjs"
   },
   "dependencies": {
     "@directus/sdk": "^16.0.2",
