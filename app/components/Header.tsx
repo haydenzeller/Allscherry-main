@@ -40,7 +40,7 @@ export default function MobileHeader() {
                                 Shop
                             </div>
                             <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
-                                <li><a>Coming soon!</a></li>
+                                <li><a href="/">Coming soon!</a></li>
                             </ul>
                         </div>
                     </li>
