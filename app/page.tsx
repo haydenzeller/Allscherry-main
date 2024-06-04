@@ -7,8 +7,25 @@ import SubscribeBox from "@/app/components/SubscribeBox";
 import PageTitle from "@/app/components/PageTitle";
 import FeaturedProjectsList from "@/app/components/FeaturedProjectsList";
 
+import Head from "next/head";
+
+
+
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>AllsCherry | Home</title>
+      <meta name="description" content="AllsCherry Home Page" />
+      <link rel="icon" href="/favicon.ico" />
+      <meta property="og:title" content="AllsCherry | Home" />
+      <meta property="og:description" content="AllsCherry Home Page" />
+      <meta property="og:image" content="/logo.png" />
+      <meta property="og:url" content="https://allscherry.com" />
+      <meta name="twitter:title" content="AllsCherry | Home" />
+      <meta name="twitter:description" content="AllsCherry Home Page" />
+      <meta name="twitter:image" content="/icon.svg" />
+    </Head>
     <main id="main" className="flex flex-col bg-base-100 max-w-svw">
       {/* MOBILE */}
       <section className="">
@@ -36,5 +53,6 @@ export default function Home() {
         <Footer />
       </section>
     </main>
+    </>
   );
 }

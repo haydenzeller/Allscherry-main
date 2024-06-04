@@ -26,6 +26,7 @@
     "glob": "^10.4.1",
     "jquery": "^3.7.1",
     "next": "14.2.3",
+    "next-seo": "^6.5.0",
     "nextjs-cors": "^2.2.0",
     "react": "^18",
     "react-dom": "^18",
