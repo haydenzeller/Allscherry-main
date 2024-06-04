@@ -5,18 +5,19 @@
         {
             "purpose": "maskable",
             "sizes": "512x512",
-            "src": "/icon512_maskable.png",
+            "src": "icon512_maskable.png",
             "type": "image/png"
         },
         {
             "purpose": "any",
             "sizes": "512x512",
-            "src": "/icon512_rounded.png",
+            "src": "icon512_rounded.png",
             "type": "image/png"
         }
     ],
     "orientation": "portrait",
     "display": "standalone",
+    "description": "AllsCherry, is a brand that represents community, quality stories, and collaborative art pieces of all kinds!",
     "dir": "auto",
     "lang": "en-CA",
     "name": "AllsCherry",
