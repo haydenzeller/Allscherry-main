@@ -16,7 +16,7 @@ export default function MobileHeader() {
             </section>
             <Link href="/">
                 <div className=" z-10 -mt-28">
-                    <Image priority={true} className="w-52" src={allscherryLogo} alt="Allscherry Logo"/>
+                    <Image priority className="w-52" src={allscherryLogo} alt="Allscherry Logo"/>
                 </div>
             </Link>
             <div className="flex flex-col justify-center items-center mt-3">
