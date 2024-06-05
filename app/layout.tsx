@@ -29,8 +29,8 @@ export default function RootLayout({
     <html lang="en" className="overflow-x-hidden">
       <head>
         <link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml" />
-        <meta name="theme-color" content="#FFB7B7" />
         <meta name="description" content="AllsCherry" />
+        <meta name="color-scheme" content="light"></meta>
         <meta property="og:title" content="AllsCherry | Home" />
         <meta property="og:description" content="AllsCherry" />
         <meta property="og:image" content="/icon.svg" />
