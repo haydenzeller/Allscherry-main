@@ -9,7 +9,7 @@ export default function Publishing() {
                 <Header />
                 <Footer/>
             </main>
-            <main className="sm:hidden md:flex flex-col items-center justify-center min-h-screen">
+            <main className="hidden md:flex flex-col items-center justify-center min-h-screen">
                 <div className="flex flex-col items-center justify-center">
                     <Image src={underConstruction} alt="Under Construction" width={400} height={400}/>
                     <h1 className="text-2xl w-1/2 text-center">Oop, sorry! Desktop version is under construction, check back later!</h1>
