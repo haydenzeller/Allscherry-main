@@ -7,26 +7,14 @@ import SubscribeBox from "@/app/components/SubscribeBox";
 import PageTitle from "@/app/components/PageTitle";
 import FeaturedProjectsList from "@/app/components/FeaturedProjectsList";
 
-import Head from "next/head";
-
+import underConstruction from "@/public/underConstruction.svg";
+import Image from "next/image"
 
 
 export default function Home() {
   return (
     <>
-    <Head>
-      <title>AllsCherry | Home</title>
-      <meta name="description" content="AllsCherry Home Page" />
-      <link rel="icon" href="/favicon.ico" />
-      <meta property="og:title" content="AllsCherry | Home" />
-      <meta property="og:description" content="AllsCherry Home Page" />
-      <meta property="og:image" content="/logo.png" />
-      <meta property="og:url" content="https://allscherry.com" />
-      <meta name="twitter:title" content="AllsCherry | Home" />
-      <meta name="twitter:description" content="AllsCherry Home Page" />
-      <meta name="twitter:image" content="/icon.svg" />
-    </Head>
-    <main id="main" className="flex flex-col bg-base-100 max-w-svw">
+    <main id="main" className="flex flex-col bg-base-100 max-w-svw lg:hidden">
       {/* MOBILE */}
       <section className="">
         <Header />
@@ -52,6 +40,12 @@ export default function Home() {
         </section>
         <Footer />
       </section>
+    </main>
+    <main className="sm:hidden md:flex flex-col items-center justify-center min-h-screen">
+      <div className="flex flex-col items-center justify-center">
+        <Image src={underConstruction} alt="Under Construction" width={400} height={400}/>
+        <h1 className="text-2xl w-1/2 text-center">Oop, sorry! Desktop version is under construction, check back later!</h1>
+      </div>
     </main>
     </>
   );
