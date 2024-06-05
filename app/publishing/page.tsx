@@ -73,7 +73,7 @@ export default function Publishing() {
                     </div>
                     <div className="flex flex-row mt-14 mb-14 gap-10">
                         <div>
-                            <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="">
+                            <Link className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" href="/publishing/anthology">
                                 Join in!
                             </Link>
                         </div>

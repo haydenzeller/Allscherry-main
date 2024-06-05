@@ -20,7 +20,7 @@ export default function MobileHeader() {
                 </div>
             </Link>
             <div className="flex flex-col justify-center items-center mt-3">
-                <h1 className="mb-2 font-bold text-2xl text-center">Feel the wonder,<br/>crave adventure!</h1>
+                <h1 className="mb-2 font-bold text-2xl text-center">Feel The Wonder,<br/>Crave Adventure! <span className="text-xs">&copy;</span></h1>
             <div className="h-2 rounded-3xl w-64 bg-white mb-7"></div>
                 <div>
                     <ul className="grid grid-cols-2 grid-rows-2 gap-7">
