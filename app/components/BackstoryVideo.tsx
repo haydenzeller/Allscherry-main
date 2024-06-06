@@ -8,7 +8,7 @@ export default async function VideoComponent() {
   const { url } = blobs[0]
  
   return (
-    <video controls preload="auto" autoPlay aria-label="Video player" className='rounded-box'>
+    <video controls preload="auto" autoPlay aria-label="Video player" className='rounded-box' width={1920} height={1080}>
       <source src={url} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
