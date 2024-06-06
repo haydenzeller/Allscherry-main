@@ -7,7 +7,7 @@ import underConstruction from "@/public/underConstruction.svg";
 export default function Affiliates() {
     return (
         <>
-            <main className="flex min-h-screen flex-col bg-base-100">
+            <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">
                 <Header />
                 <PageTitle title="Who helps out around AllsCherry?"/>
                 <section className="flex flex-col text-center mt-14 ml-12 mr-12 items-center justify-center">
@@ -23,7 +23,7 @@ export default function Affiliates() {
                 </section>
                 <Footer/>
             </main>
-            <main className="hidden md:flex flex-col items-center justify-center min-h-screen">
+            <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
                 <div className="flex flex-col items-center justify-center">
                     <Image src={underConstruction} alt="Under Construction" width={400} height={400}/>
                     <h1 className="text-2xl w-1/2 text-center">Oop, sorry! Desktop version is under construction, check back later!</h1>
