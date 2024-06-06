@@ -15,6 +15,11 @@ import animationGif from "@/public/animation-intro.gif";
 import watsGrid1 from "@/public/wats-grid-1.jpeg";
 import watsGrid2 from "@/public/wats-grid-2.jpeg";
 import watsGrid3 from "@/public/wats-grid-3.jpeg";
+import wendy0zine from "@/public/wendy0-zine.jpg";
+import gribble from "@/public/gribble.png";
+import raze from "@/public/raze.png";
+import mountGenesis from "@/public/mount-genesis.jpg";
+import starlaAndDoom from "@/public/starla-and-doom.png";
 
 export default function Publishing() {
     return (
@@ -45,6 +50,7 @@ export default function Publishing() {
                     </div>
                     <div className="flex flex-col items-center justify-center m-6">
                         <BackstoryVideo/>
+                        <p className="opacity-50">Original idea for Wendy and the Sprite</p>
                     </div>
                 </section>
                 <section className="flex justify-center items-center mx-4">
@@ -54,6 +60,32 @@ export default function Publishing() {
                         <Image src={watsGrid2} alt="Wendy and the Sprite Grid 2" width={200} height={200} className="w-48 h-48 rounded-box object-cover"/>
                         <Image src={watsGrid3} alt="Wendy and the Sprite Grid 3" width={200} height={200} className="w-48 h-48 rounded-box object-cover"/>
                     </div>
+                </section>
+                <section className="flex flex-col items-center justify-center text-center mt-16">
+                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4">After switching to a comic book format, Chapter 0 was created as a way to have context to what would have been an animated story</h2>
+                    <Image src={wendy0zine} alt="Wendy and the Sprite Chapter 0" width={300} height={300} className="rounded-box mt-6 w-auto h-auto"/>
+                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6">Eric works mostly with coincidence, candidness and spontaneity. As the story and lore progresses, the characters and history begin to speak for themselves!<br/><br/>This makes for unexpected characters and twists even for the creator!</h2>
+                </section>
+                <section className="flex flex-col items-center justify-center mt-16">
+                    <div className="flex flex-row items-start justify-center gap-3 text-center text-sm">
+                        <div className="flex flex-col items-center justify-center w-1/2">
+                            <Image src={raze} alt="Raze" width={400} height={400} className="rounded-box h-auto w-3/4"/>
+                            <p className="opacity-50">Raze Cub, Wendy Chapter 2</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center w-1/2">
+                            <Image src={gribble} alt="Gribble" width={400} height={400} className="rounded-box h-auto w-3/4"/>
+                            <p className="opacity-50">Gribble and their Grub of Gribblets, Wendy Chapter 2</p>
+
+                        </div>
+                    </div>
+                    <h2 className="text-center w-3/4 border border-base-200 rounded-3xl p-3 mt-6">Naturally, the story has grown into something much more than a Snow Person and a Ball of Ice.<br/><br/>Exploring narratives of Witchcraft, Robotic Animals, Spatial Phenomenons, native’s at war with stone people, The Sun splitting in half, as well as underwater adventures, Wendy and the Sprite was only the beginning of a much bigger project</h2>
+                </section>
+                <section className="flex flex-col items-center justify-center mt-16">
+                    <Image src={mountGenesis} alt="Mount Genesis" width={400} height={400} className="rounded-box h-auto w-auto" />
+                    <p className="opacity-50 text-center">Mount Genesis, Era of Fading</p>
+                    <Image src={starlaAndDoom} alt="Starla and Doom" width={200} height={200} className="rounded-box h-auto w-auto mt-6"/>
+                    <p className="opacity-50 w-2/4 text-center">Starla the Cosmic Witch and the Doom Sprites</p>
+                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">By this point, 3 comics were released, with Wendy having gone through 4 character concepts before finalizing their look</h2>
                 </section>
                 <Footer />
             </main>
