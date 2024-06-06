@@ -49,7 +49,7 @@ export default function Publishing() {
                 </section>
                 <section className="flex justify-center items-center mx-4">
                     <div className="grid grid-cols-2 grid-rows-2 gap-5 overflow-hidden">
-                        <Image src={animationGif} alt="Wendy and the Sprite Animation" width={200} height={200} className="rounded-box"/>
+                        <Image src={animationGif} alt="Wendy and the Sprite Animation" width={200} height={200} className="w-48 h-48 rounded-box object-cover"/>
                         <Image src={watsGrid1} alt="Wendy and the Sprite Grid 1" width={200} height={200} className="w-48 h-48 rounded-box object-cover"/>
                         <Image src={watsGrid2} alt="Wendy and the Sprite Grid 2" width={200} height={200} className="w-48 h-48 rounded-box object-cover"/>
                         <Image src={watsGrid3} alt="Wendy and the Sprite Grid 3" width={200} height={200} className="w-48 h-48 rounded-box object-cover"/>
