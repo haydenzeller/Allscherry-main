@@ -28,6 +28,10 @@ import wendy2024 from "@/public/wendy2024.png";
 import wendyPortrait2018 from "@/public/wendy-2018.jpg";
 import wendyPortrait2019 from "@/public/wendy-2019.jpg";
 import wendyPortrait2021 from "@/public/wendy-2021.jpg";
+import belleBio from "@/public/belle-bio.jpg";
+import spriteBio from "@/public/sprite-bio.jpg";
+import starlaBio from "@/public/starla-bio.jpg";
+import wendyBio from "@/public/wendy-bio.jpg";
 
 export default function Publishing() {
     return (
@@ -130,11 +134,11 @@ export default function Publishing() {
                     <div className="flex flex-row items-center justify-center mt-6">
                         <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
                     </div>
-                    <div className="grid grid-cols-2 grid-rows-2 gap-5 mt-6">
-                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
-                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
-                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
-                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
+                    <div className="grid grid-cols-2 grid-rows-2 gap-1 mt-6 mx-1">
+                        <Image src={wendyBio} alt="Wendy Bio" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                        <Image src={spriteBio} alt="Sprite Bio" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                        <Image src={starlaBio} alt="Starla Bio" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                        <Image src={belleBio} alt="Belle Bio" width={200} height={200} className="rounded-box h-auto w-auto"/>
                     </div>
                     <div className="flex flex-col items-center justify-center">
                         <Image src={wendy2024} alt="Wendy 2024" width={200} height={200} className="rounded-box h-auto w-auto mt-6"/>
