@@ -28,10 +28,10 @@ import wendy2024 from "@/public/wendy2024.png";
 import wendyPortrait2018 from "@/public/wendy-2018.jpg";
 import wendyPortrait2019 from "@/public/wendy-2019.jpg";
 import wendyPortrait2021 from "@/public/wendy-2021.jpg";
-import belleBio from "@/public/belle-bio.jpg";
-import spriteBio from "@/public/sprite-bio.jpg";
-import starlaBio from "@/public/starla-bio.jpg";
-import wendyBio from "@/public/wendy-bio.jpg";
+import belleBio from "@/public/belleBio.jpg";
+import spriteBio from "@/public/spriteBio.jpg";
+import starlaBio from "@/public/starlaBio.jpg";
+import wendyBio from "@/public/wendyBio.jpg";
 
 export default function Publishing() {
     return (
