@@ -20,6 +20,16 @@ import gribble from "@/public/gribble.png";
 import raze from "@/public/raze.png";
 import mountGenesis from "@/public/mount-genesis.jpg";
 import starlaAndDoom from "@/public/starla-and-doom.png";
+import wendyPortrait2018 from "@/public/wendy-portrait-2018.jpg";
+import wendyPortrait2019 from "@/public/wendy-portrait-2019.jpg";
+import wendyPortrait2021 from "@/public/wendy-portrait-2021.jpg";
+import wendyEyes from "@/public/wendy-eyes.png";
+import cookieShirt from "@/public/cookie-shirt.jpg";
+import finishedShirt from "@/public/finished-shirt.jpg";
+import gribbleConcept from "@/public/gribble-concept.jpg";
+import razeConcept from "@/public/raze-concept.jpg";
+import shadowUmbraConcept from "@/public/shadow-umbra-concept.jpg";
+import wendy2024 from "@/public/wendy2024.png";
 
 export default function Publishing() {
     return (
@@ -87,6 +97,52 @@ export default function Publishing() {
                     <p className="opacity-50 w-2/4 text-center">Starla the Cosmic Witch and the Doom Sprites</p>
                     <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">By this point, 3 comics were released, with Wendy having gone through 4 character concepts before finalizing their look</h2>
                 </section>
+                <section className="flex flex-col items-center justify-center">
+                    <div className="grid grid-cols-2 grid-rows-2 gap-5 p-2 mt-6">
+                        <Image src={wendyPortrait2018} alt="Wendy Portrait 2018" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                        <Image src={wendyPortrait2019} alt="Wendy Portrait 2019" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                        <Image src={wendyPortrait2021} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                        <Image src={wendyPortrait2021} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                    </div>
+                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">Wendy and the Sprite has 3 graphic novels so far, and is planned to continue, however, to build up the story, Eric has started two other series to go alongside it.<br/><br/>The story doesn&apos;t stop at this series, all fo Eric&apos;s work interconnect, explore and enjoy!</h2>
+                    <div className="flex flex-row gap-3 mt-6">
+                        <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0" href="">
+                            Overflow
+                        </Link>
+                        <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0" href="">
+                            Dot the Robot
+                        </Link>
+                    </div>
+                </section>
+                <section className="flex flex-col items-center justify-center mt-16">
+                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">Wendy and Sprite quickly became the mascots of Eric&apos;s illustrative practice, being on all branding material, every sketchbook, and every story he came up with</h2>
+                    <Image src={wendyEyes} alt="Wendy Eyes" width={150} height={150} className="rounded-box h-auto w-auto mt-6"/>
+                    <div className="flex flex-row items-center justify-center gap-5 mt-6">
+                        <div className="flex items-center">
+                            <Image src={cookieShirt} alt="Cookie Shirt" width={200} height={200} className="rounded-box object-cover aspect-square"/>
+                        </div>
+                        <div className="flex items-center">
+                            <Image src={finishedShirt} alt="Finished Shirt" width={200} height={200} className="rounded-box object-cover aspect-square"/>
+                        </div>
+                    </div>
+                    <div className="flex flex-row items-center justify-center mt-6 gap-5">
+                        <Image src={razeConcept} alt="Raze Concept" width={175} height={175} className="rounded-box h-auto w-auto"/>
+                        <Image src={gribbleConcept} alt="Gribble Concept" width={175} height={175} className="rounded-box h-auto w-auto"/>
+                    </div>
+                    <div className="flex flex-row items-center justify-center mt-6">
+                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
+                    </div>
+                    <div className="grid grid-cols-2 grid-rows-2 gap-5 mt-6">
+                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
+                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
+                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
+                        <Image src={shadowUmbraConcept} alt="Shadow Umbra Concept" width={177} height={175} className="rounded-box h-auto w-auto"/>
+                    </div>
+                    <div className="flex flex-col items-center justify-center">
+                        <Image src={wendy2024} alt="Wendy 2024" width={200} height={200} className="rounded-box h-auto w-auto mt-6"/>
+                    </div>
+                </section>
+                
                 <Footer />
             </main>
             <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
