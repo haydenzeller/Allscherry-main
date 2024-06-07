@@ -49,3 +49,12 @@
 //     return NextResponse.json({ status: 405, message: "Not allowed" });
 //   }
 // }
+
+import { NextRequest, NextResponse } from 'next/server';
+
+
+
+export async function GET(req: NextRequest) {
+  return NextResponse.next();
+}
+
