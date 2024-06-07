@@ -25,9 +25,9 @@ import gribbleConcept from "@/public/gribble-concept.jpg";
 import razeConcept from "@/public/raze-concept.jpg";
 import shadowUmbraConcept from "@/public/shadow-umbra-concept.jpg";
 import wendy2024 from "@/public/wendy2024.png";
-import wendyPortrait2018 from "@/public/wendy-portrait-2018.jpg";
-import wendyPortrait2019 from "@/public/wendy-portrait-2019.jpg";
-import wendyPortrait2021 from "@/public/wendy-portrait-2021.jpg";
+import wendyPortrait2018 from "@/public/wendy-2018.jpg";
+import wendyPortrait2019 from "@/public/wendy-2019.jpg";
+import wendyPortrait2021 from "@/public/wendy-2021.jpg";
 
 export default function Publishing() {
     return (
