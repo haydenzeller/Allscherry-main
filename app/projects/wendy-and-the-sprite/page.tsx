@@ -18,9 +18,6 @@ import gribble from "@/public/gribble.png";
 import raze from "@/public/raze.png";
 import mountGenesis from "@/public/mount-genesis.jpg";
 import starlaAndDoom from "@/public/starla-and-doom.png";
-import wendyPortrait2018 from "@/public/wendy-portrait-2018.jpg";
-import wendyPortrait2019 from "@/public/wendy-portrait-2019.jpg";
-import wendyPortrait2021 from "@/public/wendy-portrait-2021.jpg";
 import wendyEyes from "@/public/wendy-eyes.png";
 import cookieShirt from "@/public/cookie-shirt.jpg";
 import finishedShirt from "@/public/finished-shirt.jpg";
@@ -28,6 +25,9 @@ import gribbleConcept from "@/public/gribble-concept.jpg";
 import razeConcept from "@/public/raze-concept.jpg";
 import shadowUmbraConcept from "@/public/shadow-umbra-concept.jpg";
 import wendy2024 from "@/public/wendy2024.png";
+import wendyPortrait2018 from "@/public/wendy-portrait-2018.jpg";
+import wendyPortrait2019 from "@/public/wendy-portrait-2019.jpg";
+import wendyPortrait2021 from "@/public/wendy-portrait-2021.jpg";
 
 export default function Publishing() {
     return (
