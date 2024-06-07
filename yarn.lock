@@ -2541,7 +2541,7 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react@^19.0.0-rc-cc1ec60d0d-20240607:
+react@^19.0.0-rc-f994737d14-20240522:
   version "19.0.0-rc-f994737d14-20240522"
   resolved "https://registry.yarnpkg.com/react/-/react-19.0.0-rc-f994737d14-20240522.tgz#b400d554859940e9f4b8b6db1fd2537bd822bcc9"
   integrity sha512-SeU2v5Xy6FotVhKz0pMS2gvYP7HlkF0qgTskj3JzA1vlxcb3dQjxlm9t0ZlJqcgoyI3VFAw7bomuDMdgy1nBuw==
