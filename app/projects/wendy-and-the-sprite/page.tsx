@@ -23,6 +23,7 @@ import starlaAndDoom from "@/public/starla-and-doom.png";
 import wendyPortrait2018 from "@/public/wendy-portrait-2018.jpg";
 import wendyPortrait2019 from "@/public/wendy-portrait-2019.jpg";
 import wendyPortrait2021 from "@/public/wendy-portrait-2021.jpg";
+
 import wendyEyes from "@/public/wendy-eyes.png";
 import cookieShirt from "@/public/cookie-shirt.jpg";
 import finishedShirt from "@/public/finished-shirt.jpg";
