@@ -31,6 +31,7 @@ export default function MobileHeader() {
                             </div>
                             <ul tabIndex={0} className="text-black dropdown-content mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom z-50 flex flex-col">
                                 <Link href="/projects/wendy-and-the-sprite" className="hover:bg-white p-2 rounded-2xl w-full">Wendy and the Sprite</Link>
+                                <Link href="/projects/overflow" className="hover:bg-white p-2 rounded-2xl w-full">Overflow</Link>
                             </ul>
                         </div>
                     </li>
