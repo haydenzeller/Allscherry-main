@@ -69,6 +69,7 @@ export default function Publishing() {
                     <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-32 text-center active:mt-4 active:border-0" href="">Dot the Robot!</Link>
                 </section>
                 <Footer />
+                
             </main>
             <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
                 <div className="flex flex-col items-center justify-center">
