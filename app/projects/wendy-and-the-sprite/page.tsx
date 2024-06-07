@@ -2,13 +2,11 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
 import underConstruction from "@/public/underConstruction.svg";
-
 import watsBanner from "@/public/wats-banner.jpg";
 import wats0 from "@/public/wats-chp0.png";
 import wats1 from "@/public/wats-chp1.png";
 import wats2 from "@/public/wats-chp2.png";
 import watsBackstorySketch from "@/public/wats-backstory-sketch.svg";
-
 import Link from "next/link";
 import BackstoryVideo from "@/app/components/BackstoryVideo";
 import animationGif from "@/public/animation-intro.gif";
@@ -23,7 +21,6 @@ import starlaAndDoom from "@/public/starla-and-doom.png";
 import wendyPortrait2018 from "@/public/wendy-portrait-2018.jpg";
 import wendyPortrait2019 from "@/public/wendy-portrait-2019.jpg";
 import wendyPortrait2021 from "@/public/wendy-portrait-2021.jpg";
-
 import wendyEyes from "@/public/wendy-eyes.png";
 import cookieShirt from "@/public/cookie-shirt.jpg";
 import finishedShirt from "@/public/finished-shirt.jpg";
