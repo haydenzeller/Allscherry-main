@@ -1,10 +1,12 @@
 'use client'
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface FeaturedProjects {
     name: string;
     image: string;
+    link: string;
 }
 
 export default function FeaturedProjectsList() {
@@ -45,16 +47,16 @@ export default function FeaturedProjectsList() {
                     <ul className="grid grid-cols-2 gap-4">
                         {featuredProjects.map((project, index) => (
                             <li key={index} className="flex flex-col items-center space-y-4">
-                                <div className="w-48 h-48 relative object-contain">
-                                    <Image
-                                        src={"https://api.allscherry.com/assets/"+project.image}
-                                        alt={project.name}
-                                        fill
-                                        sizes="(max-width: 600px) 480px, 800px"
-                                        style={{ objectFit: 'cover' }}  // Instead of objectFit prop
-                                        className="rounded-box"
-                                    />
-                                </div>
+                                <Link href={project.link || ""}className="w-48 h-48 relative object-contain">
+                                        <Image
+                                            src={"https://api.allscherry.com/assets/"+project.image}
+                                            alt={project.name}
+                                            fill
+                                            sizes="(max-width: 600px) 480px, 800px"
+                                            style={{ objectFit: 'cover' }}  // Instead of objectFit prop
+                                            className="rounded-box"
+                                        />
+                                </Link>
                                 <div>
                                     <h3>{project.name}</h3>
                                 </div>
