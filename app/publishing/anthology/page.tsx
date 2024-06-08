@@ -13,7 +13,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "AllsCherry | Anthology",
-    description: "AllsCherry Anthology Page - We make annual Anthologies!",
+    description: "AllsCherry Anthology Page - We make annual Anthologies! Check out our past works and how you can join in! We love local talent! Join us!",
     keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
     twitter: {
         card: "summary",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "https://allscherry.com",
         title: "AllsCherry | Anthology",
         siteName: "AllsCherry",
-        description: "AllsCherry Anthology Page - We make annual Anthologies!",
+        description: "AllsCherry Anthology Page - We make annual Anthologies! Check out our past works and how you can join in! We love local talent! Join us!",
         images: [
             {
                 url: "https://allscherry.com/icon.svg",

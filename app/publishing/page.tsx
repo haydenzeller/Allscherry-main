@@ -13,7 +13,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "AllsCherry | Publishing",
-    description: "AllsCherry Publishing Page - AllsCherry is primarily a comic book brand!",
+    description: "AllsCherry Publishing Page - AllsCherry is primarily a comic book brand! Want to publish yourself, but don't have a printer? Need some business cards? A poster? Brochures?! Don't worry, we know a guy ;)",
     keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
     twitter: {
         card: "summary",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "https://allscherry.com",
         title: "AllsCherry | Publishing",
         siteName: "AllsCherry",
-        description: "AllsCherry Publishing Page - AllsCherry is primarily a comic book brand!",
+        description: "AllsCherry Publishing Page - AllsCherry is primarily a comic book brand! Want to publish yourself, but don't have a printer? Need some business cards? A poster? Brochures?! Don't worry, we know a guy ;)",
         images: [
             {
                 url: "https://allscherry.com/icon.svg",
@@ -50,7 +50,7 @@ export default function Publishing() {
                             <Image src={comicsPublishing} alt="Comics Publishing" width={700} height={700} className="rounded-box"/>
                         </div>
                         <div className="flex justify-center">
-                            <p className="text-md w-10/12 text-center border border-base-200 rounded-3xl p-3">AllsCherry has it&apos;s own label, used to collaborate with artists, distribute and sell it&apos;s books while staying independent and local!</p>
+                            <h1 className="text-md w-10/12 text-center border border-base-200 rounded-3xl p-3">AllsCherry has it&apos;s own label, used to collaborate with artists, distribute and sell it&apos;s books while staying independent and local!</h1>
                         </div>
                     </div>
                     <div className="flex flex-row-reverse items-center justify-center">

@@ -8,7 +8,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "AllsCherry | Affiliates",
-    description: "AllsCherry Affiliates Page - Who helps out around AllsCherry?",
+    description: "AllsCherry Affiliates Page - Who helps out around AllsCherry? - Take a look at what they have to offer, you might make a friend!",
     keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
     twitter: {
         card: "summary",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "https://allscherry.com",
         title: "AllsCherry | Affiliates",
         siteName: "AllsCherry",
-        description: "AllsCherry Affiliates Page - Who helps out around AllsCherry?",
+        description: "AllsCherry Affiliates Page - Who helps out around AllsCherry? - Take a look at what they have to offer, you might make a friend!",
         images: [
             {
                 url: "https://allscherry.com/icon.svg",
@@ -43,9 +43,9 @@ export default function Affiliates() {
                 <section className="flex flex-col text-center mt-14 ml-12 mr-12 items-center justify-center">
                     <div className="relative flex items-center justify-center  text-black rounded-2xl shadow-xl mt-12">
                         <div className="absolute -inset-2 z-0 bg-base-300 rounded-2xl transform scale-105 mt-24"></div>
-                        <h2 className="text-center text-lg relative z-10 bg-base-200 rounded-2xl p-5">
+                        <h1 className="text-center text-lg relative z-10 bg-base-200 rounded-2xl p-5">
                             Although primarily run by Eric, there&apos;s a lot of behind the scenes work done at AllsCherry. Our web developer, the co-host of our podcast, collaborative artists, and our printer do quite a bit!<br/><br/>Take a look at what they have to offer, you might make a friend!                    
-                        </h2>
+                        </h1>
                     </div>
                 </section>
                 <section className="felx flex-col justify-center items-center mt-24 text-center">

@@ -9,7 +9,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
     title: "AllsCherry | Contact",
-    description: "AllsCherry Contact Page - Questions? Email us!",
+    description: "AllsCherry Contact Page - Questions? Email us! But who is us? Eric Olcsvary, the founder of AllsCherry! Shoot him an email!",
     keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
     twitter: {
         card: "summary",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "https://allscherry.com",
         title: "AllsCherry | Contact",
         siteName: "AllsCherry",
-        description: "AllsCherry Contact Page - Questions? Email us!",
+        description: "AllsCherry Contact Page - Questions? Email us! But who is us? Eric Olcsvary, the founder of AllsCherry! Shoot him an email!",
         images: [
             {
                 url: "https://allscherry.com/icon.svg",
@@ -48,9 +48,9 @@ export default function Contact() {
                     </div>
                     <div className="relative flex items-center justify-center  text-black rounded-2xl shadow-xl mt-12">
                         <div className="absolute -inset-2 z-0 bg-base-300 rounded-2xl transform scale-105 mt-24"></div>
-                        <h2 className="text-center text-lg relative z-10 bg-base-200 rounded-2xl p-5">
+                        <h1 className="text-center text-lg relative z-10 bg-base-200 rounded-2xl p-5">
                             My name is Eric! I&apos;m an artist! One who loves to tell stories, create worlds, and work with my fellow artists around me. I primarily work with comic books, but I tend to dabble in whatever medium strikes me as I work!<br/><br/>I like to work with the community, so if you have any questions, or simply want to say hello, <i>shoot me an email!</i>
-                        </h2>
+                        </h1>
                     </div>
                     <section className="flex flex-col justify-center items-center text-center mt-20 w-full">
                         <div className="w-52 h-3 bg-base-200 rounded-xl mb-10"/>

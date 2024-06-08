@@ -14,7 +14,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AllsCherry | Info",
-  description: "AllsCherry Info Page - So what is an AllsCherry anyway?",
+  description: "AllsCherry Info Page - So what is an AllsCherry anyway? Sounds intriguing? Wanna join in? Take a look around the site, or shoot an email to the founder, Eric!",
   keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
   twitter: {
     card: "summary",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://allscherry.com",
     title: "AllsCherry | Info",
     siteName: "AllsCherry",
-    description: "AllsCherry Info Page - So what is an AllsCherry anyway?",
+    description: "AllsCherry Info Page - So what is an AllsCherry anyway? Sounds intriguing? Wanna join in? Take a look around the site, or shoot an email to the founder, Eric!",
     images: [
       {
         url: "https://allscherry.com/icon.svg",
@@ -57,7 +57,7 @@ export default function Info() {
             <div className="flex flex-col justify-center items-center">
               <div className="relative flex items-center justify-center mr-12 ml-12 text-black rounded-2xl shadow-xl">
                 <div className="absolute -inset-2 z-0 bg-base-300 rounded-2xl transform scale-105 mt-24"></div>
-                <h2 className="text-center text-xl relative z-10 bg-base-200 rounded-2xl p-5 ">
+                <h1 className="text-center text-xl relative z-10 bg-base-200 rounded-2xl p-5 ">
                   AllsCherry, is a brand that<br />
                   represents community,<br />
                   quality stories, and<br />
@@ -67,7 +67,7 @@ export default function Info() {
                   join in? Take a<br />
                   look around the site, or shoot an email<br />
                   to the founder, Eric!
-                </h2>
+                </h1>
               </div>
             </div>
           </section>

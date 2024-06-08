@@ -9,7 +9,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "AllsCherry | Events",
-    description: "AllsCherry Events Page - Check out our local events!",
+    description: "AllsCherry Events Page - Check out our local events! - AllsCherry loves local events! Scroll down for a list of our events for 2024!",
     keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
     twitter: {
         card: "summary",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: "website",
         url: "https://allscherry.com",
         title: "AllsCherry | Events",
-        description: "AllsCherry Events Page - Check out our local events!",
+        description: "AllsCherry Events Page - Check out our local events! - AllsCherry loves local events! Scroll down for a list of our events for 2024!",
         images: [
             {
                 url: "https://allscherry.com/icon.svg",
@@ -42,7 +42,7 @@ export default function Events() {
                     <Header/>
                     <PageTitle title="AllsCherry loves local events!"/>
                     <div className="flex flex-col justify-center items-center mt-14 text-center">
-                        <h2 className="text-lg w-3/4 text-center border border-base-200 rounded-full px-3 py-1 mb-5">Scroll down for a list<br/>of our events for 2024!</h2>
+                        <h1 className="text-lg w-3/4 text-center border border-base-200 rounded-full px-3 py-1 mb-5">Scroll down for a list<br/>of our events for 2024!</h1>
                         <Image className="w-96 rounded-box" src={ericBooth} alt="Erics Booth"/>
                     </div>
                     <section className="mt-14">
