@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-export default function Error404(){
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+export default function NotFound(){
     return (
     <>
         <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">
