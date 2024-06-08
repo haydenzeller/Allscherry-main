@@ -47,6 +47,7 @@ export const metadata: Metadata = {
         type: 'website',
         url: 'https://allscherry.com',
         title: 'AllsCherry | Wendy and the Sprite',
+        siteName: 'AllsCherry',
         description: 'Wendy and the Sprite is the adventure of a Snow Nymph and an Ice Sprite, traversing an old, frozen planet. Along their adventure, they discover a phenomenon called, “The Fading”, making the planet and it\'s inhabitants lose their colour and memory.',
         images: [
             {

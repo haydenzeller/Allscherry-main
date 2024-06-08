@@ -23,6 +23,7 @@ export const metadata: Metadata = {
         type: "website",
         url: "https://allscherry.com",
         title: "AllsCherry | Publishing",
+        siteName: "AllsCherry",
         description: "AllsCherry Publishing Page - AllsCherry is primarily a comic book brand!",
         images: [
             {

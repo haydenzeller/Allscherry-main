@@ -23,6 +23,7 @@ export const metadata: Metadata = {
         type: "website",
         url: "https://allscherry.com",
         title: "AllsCherry | Anthology",
+        siteName: "AllsCherry",
         description: "AllsCherry Anthology Page - We make annual Anthologies!",
         images: [
             {

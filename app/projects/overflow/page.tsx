@@ -27,6 +27,7 @@ export const metadata: Metadata = {
         type: "website",
         url: "https://allscherry.com",
         title: "AllsCherry | Overflow",
+        siteName: "AllsCherry",
         description: "AllsCherry Overflow Page - Overflow is a book of discovery, mystery, colourful underwater lands, and a complicated series of historical events.",
         images: [
             {
