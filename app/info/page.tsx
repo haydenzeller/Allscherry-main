@@ -16,6 +16,24 @@ export const metadata: Metadata = {
   title: "AllsCherry | Info",
   description: "AllsCherry Info Page - So what is an AllsCherry anyway?",
   keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+  twitter: {
+    card: "summary",
+    site: "@allscherry",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://allscherry.com",
+    title: "AllsCherry | Info",
+    description: "AllsCherry Info Page - So what is an AllsCherry anyway?",
+    images: [
+      {
+        url: "https://allscherry.com/icon.svg",
+        width: 1200,
+        height: 630,
+        alt: "AllsCherry Logo",
+      },
+    ],
+  },
 };
 
 export default function Info() {
