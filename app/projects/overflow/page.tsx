@@ -12,6 +12,7 @@ import ofGrid2 from "@/public/of-grid-2.jpeg";
 import ofGrid3 from "@/public/of-grid-3.jpeg";
 import ofGrid4 from "@/public/of-grid-4.jpeg";
 import ofGroup from "@/public/of-group.jpeg";
+import ofPromo from "@/public/of-promo.jpg";
 export default function Publishing() {
     return (
         <>
@@ -62,8 +63,8 @@ export default function Publishing() {
                         <p className="border border-base-200 rounded-3xl p-3 w-10/12 mt-6 text-center">Since Wendy and most of the creatures in the comic series don&apos;t speak, Overflow gave Eric an opportunity to write with more dialogue, and see how this can work in his comic formats!<br/><br/>This new landscape, creatures, and plot line also gave a lot of opportunity for lore building. Since the book is set so far int he future, a lot has changed. What do the events of Wendy and the Sprite have to do with this plot I wonder?</p>
                     </div>
                     {/* large div for image placeholder */}
-                    <div className="flex flex-col items-center justify-center bg-base-200 rounded-box h-96 w-96 mt-6">
-                        <h2>Coming Soon!</h2>
+                    <div className="flex flex-col items-center justify-center mt-6 mx-5">
+                        <Image src={ofPromo} alt="Overflow Promo" width={500} height={500} className="rounded-box"/>
                     </div>
                     <h2 className="border border-base-200 rounded-3xl p-3 w-10/12 mt-6 text-center">Overflow, now opening many avenues for lore and character building, gave Eric another new idea for a book, Dot the Robot. We know the present (Wendy), we know the future (Overflow), but what about the planet&apos;s past?</h2>
                     <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-32 text-center active:mt-4 active:border-0" href="">Dot the Robot!</Link>
