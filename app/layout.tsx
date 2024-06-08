@@ -4,6 +4,8 @@ import "./globals.css";
 import { Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import GoogleAnalytics from '@/app/components/GoogleAnalytics';
+
 
 const Asap = GoogleAsap({ 
   weight: '500',
@@ -21,6 +23,8 @@ export const viewport: Viewport = {
   viewportFit: "cover",
   themeColor:"#FFB7B7",
 };
+
+
 
 export default function RootLayout({
   children,
@@ -41,6 +45,7 @@ export default function RootLayout({
         <meta name="twitter:description" content="AllsCherry | Home" />
         <meta name="twitter:image" content="/icon.svg" />
       </head>
+      <GoogleAnalytics/>
       <body className={Asap.className}>
         {children}
         <Analytics/>
