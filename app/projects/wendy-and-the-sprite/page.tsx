@@ -43,6 +43,9 @@ export const metadata: Metadata = {
         card: 'summary',
         site: '@allscherry',
     },
+    alternates: {
+        canonical: 'https://allscherry.com/projects/wendy-and-the-sprite',
+    },
     openGraph: {
         type: 'website',
         url: 'https://allscherry.com',
@@ -69,9 +72,9 @@ export default function WendyAndTheSprite() {
                 <section>
                     <div className="flex flex-col items-center justify-center mt-14">
                         <Image priority src={watsBanner} alt="Wendy and the Sprite Banner" width={250} height={1000} className="rounded-box h-auto w-auto"/>
-                        <h2 className="w-3/4 text-md text-center mt-6 border border-base-200 rounded-3xl p-3">
+                        <h1 className="w-3/4 text-md text-center mt-6 border border-base-200 rounded-3xl p-3">
                             Wendy and the Sprite is the adventure of a Snow Nymph and an Ice Sprite, traversing an old, frozen planet. Along their adventure, they discover a phenomenon called, “The Fading”, making the planet and it&apos;s inhabitants lose their colour and memory.
-                        </h2>
+                        </h1>
                         <div className="flex flex-row gap-3 mt-6">
                             <Image priority src={wats0} alt="Wendy and the Sprite Chapter 0" width={125} height={300} className="rounded-box h-auto w-auto "/>
                             <Image priority src={wats1} alt="Wendy and the Sprite Chapter 1" width={125} height={300} className="rounded-box h-auto w-auto "/>

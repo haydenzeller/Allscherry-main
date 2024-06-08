@@ -15,10 +15,14 @@ export const metadata: Metadata = {
   title: "AllsCherry | Home",
   description: "AllsCherry Home Page - Welcome to AllsCherry! Take a look around!",
   keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+  alternates: {
+    canonical: "https://allscherry.com",
+  },
   twitter: {
     card: "summary",
     site: "@allscherry",
   },
+  
   openGraph: {
     type: "website",
     url: "https://allscherry.com",
@@ -49,9 +53,9 @@ export default function Home() {
         </section>
         <section className="flex flex-col justify-center items-center mt-24">
           <div className="flex justify-center items-center">
-            <h1 className="text-2xl text-center border border-base-200 rounded-full p-3">
+            <h2 className="text-2xl text-center border border-base-200 rounded-full p-3">
               Here&apos;s some of out current news!
-            </h1>
+            </h2>
           </div>
         </section>
         <section className="flex flex-col items-center justify-center w-full h-auto">
@@ -69,7 +73,7 @@ export default function Home() {
     <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
       <div className="flex flex-col items-center justify-center">
         <Image src={underConstruction} alt="Under Construction" width={400} height={400}/>
-        <h1 className="text-2xl w-1/2 text-center">Oop, sorry! Desktop version is under construction, check back later!</h1>
+        <h2 className="text-2xl w-1/2 text-center">Oop, sorry! Desktop version is under construction, check back later!</h2>
       </div>
     </main>
     </>
