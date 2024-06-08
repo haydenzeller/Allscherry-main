@@ -19,6 +19,9 @@ export const metadata: Metadata = {
         card: "summary",
         site: "@allscherry",
     },
+    alternates: {
+        canonical: "https://allscherry.com/publishing",
+    },
     openGraph: {
         type: "website",
         url: "https://allscherry.com",
