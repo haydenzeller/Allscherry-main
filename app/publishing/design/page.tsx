@@ -7,7 +7,15 @@ import Link from "next/link";
 import mailLogo from "@/public/mail.svg"
 import DesignImages from "@/app/components/DesignImages";
 import underConstruction from "@/public/underConstruction.svg"
-export default function Anthology() {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Design",
+    description: "AllsCherry Design Page - Need some design help?",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+};
+
+export default function Design() {
   return (
     <>
         <main id="main" className="flex min-h-screen flex-col bg-base-100 lg:hidden">

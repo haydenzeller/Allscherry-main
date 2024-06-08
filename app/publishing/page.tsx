@@ -9,6 +9,13 @@ import indieSign from "@/public/indie-sign-square.jpg"
 import comicsPublishing from "@/public/allscherry-comics-publishing.jpg"
 import prints from "@/public/print-carousel.jpg"
 import underConstruction from "@/public/underConstruction.svg"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Publishing",
+    description: "AllsCherry Publishing Page - AllsCherry is primarily a comic book brand!",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+};
 export default function Publishing() {
     return (
         <>

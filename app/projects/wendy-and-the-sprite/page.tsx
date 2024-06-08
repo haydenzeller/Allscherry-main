@@ -33,7 +33,16 @@ import spriteBio from "@/public/spriteBio.jpg";
 import starlaBio from "@/public/starlaBio.jpg";
 import wendyBio from "@/public/wendyBio.jpg";
 
-export default function Publishing() {
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'AllsCherry | Wendy and the Sprite',
+  description: 'Wendy and the Sprite is the adventure of a Snow Nymph and an Ice Sprite, traversing an old, frozen planet. Along their adventure, they discover a phenomenon called, “The Fading”, making the planet and it\'s inhabitants lose their colour and memory.',
+  keywords: ['AllsCherry', 'Home', 'AllsCherry Home', 'AllsCherry Projects', 'AllsCherry News', 'AllsCherry Updates', 'AllsCherry Blog', 'AllsCherry Blog Posts', 'AllsCherry Blog Updates', 'AllsCherry Blog News', 'AllsCherry Blog Projects', 'AllsCherry Blog Posts Projects News Updates', 'AllsCherry Blog Posts Projects News Updates Home'],
+}
+ 
+
+export default function WendyAndTheSprite() {
     return (
         <>
             <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">

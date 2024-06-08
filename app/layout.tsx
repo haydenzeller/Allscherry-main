@@ -4,14 +4,16 @@ import "./globals.css";
 import { Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const Asap = GoogleAsap({ 
   weight: '500',
   subsets: ["latin"] 
 });
 
 export const metadata: Metadata = {
-  title: "Allscherry!",
-  description: "",
+  title: "AllsCherry!",
+  description: "AllsCherry",
+  keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
 };
 
 export const viewport: Viewport = {

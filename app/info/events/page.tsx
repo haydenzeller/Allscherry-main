@@ -5,6 +5,14 @@ import Image from "next/image";
 import PageTitle from "@/app/components/PageTitle";
 import Footer from "@/app/components/Footer";
 import underConstruction from "@/public/underConstruction.svg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Events",
+    description: "AllsCherry Events Page - Check out our local events!",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+};
+
 export default function Events() {
     return (
         <>
