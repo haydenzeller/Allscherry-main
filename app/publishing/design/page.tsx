@@ -11,7 +11,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "AllsCherry | Design",
-    description: "AllsCherry Design Page - Need some design help?",
+    description: "AllsCherry Design Page - Need some design help? AllsCherry could help with general design advice, logo creation / advice, branding / marketing (such as business cards, posters, or ads). Everything of ours is designed in house, including this website! Email us if you need assistance, we might be able to help!",
     keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
     twitter: {
         card: "summary",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: "https://allscherry.com",
         title: "AllsCherry | Design",
         siteName: "AllsCherry",
-        description: "AllsCherry Design Page - Need some design help?",
+        description: "AllsCherry Design Page - Need some design help? AllsCherry could help with general design advice, logo creation / advice, branding / marketing (such as business cards, posters, or ads). Everything of ours is designed in house, including this website! Email us if you need assistance, we might be able to help!",
         images: [
             {
                 url: "https://allscherry.com/icon.svg",
@@ -47,7 +47,7 @@ export default function Design() {
             <PageTitle title={"Need some design help?"}/>
             <section className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-center w-full mt-14">
-                    <h2 className="text-lg w-3/4 text-center border border-base-200 rounded-3xl p-3">In the process of making a book, poster, banner, or something similar?</h2>
+                    <h1 className="text-lg w-3/4 text-center border border-base-200 rounded-3xl p-3">In the process of making a book, poster, banner, or something similar?</h1>
                 </div>
             </section>
             <section className="flex flex-col justify-center items-center mb-14 mt-14">
