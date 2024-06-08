@@ -4,6 +4,7 @@ import "./globals.css";
 import { Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const Asap = GoogleAsap({ 
   weight: '500',
@@ -21,6 +22,8 @@ export const viewport: Viewport = {
   viewportFit: "cover",
   themeColor:"#FFB7B7",
 };
+
+
 
 export default function RootLayout({
   children,
@@ -46,6 +49,7 @@ export default function RootLayout({
         <Analytics/>
         <SpeedInsights/>
       </body>
+      <GoogleAnalytics gaId="G-782F5KWKDX"/>
     </html>
   );
 }
