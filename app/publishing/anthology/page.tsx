@@ -9,6 +9,14 @@ import AnthologyCarousel from "@/app/components/AnthologyCarousel";
 import anth1 from "@/public/allscherry-anth1.png"
 import anth2 from "@/public/anth-vol2-cover.jpg"
 import underConstruction from "@/public/underConstruction.svg"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Anthology",
+    description: "AllsCherry Anthology Page - We make annual Anthologies!",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+};
+
 export default function Anthology() {
   return (
     <>

@@ -10,6 +10,14 @@ import ericUVFS from "@/public/ericUVFS.jpg";
 import PageTitle from "@/app/components/PageTitle";
 import printBundle from "@/public/print-bundle-example.webp"
 import underConstruction from "@/public/underConstruction.svg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AllsCherry | Info",
+  description: "AllsCherry Info Page - So what is an AllsCherry anyway?",
+  keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+};
+
 export default function Info() {
   return (
     <>

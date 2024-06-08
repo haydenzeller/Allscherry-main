@@ -1,6 +1,13 @@
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import PageTitle from "@/app/components/PageTitle";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Privacy Policy",
+    description: "AllsCherry Privacy Policy Page - AllsCherry Privacy Policy Information",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+};
 
 export default function PrivacyPolicy() {
     return (

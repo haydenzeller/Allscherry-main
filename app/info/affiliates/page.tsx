@@ -4,6 +4,14 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
 import underConstruction from "@/public/underConstruction.svg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Affiliates",
+    description: "AllsCherry Affiliates Page - Who helps out around AllsCherry?",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+};
+
 export default function Affiliates() {
     return (
         <>

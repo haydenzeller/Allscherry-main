@@ -13,7 +13,15 @@ import ofGrid3 from "@/public/of-grid-3.jpeg";
 import ofGrid4 from "@/public/of-grid-4.jpeg";
 import ofGroup from "@/public/of-group.jpeg";
 import ofPromo from "@/public/of-promo.jpg";
-export default function Publishing() {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Overflow",
+    description: "AllsCherry Overflow Page - Overflow is a book of discovery, mystery, colourful underwater lands, and a complicated series of historical events.",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+};
+
+export default function Overflow() {
     return (
         <>
             <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://alpha.allscherry.com
+Host: https://www.allscherry.com
 
 # Sitemaps
-Sitemap: https://alpha.allscherry.com/sitemap.xml
+Sitemap: https://www.allscherry.com/sitemap.xml
