@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://allscherry.com",
     title: "AllsCherry | Info",
+    siteName: "AllsCherry",
     description: "AllsCherry Info Page - So what is an AllsCherry anyway?",
     images: [
       {

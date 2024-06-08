@@ -15,6 +15,7 @@ export const metadata: Metadata = {
         type: "website",
         url: "https://allscherry.com",
         title: "AllsCherry | Privacy Policy",
+        siteName: "AllsCherry",
         description: "AllsCherry Privacy Policy Page - AllsCherry Privacy Policy Information",
         images: [
             {
