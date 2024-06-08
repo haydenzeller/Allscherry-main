@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     url: "https://allscherry.com",
     title: "AllsCherry | Home",
     siteName: "AllsCherry",
+    
     description: "AllsCherry Home Page - Welcome to AllsCherry! Take a look around!",
     images: [
       {
