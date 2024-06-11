@@ -16,7 +16,7 @@
         },
         {
             "purpose": "any",
-            "sizes": "any",
+            "sizes": "144x144",
             "src": "icon.svg",
             "type": "image/svg+xml"
         },
