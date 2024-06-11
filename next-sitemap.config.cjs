@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.SITE_URL || 'https://www.allscherry.com',
+    siteUrl: process.env.SITE_URL || 'https://allscherry.com',
     generateRobotsTxt: true,
   }
