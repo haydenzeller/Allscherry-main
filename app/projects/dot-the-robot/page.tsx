@@ -61,7 +61,6 @@ export default function DotTheRobot() {
                     </div>
                 </section>
                 <section className="flex flex-col items-center justify-center">
-                    // 2x3 grid of images use coming soon
                     <div className="grid grid-cols-2 grid-rows-3 gap-1 mt-6">
                         <div className="flex flex-col items-center justify-center relative">
                             <Image src={dotmntgenesis} alt="Dot the Robot Mount Genesis" className="rounded-3xl"/>
