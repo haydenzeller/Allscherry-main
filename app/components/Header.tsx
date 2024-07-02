@@ -33,6 +33,7 @@ export default function MobileHeader() {
                                 <Link href="/projects/wendy-and-the-sprite" className="hover:bg-white p-2 rounded-2xl w-full">Wendy and the Sprite</Link>
                                 <Link href="/projects/overflow" className="hover:bg-white p-2 rounded-2xl w-full">Overflow</Link>
                                 <Link href="/projects/dot-the-robot" className="hover:bg-white p-2 rounded-2xl w-full">Dot the Robot</Link>
+                                <Link href="/projects/allscherry-anthology" className="hover:bg-white p-2 rounded-2xl w-full">AllsCherry Anthology</Link>
                             </ul>
                         </div>
                     </li>

@@ -86,7 +86,7 @@ export default function DotTheRobot() {
                     </div>
                     <div className="flex flex-col items-center justify-center">
                         <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">But of course, Eric&apos;s ideas did not stop there. Because now that we have seen the past of this “Grey Planet” Wendy and the gang traverse, what about the past&apos;s past??<br/><br/>Always wanting to dabble into music, since all of his comics stemmed from musical inspiration, the idea to make an album sprouted from this on-going project. Where did the world of Dot the Robot originate?</h2>
-                        <Link href="/projects/wendy-and-the-sprite" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0">Wendy and the Sprite</Link>
+                        <Link href="/projects/wendy-and-the-sprite" className="bg-primary text-black p-2 mt-4 border-b-accent border-b-4 rounded-full block w-34 text-center active:mt-5 active:border-0">Prophets of Grey</Link>
                     </div>
                 </section>
                 <Footer />
