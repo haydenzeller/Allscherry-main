@@ -34,6 +34,9 @@ export default function MobileHeader() {
                                 <Link href="/projects/overflow" className="hover:bg-white p-2 rounded-2xl w-full">Overflow</Link>
                                 <Link href="/projects/dot-the-robot" className="hover:bg-white p-2 rounded-2xl w-full">Dot the Robot</Link>
                                 <Link href="/projects/allscherry-anthology" className="hover:bg-white p-2 rounded-2xl w-full">AllsCherry Anthology</Link>
+                                <Link href="/projects/crow-on-a-perch" className="hover:bg-white p-2 rounded-2xl w-full">Crow on a Perch</Link>
+                                <Link href="/projects/prophets-of-grey" className="hover:bg-white p-2 rounded-2xl w-full">Prophets of Grey</Link>
+
                             </ul>
                         </div>
                     </li>
