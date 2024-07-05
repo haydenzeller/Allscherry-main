@@ -44,7 +44,6 @@ export const metadata: Metadata = {
 
 export default function DotTheRobot() {
     return (
-        <>
             <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">
                 <Header />
                 <section className="flex flex-col items-center justify-center">
@@ -98,6 +97,5 @@ export default function DotTheRobot() {
                 </section>
                 <Footer />
             </main>
-        </>
     )
 }

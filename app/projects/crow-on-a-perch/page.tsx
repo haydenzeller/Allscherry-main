@@ -19,7 +19,7 @@ import streamStarting from '@/public/streamStarting.gif';
 import offThePerch from '@/public/offThePerch.jpeg';
 import season2 from '@/public/coapS2.jpg';
 import linkTree from '@/public/linktree.svg';
-
+import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: "AllsCherry | Crow on a Perch",
     description: "AllsCherry Crow on a Perch Page - The official AllsCherry podcast! Crow on a Perch! Hosts Liam and Eric delve into present day culture as an artist and philosophy major in South Ontario.",
