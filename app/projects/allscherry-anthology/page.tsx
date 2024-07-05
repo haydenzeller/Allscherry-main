@@ -2,11 +2,11 @@ import  Header from "@/app/components/Header";
 import  Footer from "@/app/components/Footer";
 import  Image from "next/image";
 import  Link from "next/link";
-import anthDinner from "@/public/anth-dinner4.jpg";
+import anthDinner from "@/public/anthDinner4.jpg";
 import anthCarousel from "@/public/anthCarousel4.jpg";
-import vol1Cover from "@/public/allscherry-anth1.png";
-import vol2Cover from "@/public/anth-vol2-cover.jpg";
-
+import vol1Cover from "@/public/allscherryAnth1.png";
+import vol2Cover from "@/public/anthVol2Cover.jpg";
+import { Metadata } from "next";
 export const metadata: Metadata = { 
     title: "AllsCherry | Anthology",
     description: "AllsCherry Anthology Page - The AllsCherry Anthology started with the simple concept to make a book with our local artists and friends. This simple idea has broadened into one of AllsCherry’s strongest ways of bringing people together.",
