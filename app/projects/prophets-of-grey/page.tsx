@@ -1,10 +1,37 @@
 import Image from 'next/image';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
-import Link from 'next/link';
 import splitInTheSun from '@/public/splitInTheSun.jpg';
 import magik from '@/public/magik.jpg';
 import sage from '@/public/sage.jpg';
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+    title: "AllsCherry | Prophets of Grey",
+    description: "AllsCherry Prophets of Grey Page - The Prophets of Grey, a project Eric debated for a very long time, is the name of his three piece band. Consisting of the Three Prophets of the Grey Planet.",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+    twitter: {
+        card: "summary",
+        site: "@allscherry",
+    },
+    alternates: {
+        canonical: "https://allscherry.com/projects/prophets-of-grey",
+    },
+    openGraph: {
+        type: "website",
+        url: "https://allscherry.com",
+        title: "AllsCherry | Prophets of Grey",
+        siteName: "AllsCherry",
+        description: "AllsCherry Prophets of Grey Page - The Prophets of Grey, a project Eric debated for a very long time, is the name of his three piece band. Consisting of the Three Prophets of the Grey Planet.",
+        images: [
+            {
+                url: "https://allscherry.com/icon.svg",
+                width: 1200,
+                height: 630,
+                alt: "AllsCherry Logo",
+            },
+        ],
+    },
+};
 
 export default function ProphetsOfGrey() {
     return (
@@ -26,7 +53,7 @@ export default function ProphetsOfGrey() {
                     <Image src="" alt=""/>
                     <Image src="" alt=""/>
                 </div>
-                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Although the music is finished, a lot goes into making an album! Stay tuned for the rest of this page to be finished:)</h2>
+                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Although the music is finished, a lot goes into making an album! Stay tuned for the rest of this page to be finished:)</h2>t
             </section>
             <Footer/>
         </main>

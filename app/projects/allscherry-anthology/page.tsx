@@ -2,16 +2,45 @@ import  Header from "@/app/components/Header";
 import  Footer from "@/app/components/Footer";
 import  Image from "next/image";
 import  Link from "next/link";
-import anthDinner from "@/public/anth-dinner4.jpg";
+import anthDinner from "@/public/anthDinner4.jpg";
 import anthCarousel from "@/public/anthCarousel4.jpg";
-import vol1Cover from "@/public/allscherry-anth1.png";
-import vol2Cover from "@/public/anth-vol2-cover.jpg";
+import vol1Cover from "@/public/allscherryAnth1.png";
+import vol2Cover from "@/public/anthVol2Cover.jpg";
+import { Metadata } from "next";
+export const metadata: Metadata = { 
+    title: "AllsCherry | Anthology",
+    description: "AllsCherry Anthology Page - The AllsCherry Anthology started with the simple concept to make a book with our local artists and friends. This simple idea has broadened into one of AllsCherry’s strongest ways of bringing people together.",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+    twitter: {
+        card: "summary",
+        site: "@allscherry",
+    },
+    alternates: {
+        canonical: "https://allscherry.com/publishing/anthology",
+    },
+    openGraph: {
+        type: "website",
+        url: "https://allscherry.com",
+        title: "AllsCherry | Anthology",
+        siteName: "AllsCherry",
+        description: "AllsCherry Anthology Page - The AllsCherry Anthology started with the simple concept to make a book with our local artists and friends. This simple idea has broadened into one of AllsCherry’s strongest ways of bringing people together.",
+        images: [
+            {
+                url: "https://allscherry.com/icon.svg",
+                width: 1200,
+                height: 630,
+                alt: "AllsCherry Logo",
+            },
+        ],
+    },
+};
+
 export default function AllscherryAnthology() {
     return (
         <main className="flex flex-col min-h-screen bg-base-100 lg:hidden">
             <Header/>
             <section className="flex flex-col items-center justify-center">
-                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">The AllsCherry Anthology started with the simple concept to make a book with our local artists and friends. This simple idea has broadened into one of AllsCherry’s strongest ways of bringing people together.</h2>
+                <h1 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">The AllsCherry Anthology started with the simple concept to make a book with our local artists and friends. This simple idea has broadened into one of AllsCherry’s strongest ways of bringing people together.</h1>
                 <div className="flex flex-col items-center justify-center m-6 p-1">
                     <Image src={anthDinner} alt="Anthology Dinner" className="rounded-3xl"/>
                 </div>

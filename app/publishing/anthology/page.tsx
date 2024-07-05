@@ -6,8 +6,8 @@ import PageTitle from "@/app/components/PageTitle";
 import Link from "next/link";
 import Image from "next/image";
 import AnthologyCarousel from "@/app/components/AnthologyCarousel";
-import anth1 from "@/public/allscherry-anth1.png"
-import anth2 from "@/public/anth-vol2-cover.jpg"
+import anth1 from "@/public/allscherryAnth1.png"
+import anth2 from "@/public/anthVol2Cover.jpg"
 import underConstruction from "@/public/underConstruction.svg"
 import { Metadata } from "next";
 
