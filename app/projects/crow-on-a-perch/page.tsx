@@ -19,6 +19,35 @@ import streamStarting from '@/public/streamStarting.gif';
 import offThePerch from '@/public/offThePerch.jpeg';
 import season2 from '@/public/coapS2.jpg';
 import linkTree from '@/public/linktree.svg';
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Crow on a Perch",
+    description: "AllsCherry Crow on a Perch Page - The official AllsCherry podcast! Crow on a Perch! Hosts Liam and Eric delve into present day culture as an artist and philosophy major in South Ontario.",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+    twitter: {
+        card: "summary",
+        site: "@allscherry",
+    },
+    alternates: {
+        canonical: "https://allscherry.com/projects/crow-on-a-perch",
+    },
+    openGraph: {
+        type: "website",
+        url: "https://allscherry.com",
+        title: "AllsCherry | Crow on a Perch",
+        siteName: "AllsCherry",
+        description: "AllsCherry Crow on a Perch Page - The official AllsCherry podcast! Crow on a Perch! Hosts Liam and Eric delve into present day culture as an artist and philosophy major in South Ontario.",
+        images: [
+            {
+                url: "https://allscherry.com/icon.svg",
+                width: 1200,
+                height: 630,
+                alt: "AllsCherry Logo",
+            },
+        ],
+    },
+};
+
 export default function CrowOnAPerch() {
     return (
         <main className="flex flex-col min-h-screen bg-base-100 lg:hidden">
@@ -27,7 +56,7 @@ export default function CrowOnAPerch() {
                 <div className="mt-12 px-4">
                     <Image src={coapBanner} alt="Crow on a Perch Banner" className="rounded-3xl"/>
                  </div>   
-                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">The official AllsCherry podcast! Crow on a Perch!</h2>
+                <h1 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">The official AllsCherry podcast! Crow on a Perch!</h1>
                 <div className="mt-6 px-12">
                     <Image src={coaps1} alt="Crow on a Perch set 1" className="rounded-3xl"/>
                 </div>

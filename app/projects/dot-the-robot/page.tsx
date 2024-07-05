@@ -52,7 +52,7 @@ export default function DotTheRobot() {
                         <Image src={dotmntgenesis} alt="Dot the Robot Mount Genesis" className="rounded-3xl"/>                        
                     </div>
                     <div className="flex flex-col items-center justify-center relative">
-                        <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Dot the Robot, the “beginning” of it all. Originally inspir4ed during his trip to Victoria, BC in 2023, Eric was experimenting with many new ideas as well as a whole new lifestyle.<br/><br/>In his personal life, a lot had changed and for the better. This not only changed a a lifestyle, but the art style too!</h2>
+                        <h1 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Dot the Robot, the “beginning” of it all. Originally inspir4ed during his trip to Victoria, BC in 2023, Eric was experimenting with many new ideas as well as a whole new lifestyle.<br/><br/>In his personal life, a lot had changed and for the better. This not only changed a a lifestyle, but the art style too!</h1>
                     </div>
                     <div className="flex flex-col items-center justify-center relative mx-5 my-12">
                         <Image src={dotpage1} alt="Dot the Robot Page 1" className="rounded-3xl"/>
