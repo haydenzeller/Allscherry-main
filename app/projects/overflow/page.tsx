@@ -97,7 +97,7 @@ export default function Overflow() {
                         <Image src={ofPromo} alt="Overflow Promo" width={500} height={500} className="rounded-box"/>
                     </div>
                     <h2 className="border border-base-200 rounded-3xl p-3 w-10/12 mt-6 text-center">Overflow, now opening many avenues for lore and character building, gave Eric another new idea for a book, Dot the Robot. We know the present (Wendy), we know the future (Overflow), but what about the planet&apos;s past?</h2>
-                    <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-32 text-center active:mt-4 active:border-0" href="">Dot the Robot!</Link>
+                    <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-32 text-center active:mt-4 active:border-0" href="/projects/dot-the-robot">Dot the Robot!</Link>
                 </section>
                 <Footer />
             </main>

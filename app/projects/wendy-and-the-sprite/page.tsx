@@ -32,7 +32,7 @@ import belleBio from "@/public/belleBio.jpg";
 import spriteBio from "@/public/spriteBio.jpg";
 import starlaBio from "@/public/starlaBio.jpg";
 import wendyBio from "@/public/wendyBio.jpg";
-
+import wendyZoom from "@/public/wendy-zoom.png";
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
@@ -75,10 +75,10 @@ export default function WendyAndTheSprite() {
                         <h1 className="w-3/4 text-md text-center mt-6 border border-base-200 rounded-3xl p-3">
                             Wendy and the Sprite is the adventure of a Snow Nymph and an Ice Sprite, traversing an old, frozen planet. Along their adventure, they discover a phenomenon called, “The Fading”, making the planet and it&apos;s inhabitants lose their colour and memory.
                         </h1>
-                        <div className="flex flex-row gap-3 mt-6">
-                            <Image priority src={wats0} alt="Wendy and the Sprite Chapter 0" width={125} height={300} className="rounded-box h-auto w-auto "/>
-                            <Image priority src={wats1} alt="Wendy and the Sprite Chapter 1" width={125} height={300} className="rounded-box h-auto w-auto "/>
-                            <Image priority src={wats2} alt="Wendy and the Sprite Chapter 2" width={125} height={300} className="rounded-box h-auto w-auto "/>
+                        <div className="flex flex-row items-center justify-center gap-0 m-6">
+                            <Image priority src={wats0} alt="Wendy and the Sprite Chapter 0" width={125} height={300} className="rounded-tl-3xl rounded-bl-3xl"/>
+                            <Image priority src={wats1} alt="Wendy and the Sprite Chapter 1" width={125} height={300} className=""/>
+                            <Image priority src={wats2} alt="Wendy and the Sprite Chapter 2" width={125} height={300} className="rounded-tr-3xl rounded-br-3xl"/>
                         </div>
                         <h2 className="mt-6 text-xl border border-base-200 rounded-3xl p-3">Check out the series here!</h2>
                         <Link className="mt-3 bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0" href="">
@@ -131,18 +131,18 @@ export default function WendyAndTheSprite() {
                     <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">By this point, 3 comics were released, with Wendy having gone through 4 character concepts before finalizing their look</h2>
                 </section>
                 <section className="flex flex-col items-center justify-center">
-                    <div className="grid grid-cols-2 grid-rows-2 gap-5 p-2 mt-6">
+                    <div className="grid grid-cols-2 grid-rows-2 gap-3 p-2 mt-6">
                         <Image src={wendyPortrait2018} alt="Wendy Portrait 2018" width={200} height={200} className="rounded-box h-auto w-auto"/>
                         <Image src={wendyPortrait2019} alt="Wendy Portrait 2019" width={200} height={200} className="rounded-box h-auto w-auto"/>
                         <Image src={wendyPortrait2021} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-auto w-auto"/>
-                        <Image src={wendyPortrait2021} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                        <Image src={wendyZoom} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-auto w-auto"/>
                     </div>
                     <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">Wendy and the Sprite has 3 graphic novels so far, and is planned to continue, however, to build up the story, Eric has started two other series to go alongside it.<br/><br/>The story doesn&apos;t stop at this series, all fo Eric&apos;s work interconnect, explore and enjoy!</h2>
                     <div className="flex flex-row gap-3 mt-6">
-                        <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0" href="">
+                        <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0" href="/projects/overflow">
                             Overflow
                         </Link>
-                        <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0" href="">
+                        <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0" href="/projects/dot-the-robot">
                             Dot the Robot
                         </Link>
                     </div>
@@ -175,7 +175,6 @@ export default function WendyAndTheSprite() {
                         <Image src={wendy2024} alt="Wendy 2024" width={200} height={200} className="rounded-box h-auto w-auto mt-6"/>
                     </div>
                 </section>
-                
                 <Footer />
             </main>
             <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
