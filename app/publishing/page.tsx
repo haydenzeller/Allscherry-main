@@ -55,26 +55,26 @@ export default function Publushing() {
                         <h2>AllsCherry has 3 core values...</h2>
                     </div>
                     <div className="mt-2">
-                        <div className="rounded-3xl text-black bg-white p-3 px-5 m-3">
+                        <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
                             <h2>1. Tyranny is not Art</h2>
                         </div>
-                        <div className=" rounded-3xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
-                            <h2>Have an idea? Let’s make it happen! Your way</h2>
+                        <div className=" rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
+                            <h2>Have an idea? Let&apos;s make it happen! Your way</h2>
                         </div>
                     </div>
                     <div className="mt-2">
-                        <div className="rounded-3xl text-black bg-white p-3 px-5 m-3">
+                        <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
                             <h2>2. A strong community builds strong projects</h2>
                         </div>
-                        <div className="rounded-3xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
+                        <div className="rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
                             <h2>AllsCherry works with many types of artists; building teams for projects or for collaborative works!</h2>
                         </div>
                     </div>             
                     <div className="mt-2">
-                        <div className="rounded-3xl text-black bg-white p-3 px-5 m-3">
+                        <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
                             <h2>3. Origiality is key</h2>
                         </div>
-                        <div className="rounded-3xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
+                        <div className="rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
                             <h2>Creating something new, and truly yours, is what makes for something truly special!</h2>
                         </div>
                     </div>
