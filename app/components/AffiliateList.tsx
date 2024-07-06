@@ -57,7 +57,7 @@ export default function AffiliateList() {
                                         className="rounded-box"
                                     />
                                 </div>
-                                <div>
+                                <div className="bg-white rounded-xl text-black p-2">
                                     <h3 className="font-bold">{affiliate.name}</h3>
                                     <p>{affiliate.description}</p>
                                 </div>

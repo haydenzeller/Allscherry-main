@@ -55,26 +55,26 @@ export default function Publushing() {
                         <h2>AllsCherry has 3 core values...</h2>
                     </div>
                     <div className="mt-2">
-                        <div className="rounded-3xl text-black bg-white p-3 px-5 m-3">
+                        <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
                             <h2>1. Tyranny is not Art</h2>
                         </div>
-                        <div className=" rounded-3xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
-                            <h2>Have an idea? Let’s make it happen! Your way</h2>
+                        <div className=" rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
+                            <h2>Have an idea? Let&apos;s make it happen! Your way</h2>
                         </div>
                     </div>
                     <div className="mt-2">
-                        <div className="rounded-3xl text-black bg-white p-3 px-5 m-3">
+                        <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
                             <h2>2. A strong community builds strong projects</h2>
                         </div>
-                        <div className="rounded-3xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
+                        <div className="rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
                             <h2>AllsCherry works with many types of artists; building teams for projects or for collaborative works!</h2>
                         </div>
                     </div>             
                     <div className="mt-2">
-                        <div className="rounded-3xl text-black bg-white p-3 px-5 m-3">
+                        <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
                             <h2>3. Origiality is key</h2>
                         </div>
-                        <div className="rounded-3xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
+                        <div className="rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
                             <h2>Creating something new, and truly yours, is what makes for something truly special!</h2>
                         </div>
                     </div>
@@ -117,6 +117,12 @@ export default function Publushing() {
                         <h2 className="text-md w-10/12 text-center border border-base-200 rounded-3xl p-3">Don’t know where to start? Check out our application form, or simply email us! We’re happy to help!</h2>
                         <Link href="/info/contact" className="bg-primary text-black p-2 px-14 mt-6 border-b-accent border-b-4 rounded-full block w-34 text-center active:mt-5 active:border-0">Apply Here:)</Link>
                     </div>
+                </section>
+                <section className="flex flex-col items-center justify-center mx-1 mt-14 gap-5">
+                    <Link href="/info/contact#contactForm" className="flex flex-row items-center justify-center gap-5 bg-white rounded-3xl px-5 py-1">
+                        <Image src={mailLogo} alt="Mail Logo" width={100} height={100} className="w-10"/>
+                        <h2 className="text-black">Email us here!</h2>
+                    </Link>
                 </section>
                 <Footer/>
             </section>
