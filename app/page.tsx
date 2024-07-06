@@ -49,6 +49,10 @@ export default function Home() {
         <Header />
         <PageTitle title={"Welcome to AllsCherry! Take a look around!"}/>
         <section className="mt-24">
+          <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
+            <h2 className="p-2 bg-secondary text-black rounded-3xl">Sign up for our Mailing List!</h2>
+            <h2 className="p-2 bg-secondary text-black rounded-xl">Get exclusive updates, discounts, and info on newest releases!</h2>
+          </div>
           <SubscribeBox />
         </section>
         <section className="flex flex-col justify-center items-center mt-24">

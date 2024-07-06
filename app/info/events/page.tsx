@@ -6,7 +6,8 @@ import PageTitle from "@/app/components/PageTitle";
 import Footer from "@/app/components/Footer";
 import underConstruction from "@/public/underConstruction.svg";
 import { Metadata } from "next";
-
+import Link from "next/link";
+import mailLogo from "@/public/mail.svg";
 export const metadata: Metadata = {
     title: "AllsCherry | Events",
     description: "AllsCherry Events Page - Check out our local events! - AllsCherry loves local events! Scroll down for a list of our events for 2024!",
@@ -47,6 +48,13 @@ export default function Events() {
                     </div>
                     <section className="mt-14">
                         <EventList />
+                    </section>
+                    <section className="flex flex-col items-center justify-center mt-6">
+                        <h2 className="text-lg w-3/4 text-center border border-base-200 rounded-full px-3 py-1 mt-5">Have a show you want to see us at? Email us your suggestions!</h2>
+                        <Link href="/info/contact#contactForm" className="flex flex-row items-center mt-6 justify-center gap-5 bg-white rounded-3xl px-5 py-1">
+                            <Image src={mailLogo} alt="Mail Logo" width={100} height={100} className="w-10"/>
+                            <h2 className="text-black">Email us here!</h2>
+                        </Link>
                     </section>
                 </section>
                 <Footer/>

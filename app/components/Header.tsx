@@ -59,7 +59,7 @@ export default function MobileHeader() {
                                 <Link href="/info" className="hover:bg-white p-2 rounded-2xl w-full">What is AllsCherry?</Link>
                                 <Link href="/info/contact" className="hover:bg-white p-2 rounded-2xl w-full">Contact</Link>
                                 <Link href="/info/events" className="hover:bg-white p-2 rounded-2xl w-full">Events</Link>
-                                <Link href="/info/affiliates" className="hover:bg-white p-2 rounded-2xl w-full">Affiliates</Link>
+                                <Link href="/info/affiliates" className="hover:bg-white p-2 rounded-2xl w-full">Our Team</Link>
                             </ul>
                         </div>
                     </li>

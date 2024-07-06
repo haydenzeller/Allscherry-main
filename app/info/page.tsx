@@ -48,43 +48,19 @@ export default function Info() {
         <section className="">
           <Header />
           <PageTitle title="So what is an AllsCherry anyway?" />
-          <section className="flex flex-col justify-center items-center mt-14">
-            <div className="mb-5">
-              <h2 className="text-2xl text-center border border-base-200 rounded-full px-8 py-2">
-                Good question!
-              </h2>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <div className="relative flex items-center justify-center mr-12 ml-12 text-black rounded-2xl shadow-xl">
-                <div className="absolute -inset-2 z-0 bg-base-300 rounded-2xl transform scale-105 mt-24"></div>
-                <h1 className="text-center text-xl relative z-10 bg-base-200 rounded-2xl p-5 ">
-                  AllsCherry, is a brand that<br />
-                  represents community,<br />
-                  quality stories, and<br />
-                  collaborative art pieces of<br />
-                  all kinds!<br /><br />
-                  Sound intriguing? Wanna<br />
-                  join in? Take a<br />
-                  look around the site, or shoot an email<br />
-                  to the founder, Eric!
-                </h1>
-              </div>
-            </div>
-          </section>
           <section className="flex flex-col justify-center mt-14 items-center">
-            <div className="flex flex-col items-center justify-center mt-5">
-              <Link href="/info/contact#contactForm" className="gap-3 flex flex-row items-center justify-center text-xl">
-                <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
-                Look fun? Email us to join in!
+            <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
+              <h2 className="p-2 bg-secondary text-black rounded-3xl">More than a Publishing Company</h2>
+              <h2 className="p-2 bg-secondary text-black rounded-xl text-center">AllsCherry is an Indie Publisher that represents community, freedom of the creator, and community.<br/><br/>Want to join in on the fun? Look around the site to learn more about how we do things! Or, email our founder, Eric!</h2>
+            </div>
+            <div className="flex flex-col items-center justify-center mx-1 mt-14 gap-5">
+              <Link href="/info/contact#contactForm" className="flex flex-row items-center justify-center gap-5 bg-white rounded-3xl px-5 py-1">
+                <Image src={mailLogo} alt="Mail Logo" width={100} height={100} className="w-10"/>
+                  <h2 className="text-black">Email us here!</h2>
               </Link>
-              <div className="h-3 my-14 px-14 w-full ">
-                <div className="bg-white h-full w-full rounded-3xl"></div>
-              </div>
             </div>
           </section>
-
-          <section className="flex flex-col items-center justify-center gap-16">
-
+          <section className="flex flex-col items-center justify-center gap-16 mt-14">
             <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
               <div className="">
                 <Image src={groupPhoto} alt="Group photo" className="w-52 h-auto rounded-box" />

@@ -118,6 +118,12 @@ export default function Publushing() {
                         <Link href="/info/contact" className="bg-primary text-black p-2 px-14 mt-6 border-b-accent border-b-4 rounded-full block w-34 text-center active:mt-5 active:border-0">Apply Here:)</Link>
                     </div>
                 </section>
+                <section className="flex flex-col items-center justify-center mx-1 mt-14 gap-5">
+                    <Link href="/info/contact#contactForm" className="flex flex-row items-center justify-center gap-5 bg-white rounded-3xl px-5 py-1">
+                        <Image src={mailLogo} alt="Mail Logo" width={100} height={100} className="w-10"/>
+                        <h2 className="text-black">Email us here!</h2>
+                    </Link>
+                </section>
                 <Footer/>
             </section>
         </main>

@@ -37,8 +37,8 @@ export const metadata: Metadata = {
 
 export default function Contact() {
     return (
-        <>
-            <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">
+        <main>
+            <section className="flex min-h-screen flex-col bg-base-100 lg:hidden">
                 <Header/>
                 <PageTitle title="Questions? Email us! But who is us?"/>
                 <div className="flex flex-col text-center mt-14 ml-12 mr-12 items-center justify-center">
@@ -46,27 +46,27 @@ export default function Contact() {
                     <div className="mt-4 rounded-xl">
                         <Image src={ericHeadshot} alt="Eric Headshot" className="w-96 rounded-xl"/>
                     </div>
-                    <div className="relative flex items-center justify-center  text-black rounded-2xl shadow-xl mt-12">
-                        <div className="absolute -inset-2 z-0 bg-base-300 rounded-2xl transform scale-105 mt-24"></div>
-                        <h1 className="text-center text-lg relative z-10 bg-base-200 rounded-2xl p-5">
-                            My name is Eric! I&apos;m an artist! One who loves to tell stories, create worlds, and work with my fellow artists around me. I primarily work with comic books, but I tend to dabble in whatever medium strikes me as I work!<br/><br/>I like to work with the community, so if you have any questions, or simply want to say hello, <i>shoot me an email!</i>
-                        </h1>
+                    <div className="flex flex-col justify-center mt-14 items-center">
+                        <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
+                          <h2 className="p-2 bg-secondary text-black rounded-3xl"><strong>Hi! I&apos;m Eric Olcsvary</strong></h2>
+                          <h2 className="p-2 bg-secondary text-black rounded-xl text-center">I am primarily a comic book creator, and have years of experience in graphic design, publishing and web design.<br/><br/>Having founded AllsCherry in 2021, my goal is to help upcoming artists start out in the comic book industry, and create collaborative projects to help build each other up in a community environment!<br/><br/>If you have any questions, feel free to email us, we&apos;d love to have you involved!</h2>
+                        </div>
                     </div>
-                    <section className="flex flex-col justify-center items-center text-center mt-20 w-full">
+                    <div className="flex flex-col justify-center items-center text-center mt-20 w-full">
                         <div className="w-52 h-3 bg-base-200 rounded-xl mb-10"/>
                         <h2 className="text-xl">Send us an email!</h2>
                         <ContactForm/>
                         <div className="w-52 h-3 bg-base-200 rounded-xl mt-10"/>
-                    </section>
+                    </div>
                 </div>
                 <Footer/>
-            </main>
-            <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
+            </section>
+            <section className="hidden lg:flex flex-col items-center justify-center min-h-screen">
                 <div className="flex flex-col items-center justify-center">
                     <Image src={underConstruction} alt="Under Construction" width={400} height={400}/>
                     <h1 className="text-2xl w-1/2 text-center">Oop, sorry! Desktop version is under construction, check back later!</h1>
                 </div>
-            </main>
-        </>
+            </section>
+        </main>
     )
 }
