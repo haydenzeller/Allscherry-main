@@ -57,7 +57,7 @@ export default function ProphetsOfGrey() {
                     <Image src={pog6} alt="Prophets of Grey 6" className="rounded-bl-3xl"/>
                     <Image src={pog7} alt="Prophets of Grey 7" className="rounded-br-3xl"/>
                 </div>
-                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Although the music is finished, a lot goes into making an album! Stay tuned for the rest of this page to be finished:)</h2>t
+                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Although the music is finished, a lot goes into making an album! Stay tuned for the rest of this page to be finished:)</h2>
             </section>
             <Footer/>
         </main>
