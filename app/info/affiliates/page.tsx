@@ -79,7 +79,7 @@ export default function Affiliates() {
                </section>
                 <section className="flex flex-col justify-center mt-14 items-center">
                     <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
-                      <h2 className="p-2 bg-secondary text-black rounded-3xl"><strong>AllsCherry Affiliates / Artists!</strong></h2>
+                      <h2 className="p-2 bg-secondary text-black rounded-3xl"><strong>AllsCherry Affiliates / Stores</strong></h2>
                       <h2 className="p-2 bg-secondary text-black rounded-xl text-center">AllsCherry works with many creatives! Below are those signed under the AllsCherry Label, or simply work with us in collaboration! Check out their work (So much talent!)</h2>
                     </div>
                 </section>

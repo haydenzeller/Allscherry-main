@@ -68,7 +68,7 @@ export default function Info() {
               <div className="flex flex-col justify-center items-center gap-4 w-1/2">
                 <h2 className="text-md text-center border border-base-200 rounded-3xl p-3">We work with artists to make something original and special. New to books? here&apos;s a great way to start!</h2>
                 <div>
-                  <Link href="/publishing/anthology" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0">
+                  <Link href="/publishing/collaboratives" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0">
                     Collab!
                   </Link>
                 </div>

@@ -59,8 +59,8 @@ export default function AllscherryAnthology() {
                         <p>AllsCherry Anthology Vol.2</p>
                     </div>
                 </div>
-                <h2 className="border border-base-200 rounded-full p-3 w-5/6 mt-6 text-center">If you’d like to get involved, or see more info, click here below!</h2>
-                <Link href="/publishing/anthology" className="bg-primary text-black p-2 px-14 mt-4 border-b-accent border-b-4 rounded-full block w-34 text-center active:mt-5 active:border-0">Collab</Link>
+                <h2 className="border border-base-200 rounded-full p-3 w-5/6 mt-6 text-center">If you&apos;d like to get involved, or see more info, click here below!</h2>
+                <Link href="/publishing/collaboratives" className="bg-primary text-black p-2 px-14 mt-4 border-b-accent border-b-4 rounded-full block w-34 text-center active:mt-5 active:border-0">Collab</Link>
                  
             </section>
             <Footer/>
