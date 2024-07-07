@@ -11,7 +11,7 @@ export default function Collabratives() {
         <main className="flex flex-col min-h-screen bg-base-100">
             <Header />
             {/* Mobile */}
-            <section className="flex flex-col items-center justify-center mt-6">
+            <section className="flex flex-col items-center justify-center">
                 <PageTitle title={"Group projects have never been more fun!"} />
                 <h2 className="text-md w-3/4 text-center border border-base-200 text-lg rounded-3xl mt-12 p-3">We welcome new and experienced artists to our two collaborative projects!<br/><br/>The AllsCherry Anthology and Stubby Stories!</h2>
                 <div className="flex flex-col text-black items-center justify-center mt-6 rounded-3xl bg-base-200 w-11/12 p-5">
