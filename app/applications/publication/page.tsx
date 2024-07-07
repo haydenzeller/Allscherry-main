@@ -6,35 +6,6 @@ import mailLogo from "@/public/mail.svg";
 import Link from "next/link";
 import { useState } from "react";
 import { Turnstile } from "@marsidev/react-turnstile";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: "AllsCherry | Publication",
-    description: "AllsCherry Publication Page - Looking to be published? Apply below!",
-    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
-    twitter: {
-        card: "summary",
-        site: "@allscherry",
-    },
-    alternates: {
-        canonical: "https://allscherry.com/publication",
-    },
-    openGraph: {
-        type: "website",
-        url: "https://allscherry.com",
-        title: "AllsCherry | Publication",
-        siteName: "AllsCherry",
-        description: "AllsCherry Publication Page - Looking to be published? Apply below!",
-        images: [
-            {
-                url: "https://allscherry.com/icon.svg",
-                width: 1200,
-                height: 630,
-                alt: "AllsCherry Logo",
-            },
-        ],
-    },
-};
 
 export default function Publication() {
     const [firstName, setFirstName] = useState("");
