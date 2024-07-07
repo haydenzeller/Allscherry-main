@@ -4,6 +4,35 @@ import PageTitle from "../components/PageTitle";
 import Link from "next/link";
 import Image from "next/image";
 import mailLogo from "@/public/mail.svg";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+    title: "AllsCherry | Applications",
+    description: "AllsCherry Applications Page - Looking to be published? Apply below!",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+    twitter: {
+        card: "summary",
+        site: "@allscherry",
+    },
+    alternates: {
+        canonical: "https://allscherry.com/applications",
+    },
+    openGraph: {
+        type: "website",
+        url: "https://allscherry.com",
+        title: "AllsCherry | Applications",
+        siteName: "AllsCherry",
+        description: "AllsCherry Applications Page - Looking to be published? Apply below!",
+        images: [
+            {
+                url: "https://allscherry.com/icon.svg",
+                width: 1200,
+                height: 630,
+                alt: "AllsCherry Logo",
+            },
+        ],
+    },
+};
+
 export default function Applications() {
     return (
         <main className="flex flex-col min-h-screen bg-base-100">
@@ -33,7 +62,7 @@ export default function Applications() {
                     <h2 className="text-md w-3/4 text-center border border-base-200 text-lg rounded-3xl mt-12 p-3">Have an idea for a short story? Publish as a group!</h2>
                     <div className="flex flex-col text-black items-center justify-center mt-6 rounded-3xl bg-base-200 w-11/12 p-5">
                         <h2 className="bg-secondary rounded-3xl text-lg font-bold py-2 px-8">The Annual Anthology</h2>
-                        <h2 className="bg-white rounded-xl font-bold text-md mt-3 py-2 px-8">A Yearly Opportunity to "Test the Water"</h2>
+                        <h2 className="bg-white rounded-xl font-bold text-md mt-3 py-2 px-8">A Yearly Opportunity to &quot;Test the Water&quot;</h2>
                         <p className="bg-secondary rounded-3xl py-2 px-3 mt-2">Every year we gather artists big or small to each publish a short story within our Anthology Book! It&aposs an easy way to get started in comics, gain attention through each other&apos;s work, and publish your book in a cheaper way!</p>
                     </div>
                     <Link href="/applications/anthology" className="bg-primary text-black p-2 px-3 mt-6 border-b-accent border-b-4 rounded-full block w-34 mx-1 text-center active:mt-5 active:border-0">Apply Here!</Link>

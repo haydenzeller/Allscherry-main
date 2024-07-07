@@ -6,7 +6,37 @@ import Link from "next/link";
 import anthVol1 from "@/public/allscherryAnth1.png";
 import anthVol2 from "@/public/anthVol2Cover.jpg";
 import mailLogo from "@/public/mail.svg";
-export default function Collabratives() {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Collaboratives",
+    description: "AllsCherry Collaboratives Page - Group projects have never been more fun!",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+    twitter: {
+        card: "summary",
+        site: "@allscherry",
+    },
+    alternates: {
+        canonical: "https://allscherry.com/collaboratives",
+    },
+    openGraph: {
+        type: "website",
+        url: "https://allscherry.com",
+        title: "AllsCherry | Collaboratives",
+        siteName: "AllsCherry",
+        description: "AllsCherry Collaboratives Page - Group projects have never been more fun!",
+        images: [
+            {
+                url: "https://allscherry.com/icon.svg",
+                width: 1200,
+                height: 630,
+                alt: "AllsCherry Logo",
+            },
+        ],
+    },
+};
+
+export default function Collaboratives() {
     return (
         <main className="flex flex-col min-h-screen bg-base-100">
             <Header />

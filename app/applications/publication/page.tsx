@@ -6,6 +6,36 @@ import mailLogo from "@/public/mail.svg";
 import Link from "next/link";
 import { useState } from "react";
 import { Turnstile } from "@marsidev/react-turnstile";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "AllsCherry | Publication",
+    description: "AllsCherry Publication Page - Looking to be published? Apply below!",
+    keywords: ["AllsCherry", "Home", "AllsCherry Home", "AllsCherry Projects", "AllsCherry News", "AllsCherry Updates", "AllsCherry Blog", "AllsCherry Blog Posts", "AllsCherry Blog Updates", "AllsCherry Blog News", "AllsCherry Blog Projects", "AllsCherry Blog Posts Projects News Updates", "AllsCherry Blog Posts Projects News Updates Home"],
+    twitter: {
+        card: "summary",
+        site: "@allscherry",
+    },
+    alternates: {
+        canonical: "https://allscherry.com/publication",
+    },
+    openGraph: {
+        type: "website",
+        url: "https://allscherry.com",
+        title: "AllsCherry | Publication",
+        siteName: "AllsCherry",
+        description: "AllsCherry Publication Page - Looking to be published? Apply below!",
+        images: [
+            {
+                url: "https://allscherry.com/icon.svg",
+                width: 1200,
+                height: 630,
+                alt: "AllsCherry Logo",
+            },
+        ],
+    },
+};
+
 export default function Publication() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -196,10 +226,10 @@ export default function Publication() {
                             <input type="radio" id="manga" name="type" value="manga" onChange={handleInputChange} className=" appearance-none w-5 h-5 mr-5 rounded-full border-2 border-base-100 checked:bg-base-100"/>
                             <label htmlFor="manga" className="mr-8">Manga</label>
                         </div>
-                        {/* Collabrative */}
+                        {/* Collaborative */}
                         <div className="w-1/2 bg-white text-black flex flex-row items-center justify-left pl-5 mt-6 rounded-3xl py-2">
-                            <input type="radio" onChange={handleInputChange} id="collabrative" name="type" value="collabrative" className=" appearance-none w-5 h-5 mr-5 rounded-full border-2 border-base-100 checked:bg-base-100"/>
-                            <label htmlFor="collabrative" className="mr-8">Collabrative</label>
+                            <input type="radio" onChange={handleInputChange} id="collaborative" name="type" value="collaborative" className=" appearance-none w-5 h-5 mr-5 rounded-full border-2 border-base-100 checked:bg-base-100"/>
+                            <label htmlFor="collaborative" className="mr-8">Collaborative</label>
                         </div>
                     </div>
                     <h2 className="mt-12 bg-white rounded-t-3xl p-3 text-center text-black w-3/4">*What is the concept of your story?</h2>
