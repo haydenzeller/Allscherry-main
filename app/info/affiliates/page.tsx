@@ -11,6 +11,7 @@ import ericHeadshot from "@/public/ericHeadshot.jpg";
 import haydenHeadshot from "@/public/genius.jpg";
 import liamHeadshot from "@/public/liam.jpg";
 import studioComix from "@/public/studioComix.jpg";
+import lukeHeadshot from "@/public/luke.jpg";
 export const metadata: Metadata = {
     title: "AllsCherry | Affiliates",
     description: "AllsCherry Affiliates Page - Who helps out around AllsCherry? - Take a look at what they have to offer, you might make a friend!",
@@ -53,27 +54,27 @@ export default function Affiliates() {
                     <div className="flex flex-col items-center justify-center text-xs font-semibold mt-6">
                         <div className="flex felx-row items-center justify-center gap-2">
                             <div className="flex flex-col items-center justify-center w-1/2">
-                                <Image src={ericHeadshot} alt="Under Construction" width={500} height={500} className=" object-cover w-48 h-48 rounded-box"/>
+                                <Image src={ericHeadshot} alt="Eric Olcsvaru" width={500} height={500} className=" object-cover w-48 h-48 rounded-box"/>
                                 <h2 className="mt-1 bg-white rounded-3xl p-3 text-black">CEO / Founder - Eric Olcsvary</h2>
                             </div>
                             <div className="flex flex-col items-center justify-center w-1/2">
-                                <Image src={haydenHeadshot} alt="Under Construction" width={400} height={400} className="object-cover w-48 h-48 rounded-box"/>
+                                <Image src={haydenHeadshot} alt="Hayden Zeller" width={400} height={400} className="object-cover w-48 h-48 rounded-box"/>
                                 <h2 className="bg-white mt-1 rounded-3xl p-3 text-black">CTO / WebDev - Hayden Zeller</h2>
                             </div>
                         </div>
-                        <div className="flex felx-row items-center justify-center mt-2">
+                        <div className="flex felx-row items-center justify-center mt-2 gap-2">
                             <div className="flex flex-col items-center justify-center w-1/2">
-                                <Image src={liamHeadshot} alt="Under Construction" width={400} height={400} className="object-cover w-48 h-48 rounded-box"/>
+                                <Image src={liamHeadshot} alt="Liam Fletcher" width={400} height={400} className="object-cover w-48 h-48 rounded-box"/>
                                 <h2 className="bg-white rounded-3xl mt-1 p-3 text-black">Exec Assistant - Liam Fletcher</h2>
                             </div>
                             <div className="flex flex-col items-center justify-center w-1/2">
-                                <Image src={underConstruction} alt="Under Construction" width={400} height={400} className="object-cover w-48 h-48 rounded-box"/>
+                                <Image src={lukeHeadshot} alt="Luke Hymers" width={400} height={400} className="object-cover w-48 h-48 rounded-box"/>
                                 <h2 className="bg-white rounded-3xl p-3 mt-1 text-black">Editor in Chief - Luke Hymers</h2>
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center w-1/2 mt-2">
-                            <Image src={studioComix} alt="Under Construction" width={400} height={400} className="object-cover w-48 h-48 rounded-box"/>
-                            <h2 className="bg-white rounded-3xl p-3 text-black">Printer - StudioComix Press</h2>
+                            <Image src={studioComix} alt="Studio Comix" width={400} height={400} className="object-cover w-48 h-48 rounded-box"/>
+                            <h2 className="bg-white rounded-3xl p-3 mt-1 text-black">Printer - StudioComix Press</h2>
                         </div>
                     </div>
                </section>
