@@ -83,7 +83,7 @@ export default function Publushing() {
                     <div className="flex flex-row items-center justify-center gap-3">
                         <div className="w-1/2 flex flex-col justify-center">
                             <Image src={comicsPublishing} alt="Comics Publishing" width={700} height={700} className="rounded-box"/>
-                            <Link href="/publishing/anthology" className="bg-primary text-black p-2 px-1 mt-4 border-b-accent border-b-4 rounded-full block w-34 mx-1 text-center active:mt-5 active:border-0">Let&apos;s make a book!</Link>
+                            <Link href="/forms/publication" className="bg-primary text-black p-2 px-1 mt-4 border-b-accent border-b-4 rounded-full block w-34 mx-1 text-center active:mt-5 active:border-0">Let&apos;s make a book!</Link>
                         </div>
                         <div className="flex justify-center w-1/2">
                             <h2 className="text-md text-center border border-base-200 rounded-3xl p-3">AllsCherry believes if someone tells you how to make your art, then it&apos;s not your art!<br/><br/>We make your ideas come to life how you want it. Our CEO and Chief Editor personally bring you from Step 0 to a book in hand with our Publication Service!</h2>

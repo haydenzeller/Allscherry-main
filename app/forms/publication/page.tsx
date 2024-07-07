@@ -25,7 +25,7 @@ export default function Publication() {
     const [company, setCompany] = useState("");
     const [error, setError] = useState(false);
     const [cloudflareStatus, setCloudflareStatus] = useState("")
-
+    const [submitted, setSubmitted] = useState(false);
     const handleInputChange = (e:any) => {
         const { name, value } = e.target;
         setError(false);
@@ -118,6 +118,7 @@ export default function Publication() {
             });
             if (res.ok) {
                 console.log("Success");
+                setSubmitted(true);
             } else {
                 console.error('Error submitting publication form:', res.statusText);
             }
@@ -186,7 +187,7 @@ export default function Publication() {
                         </div>
                         {/* Graphic Novel */}
                         <div className="w-1/2 bg-white text-black flex flex-row items-center justify-left pl-5 mt-6 rounded-3xl py-2">
-                            <input type="radio" id="type" name="type" value="graphicNovel" onChange={handleInputChange} className=" appearance-none w-5 h-5 mr-5 rounded-full border-2 border-base-100 checked:bg-base-100"/>
+                            <input type="radio" id="novel" name="type" value="graphicNovel" onChange={handleInputChange} className=" appearance-none w-5 h-5 mr-5 rounded-full border-2 border-base-100 checked:bg-base-100"/>
                             <label htmlFor="graphicNovel" className="mr-8">Graphic Novel</label>
                         </div>
                         {/* Manga */}
@@ -259,6 +260,7 @@ export default function Publication() {
                     {cloudflareStatus == 'solved' &&
                     <div className="flex flex-col justify-center items-center mt-6">
                         {error && <p className="text-red-500">Please fill in all required fields</p>}
+                        {submitted && <p className="text-green-500">Form submitted successfully!</p>}
                         <button type="submit" className="bg-primary mt-6 text-black p-2 border-b-accent border-b-4 rounded-2xl block w-28 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-6">
                             Submit!
                         </button>
