@@ -31,10 +31,10 @@ export default function Publication() {
     const handleInputChange = (e:any) => {
         const { name, value } = e.target;
         setError(false);
+        console.log(name, value)
         switch(name) {
             case "firstName":
                 setFirstName(value);
-                console.log(value);
                 break;
             case "lastName":
                 setLastName(value);
@@ -66,7 +66,7 @@ export default function Publication() {
             case "profession":
                 setProfession(profession + value);
                 break;
-            case "publishType":
+            case "type":
                 setPublishType(value);
                 break;
             case "concept":
@@ -82,6 +82,7 @@ export default function Publication() {
                 setIdea(value);
                 break;
             default:
+                console.log("Error: Unknown input field");
                 break;
         }
     }
@@ -91,7 +92,7 @@ export default function Publication() {
         if (firstName === "" || lastName === "" || email === "" || address === "" || city === "" || province === "" || postalCode === "" || country === "" || profession === "" || publishType === "" || concept === "" || ready === "" || series === "" || idea === "") {
             setError(true);
             return;
-        }
+        } 
         const data = {
             firstName: firstName,
             lastName: lastName,
@@ -152,7 +153,7 @@ export default function Publication() {
                     <input type="text" id="address" name="address" placeholder="*Street Address" onChange={handleInputChange} className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
                     <input type="text" id="city" name="city" placeholder="*City" onChange={handleInputChange} className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
                     <input type="text" id="province" name="province" placeholder="*Province" onChange={handleInputChange} className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
-                    <input type="text" id="postal" name="postal" placeholder="*Postal Code" onChange={handleInputChange} className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
+                    <input type="text" id="postal" name="postalCode" placeholder="*Postal Code" onChange={handleInputChange} className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
                     <input type="text" id="country" name="country" placeholder="*Country" onChange={handleInputChange} className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
                     <input type="text" id="company" name="company" placeholder="Company Name" onChange={handleInputChange} className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
                     <div className=" bg-gray-500 mt-6 rounded-full h-3 w-1/2"/>
@@ -204,14 +205,14 @@ export default function Publication() {
                         </div>
                     </div>
                     <h2 className="mt-12 bg-white rounded-t-3xl p-3 text-center text-black w-3/4">*What is the concept of your story?</h2>
-                    <textarea id="storyConcept" name="storyConcept" onChange={handleInputChange} placeholder="Type your concept here..." className="mt-0 text-left h-40 text-black p-2 rounded-b-3xl w-3/4"/>
+                    <textarea id="storyConcept" name="concept" onChange={handleInputChange} placeholder="Type your concept here..." className="mt-0 text-left h-40 text-black p-2 rounded-b-3xl w-3/4"/>
                     <h2 className="mt-12 bg-white rounded-xl p-3 text-center text-black w-3/4">*Is your book already complete and ready for publication?</h2>
                     <div className="flex flex-col items-center justify-center mt-6 text-center w-full">
                         <div className="bg-white pl-4 text-black flex items-center rounded-3xl w-1/3 py-2">
                             <input
                                 type="radio"
                                 id="yes"
-                                name="answer"
+                                name="ready"
                                 value="yes"
                                 onChange={handleInputChange} 
                                 className="appearance-none w-5 h-5 mr-3 rounded-full border-2 border-base-100 checked:bg-base-100"
@@ -222,7 +223,7 @@ export default function Publication() {
                             <input
                                 type="radio"
                                 id="no"
-                                name="answer"
+                                name="ready"
                                 value="no"
                                 onChange={handleInputChange} 
                                 className="appearance-none w-5 h-5 mr-3 rounded-full border-2 border-base-100 checked:bg-base-100"
@@ -256,7 +257,7 @@ export default function Publication() {
                         </div>
                     </div>
                     <h2 className="mt-12 bg-white rounded-t-3xl p-3 text-center text-black w-3/4">*If it&apos;s a series, how many books do you have planned, and how long do you plan the series to be?</h2>
-                    <textarea id="seriesPlan" name="seriesPlan" onChange={handleInputChange} placeholder="Type your idea here..." className="mt-0 text-left h-40 text-black p-2 rounded-b-3xl w-3/4"/>
+                    <textarea id="seriesPlan" name="idea" onChange={handleInputChange} placeholder="Type your idea here..." className="mt-0 text-left h-40 text-black p-2 rounded-b-3xl w-3/4"/>
 
                     <Turnstile className="cf-turnstile mt-12" siteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY || ""} onSuccess={() => setCloudflareStatus('solved')} />
                     {cloudflareStatus == 'solved' &&
