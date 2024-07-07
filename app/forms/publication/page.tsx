@@ -30,7 +30,7 @@ export default function Publication() {
                     <input type="text" id="name" name="name" placeholder="*Postal Code" className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
                     <input type="text" id="name" name="name" placeholder="*Country" className="mt-6 text-center p-2 rounded-3xl w-3/4"/>
                     <div className=" bg-gray-500 mt-6 rounded-full h-3 w-1/2"/>
-                    <h2 className="mt-6 bg-white rounded-xl p-3 text-center text-black w-3/4">What's your Profession?</h2>
+                    <h2 className="mt-6 bg-white rounded-xl p-3 text-center text-black w-3/4">What&apos;s your Profession?</h2>
                     <div className="flex flex-col items-center justify-center mt-6 text-center">
                         <div className="bg-white text-black flex flex-row items-center justify-left pl-5 rounded-3xl w-1/2 py-2">
                             <input type="checkbox" id="illustrator" name="illustrator" value="illustrator" className=" appearance-none w-5 h-5 mr-5 rounded-full border-2 border-base-100 checked:bg-base-100"/>
