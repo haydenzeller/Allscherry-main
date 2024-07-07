@@ -24,6 +24,7 @@ export default function Publication() {
     const [idea, setIdea] = useState("");
     const [company, setCompany] = useState("");
     const [error, setError] = useState(false);
+    const [success, setSuccess] = useState(false);
     const [cloudflareStatus, setCloudflareStatus] = useState("")
 
     const handleInputChange = (e:any) => {
@@ -118,6 +119,7 @@ export default function Publication() {
             });
             if (res.ok) {
                 console.log("Success");
+                setSuccess(true);
             } else {
                 console.error('Error submitting publication form:', res.statusText);
             }
@@ -259,6 +261,7 @@ export default function Publication() {
                     {cloudflareStatus == 'solved' &&
                     <div className="flex flex-col justify-center items-center mt-6">
                         {error && <p className="text-red-500">Please fill in all required fields</p>}
+                        {success && <p className="text-green-500">Form submitted successfully!</p>}
                         <button type="submit" className="bg-primary mt-6 text-black p-2 border-b-accent border-b-4 rounded-2xl block w-28 text-center shadow active:translate-y-0.5 active:shadow-none active:border-b-0 active:mt-6">
                             Submit!
                         </button>
