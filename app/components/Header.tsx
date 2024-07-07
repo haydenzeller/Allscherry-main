@@ -70,6 +70,7 @@ export default function MobileHeader() {
                             </div>
                             <ul tabIndex={0} className="text-black dropdown-content mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom z-50 flex flex-col">
                                 <Link href="/publishing" className="hover:bg-white p-2 rounded-2xl w-full">AllsCherry Publishing</Link>
+                                <Link href="/publishing/collabratives" className="hover:bg-white p-2 rounded-2xl w-full">Collabratives</Link>
                             </ul>
                         </div>
                     </li>
