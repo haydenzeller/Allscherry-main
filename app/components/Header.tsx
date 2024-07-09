@@ -42,12 +42,11 @@ export default function MobileHeader() {
                     </li>
                     <li className="flex justify-center">
                         <div className="dropdown dropdown-end gap-4">
-                            <div tabIndex={0} role="button" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
+                            <Link href="https://shop.allscherry.com/" tabIndex={0} role="button" className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0" >
                                 Shop
-                            </div>
-                            <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
-                                <li><a href="/">Coming soon!</a></li>
-                            </ul>
+                            </Link>
+                            {/* <ul tabIndex={0} className="text-black dropdown-content z-10 mt-1 p-2 bg-primary border-4 border-accent rounded-box w-52 shadow-right-bottom">
+                            </ul> */}
                         </div>
                     </li>
                     <li className="flex justify-center">
