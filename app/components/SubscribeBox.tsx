@@ -53,7 +53,7 @@ export default function SubscribeBox({showOrbs = true}) {
     };
     return (
     <section>
-        <div className="mt-10 flex flex-row gap-6 justify-center items-center">
+        <div className="mt-10 flex flex-row gap-2 justify-center items-center">
             {showOrbs && <div className="bg-white w-12 h-12 rounded-full" /> }
             <input className="rounded-2xl input w-60 bg-white input-md text-black text-center" placeholder="Subscribe for Updates!" onChange={e => {setEmail(e.target.value); setShowError(false); setShowSuccess(false)}}/>
             {showOrbs && <div className="bg-white w-12 h-12 rounded-full" /> }

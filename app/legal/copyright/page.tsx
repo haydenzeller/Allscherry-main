@@ -51,7 +51,7 @@ export default function Copywrite() {
                 </p>
                 <br/>
                 <p>
-                    © Allscherry. All rights reserved.
+                    © AllsCherry. All rights reserved.
                 </p>
             </div>
             <p>

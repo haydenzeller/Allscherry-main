@@ -58,7 +58,7 @@ export default function Home() {
         <section className="flex flex-col justify-center items-center mt-24">
           <div className="flex justify-center items-center">
             <h1 className="text-2xl text-center border border-base-200 rounded-full p-3">
-              Here&apos;s some of out current news!
+              Here&apos;s some of our current news!
             </h1>
           </div>
         </section>

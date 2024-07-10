@@ -5,8 +5,8 @@ import Header from "@/app/components/Header";
 import Link from "next/link";
 // images
 import mailLogo from "@/public/mail.svg";
-import groupPhoto from "@/public/groupPhoto.jpg";
-import ericUVFS from "@/public/ericUVFS.jpg";
+import groupPhoto from "@/public/coapThumbnail3.jpg";
+import ckEvent from "@/public/ck-event.jpg";
 import PageTitle from "@/app/components/PageTitle";
 import printBundle from "@/public/print-bundle-example.webp"
 import underConstruction from "@/public/underConstruction.svg";
@@ -61,9 +61,10 @@ export default function Info() {
             </div>
           </section>
           <section className="flex flex-col items-center justify-center gap-16 mt-14">
+            <h2 className="text-xl text-center border border-base-200 rounded-3xl p-4">What does AllsCherry do?</h2>
             <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
               <div className="">
-                <Image src={groupPhoto} alt="Group photo" className="w-52 h-auto rounded-box" />
+                <Image src={groupPhoto} alt="Group photo" className="w-52 h-52 rounded-box object-cover" />
               </div>
               <div className="flex flex-col justify-center items-center gap-4 w-1/2">
                 <h2 className="text-md text-center border border-base-200 rounded-3xl p-3">We work with artists to make something original and special. New to books? here&apos;s a great way to start!</h2>
@@ -85,13 +86,13 @@ export default function Info() {
                 </div>
               </div>
               <div className="">
-                <Image src={printBundle} className="w-52 rounded-box" alt="Eric UVFS"/>
+                <Image src={printBundle} className="w-52 h-52 object-cover rounded-box" alt="Eric UVFS"/>
               </div>
             </div>
             
             <div className="flex flex-row gap-4 ml-3 mr-3 text-center">
               <div className="">
-                <Image src={ericUVFS} className="w-52 rounded-box" alt="Eric UVFS"/>
+                <Image src={ckEvent} className="w-52 h-52 object-cover rounded-box" alt="Eric UVFS"/>
               </div>
               <div className="flex flex-col justify-center items-center gap-4 w-1/2">
                 <h2 className="text-md text-center border border-base-200 rounded-3xl p-3">We do many shows throughout the year, click below to keep up!</h2>
