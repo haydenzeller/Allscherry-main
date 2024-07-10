@@ -74,11 +74,10 @@ export default function Home() {
         <Footer />
       </section>
     </main>
-    <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
-      <div className="flex flex-col items-center justify-center">
-        <Image src={underConstruction} alt="Under Construction" width={400} height={400}/>
-        <h2 className="text-2xl w-1/2 text-center">Oop, sorry! Desktop version is under construction, check back later!</h2>
-      </div>
+    <main className="hidden lg:flex flex-col items-center justify-center">
+        <Header />
+        
+        <Footer />
     </main>
     </>
   );
