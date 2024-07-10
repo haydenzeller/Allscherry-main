@@ -12,6 +12,7 @@ import haydenHeadshot from "@/public/genius.jpg";
 import liamHeadshot from "@/public/liam.jpg";
 import studioComix from "@/public/studioComix.jpg";
 import lukeHeadshot from "@/public/luke.jpg";
+import ArtistList from "@/app/components/ArtistList";
 export const metadata: Metadata = {
     title: "AllsCherry | Affiliates",
     description: "AllsCherry Affiliates Page - Who helps out around AllsCherry? - Take a look at what they have to offer, you might make a friend!",
@@ -92,14 +93,23 @@ export default function Affiliates() {
                             </div>
                         </div>
                     </div>
-               </section>
+                </section>
                 <section className="flex flex-col justify-center mt-14 items-center">
                     <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
-                      <h2 className="p-2 bg-secondary text-black rounded-3xl"><strong>AllsCherry Affiliates / Stores</strong></h2>
+                      <h2 className="p-2 bg-secondary text-black rounded-3xl"><strong>AllsCherry Artists!</strong></h2>
                       <h2 className="p-2 bg-secondary text-black rounded-xl text-center">AllsCherry works with many creatives! Below are those signed under the AllsCherry Label, or simply work with us in collaboration! Check out their work (So much talent!)</h2>
-                    </div>
+                   </div>
                 </section>
-                <section className="felx flex-col justify-center items-center mt-24 text-center">
+                <section className="felx flex-col justify-center items-center mt-14 text-center">
+                    <ArtistList />
+                </section>
+                <section className="flex flex-col justify-center mt-14 items-center">
+                    <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
+                      <h2 className="p-2 bg-secondary text-black rounded-3xl"><strong>AllsCherry Affiliates and Stores</strong></h2>
+                      <h2 className="p-2 bg-secondary text-black rounded-xl text-center">AllsCherry attends many events and works with your local creative stores, go check out the places below to grab your next comic book!</h2>
+                   </div>
+                </section>
+                <section className="felx flex-col justify-center items-center mt-14 text-center">
                     <AffiliateList/>
                 </section>
                 <section className="flex flex-col items-center justify-center mx-1 mt-14 gap-5">

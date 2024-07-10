@@ -2,9 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import SubscribeBox from "@/app/components/SubscribeBox";
-import mailLogo from "@/public/mail.svg"
+import mailLogo from "@/public/mail-pink.svg"
 import linktreeLogo from "@/public/linktree.svg"
 import goingUp from "@/public/going-up-arrow.svg"
+import facebookLogo from "@/public/Facebook_Logo_Secondary.png"
+import instagramLogo from "@/public/Instagram_Glyph_White.png"  
 export default function Footer() {
     const scrollToTop = () => {
         window.scrollTo({
@@ -25,16 +27,24 @@ export default function Footer() {
             <div className="mb-10">
             <SubscribeBox showOrbs={true}/>
             </div>
-            <div className="flex flex-row justify-center items-center gap-24 mb-3">
+            <div className="flex flex-row justify-center items-center gap-2 mb-3">
                 <div className="flex flex-row items-center justify-center">
-                    <Link href="https://linktr.ee/eolcsvary_art" target="_blank" className="gap-3 flex flex-row-reverse items-center jsutify-center text-lg text-base-100">
-                        Linktree!
+                    <Link href="https://linktr.ee/eolcsvary_art" target="_blank" className="gap-3 flex flex-row-reverse items-center jsutify-center text-lg">
                         <Image className="bg-white rounded-full p-1" src={linktreeLogo} alt="Email Logo" width="50"/>
                     </Link>
                 </div>
                 <div className="flex flex-row items-center justify-center">
+                    <Link href="https://www.facebook.com/allscherry/" target="_blank" className="gap-3 flex flex-row items-center jsutify-center text-lg text-base-100">
+                        <Image className="rounded-full" src={facebookLogo} alt="Email Logo" width="50"/>
+                    </Link>
+                </div>
+                <div className="flex flex-row items-center justify-center">
+                    <Link href="https://www.instagram.com/allscherrycomics/" target="_blank" className="gap-3 flex flex-row items-center jsutify-center text-lg">
+                        <Image className="" src={instagramLogo} alt="Email Logo" width="50"/>
+                    </Link>
+                </div>
+                <div className="flex flex-row items-center justify-center">
                     <Link href="/info/contact#contactForm" className="gap-3 flex flex-row items-center jsutify-center text-lg text-base-100">
-                        Email Us!
                         <Image className="bg-white rounded-full p-1" src={mailLogo} alt="Email Logo" width="50"/>
                     </Link>
                 </div>
