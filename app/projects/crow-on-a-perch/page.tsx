@@ -60,11 +60,11 @@ export default function CrowOnAPerch() {
                 <div className="mt-6 px-12">
                     <Image src={coaps1} alt="Crow on a Perch set 1" className="rounded-3xl"/>
                 </div>
-                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Hosts Liam and Eric delve into present day culture as an artist and philosophy major in South Ontario.<br/><br/>Crow on a Perch is a podcast created to tackle fun, uncomfortable, or frustrating topics about today’s world, through the lens of two 20 year old who love to think.</h2>
+                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Hosts Liam and Eric delve into present day culture as an artist and philosophy major in South Ontario.<br/><br/>Crow on a Perch is a podcast created to tackle fun, uncomfortable, or frustrating topics about today’s world, through the lens of two 20 year olds who love to think.</h2>
                 <div className="mt-12 px-4">
                     <Image src={coapThumbnail} alt="Crow on A Perch Thumbnail" className="rounded-3xl"/>
                 </div>
-                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">In 2023, these two friends decided to take a trip to Victoria BC. Gaining a fresh perspective on Canada, and conversing with locals, Eric and Liam decided to start this podcast.<br/><br/>As they spoke of it, a Crow perch up beside them, and followed them around for a lot of the trip, creating the name for their show!</h2> 
+                <h2 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">In 2023, these two friends decided to take a trip to Victoria BC. Gaining a fresh perspective on Canada, and conversing with locals, Eric and Liam decided to start this podcast.<br/><br/>As they spoke of it, a Crow perch beside them, and followed them around for a lot of the trip, creating the name for their show!</h2> 
                 <div className="mt-12 px-4">
                     <Image src={phase1} alt="Phase 1" className="rounded-3xl"/>
                 </div>

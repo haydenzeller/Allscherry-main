@@ -115,7 +115,7 @@ export default function Publushing() {
                     </div>
                     <div className="flex flex-col items-center justify-center mx-1 mt-6">
                         <h2 className="text-md w-10/12 text-center border border-base-200 rounded-3xl p-3">Don&apos;t know where to start? Check out our application form, or simply email us! We&apos;re happy to help!</h2>
-                        <Link href="/applications" className="bg-primary text-black p-2 px-14 mt-6 border-b-accent border-b-4 rounded-full block w-34 text-center active:mt-5 active:border-0">Apply Here:)</Link>
+                        <Link href="/applications" className="bg-primary text-black p-2 px-14 mt-6 border-b-accent border-b-4 rounded-full block w-34 text-center active:mt-5 active:border-0">Join In!</Link>
                     </div>
                 </section>
                 <section className="flex flex-col items-center justify-center mx-1 mt-14 gap-5">

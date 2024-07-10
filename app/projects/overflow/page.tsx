@@ -49,8 +49,8 @@ export default function Overflow() {
             <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">
                 <Header />
                 <section className="flex flex-col items-center justify-center">
-                    <div className="flex flex-col items-center justify-center relative mx-5">
-                        <Image src={overflowLogo} alt="Overflow Logo" width={500} height={500} className="w-auto h-auto"/>
+                    <div className="flex flex-col items-center justify-center relative">
+                        <Image src={overflowLogo} alt="Overflow Logo" width={500} height={500} className="w-screen h-auto pt-5 pb-5"/>
                         <Image src={ofPageEx} alt="Overflow Page Example" width={500} height={500} className="w-auto h-auto rounded-box"/>
                         <h1 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">Overflow is a book of discovery, mystery, colourful underwater lands, and a complicated series of historical events.<br/><br/>Four creatures find a whole world beneath their feet, one of true beauty. So many colours, so many creatures, and so much unexplored territory! What awaits these four brave souls deep beneath?</h1>
                     </div>
@@ -90,7 +90,7 @@ export default function Overflow() {
                     </div>
                     <div className="flex flex-col items-center justify-center mt-6 mx-4">
                         <Image src={ofGroup} alt="Overflow Group" width={500} height={500} className="w-auto h-auto rounded-box"/>
-                        <p className="border border-base-200 rounded-3xl p-3 w-10/12 mt-6 text-center">Since Wendy and most of the creatures in the comic series don&apos;t speak, Overflow gave Eric an opportunity to write with more dialogue, and see how this can work in his comic formats!<br/><br/>This new landscape, creatures, and plot line also gave a lot of opportunity for lore building. Since the book is set so far int he future, a lot has changed. What do the events of Wendy and the Sprite have to do with this plot I wonder?</p>
+                        <p className="border border-base-200 rounded-3xl p-3 w-10/12 mt-6 text-center">Since Wendy and most of the creatures in the comic series don&apos;t speak, Overflow gave Eric an opportunity to write with more dialogue, and see how this can work in his comic formats!<br/><br/>This new landscape, creatures, and plot line also gave a lot of opportunity for lore building. Since the book is set so far in the future, a lot has changed. What do the events of Wendy and the Sprite have to do with this plot I wonder?</p>
                     </div>
                     {/* large div for image placeholder */}
                     <div className="flex flex-col items-center justify-center mt-6 mx-5">

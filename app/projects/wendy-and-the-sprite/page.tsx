@@ -107,7 +107,7 @@ export default function WendyAndTheSprite() {
                 <section className="flex flex-col items-center justify-center text-center mt-16">
                     <h2 className="border border-base-200 rounded-3xl p-3 w-3/4">After switching to a comic book format, Chapter 0 was created as a way to have context to what would have been an animated story</h2>
                     <Image src={wendy0zine} alt="Wendy and the Sprite Chapter 0" width={300} height={300} className="rounded-box mt-6 w-auto h-auto"/>
-                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6">Eric works mostly with coincidence, candidness and spontaneity. As the story and lore progresses, the characters and history begin to speak for themselves!<br/><br/>This makes for unexpected characters and twists even for the creator!</h2>
+                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6">Eric works mostly with coincidence, candidness and spontaneity. As the story and lore progresses, the characters and history begin to speak for themselves!<br/><br/>This makes for unexpected characters and plot twists even for the creator!</h2>
                 </section>
                 <section className="flex flex-col items-center justify-center mt-16">
                     <div className="flex flex-row items-start justify-center gap-3 text-center text-sm">
@@ -121,7 +121,7 @@ export default function WendyAndTheSprite() {
 
                         </div>
                     </div>
-                    <h2 className="text-center w-3/4 border border-base-200 rounded-3xl p-3 mt-6">Naturally, the story has grown into something much more than a Snow Person and a Ball of Ice.<br/><br/>Exploring narratives of Witchcraft, Robotic Animals, Spatial Phenomenons, native’s at war with stone people, The Sun splitting in half, as well as underwater adventures, Wendy and the Sprite was only the beginning of a much bigger project</h2>
+                    <h2 className="text-center w-3/4 border border-base-200 rounded-3xl p-3 mt-6">Naturally, the story has grown into something much more than just a Snow Person and a Ball of Ice.<br/><br/>Exploring narratives of Witchcraft, Robotic Animals, Spatial Phenomenons, native’s at war with stone people, The Sun splitting in half, as well as underwater adventures, Wendy and the Sprite was only the beginning of a much bigger project</h2>
                 </section>
                 <section className="flex flex-col items-center justify-center mt-16">
                     <Image src={mountGenesis} alt="Mount Genesis" width={400} height={400} className="rounded-box h-auto w-auto" />
@@ -132,12 +132,12 @@ export default function WendyAndTheSprite() {
                 </section>
                 <section className="flex flex-col items-center justify-center">
                     <div className="grid grid-cols-2 grid-rows-2 gap-3 p-2 mt-6">
-                        <Image src={wendyPortrait2018} alt="Wendy Portrait 2018" width={200} height={200} className="rounded-box h-auto w-auto"/>
-                        <Image src={wendyPortrait2019} alt="Wendy Portrait 2019" width={200} height={200} className="rounded-box h-auto w-auto"/>
-                        <Image src={wendyPortrait2021} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-auto w-auto"/>
-                        <Image src={wendyZoom} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-auto w-auto"/>
+                        <Image src={wendyPortrait2018} alt="Wendy Portrait 2018" width={200} height={200} className="rounded-box h-36 w-48 object-cover"/>
+                        <Image src={wendyPortrait2019} alt="Wendy Portrait 2019" width={200} height={200} className="rounded-box h-36 w-48 object-cover"/>
+                        <Image src={wendyPortrait2021} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-36 w-48 object-cover"/>
+                        <Image src={wendyZoom} alt="Wendy Portrait 2021" width={200} height={200} className="rounded-box h-36 w-48 object-cover"/>
                     </div>
-                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">Wendy and the Sprite has 3 graphic novels so far, and is planned to continue, however, to build up the story, Eric has started two other series to go alongside it.<br/><br/>The story doesn&apos;t stop at this series, all fo Eric&apos;s work interconnect, explore and enjoy!</h2>
+                    <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">Wendy and the Sprite has 3 graphic novels so far, and is planned to continue. However, to build up the story, Eric has started two other series to go alongside it.<br/><br/>The story doesn&apos;t stop at this series, all fo Eric&apos;s work interconnect, explore and enjoy!</h2>
                     <div className="flex flex-row gap-3 mt-6">
                         <Link className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0" href="/projects/overflow">
                             Overflow

@@ -2,6 +2,7 @@ import  Header from "@/app/components/Header";
 import  Footer from "@/app/components/Footer";
 import  Image from "next/image";
 import  Link from "next/link";
+import  FlipthroughVideo from "@/app/components/FlipthroughVideo";
 import anthDinner from "@/public/anthDinner4.jpg";
 import anthCarousel from "@/public/anthCarousel4.jpg";
 import vol1Cover from "@/public/allscherryAnth1.png";
@@ -39,7 +40,8 @@ export default function AllscherryAnthology() {
     return (
         <main className="flex flex-col min-h-screen bg-base-100 lg:hidden">
             <Header/>
-            <section className="flex flex-col items-center justify-center">
+            <section className="flex mt-6 flex-col items-center justify-center">
+                <FlipthroughVideo />
                 <h1 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">The AllsCherry Anthology started with the simple concept to make a book with our local artists and friends. This simple idea has broadened into one of AllsCherry’s strongest ways of bringing people together.</h1>
                 <div className="flex flex-col items-center justify-center m-6 p-1">
                     <Image src={anthDinner} alt="Anthology Dinner" className="rounded-3xl"/>

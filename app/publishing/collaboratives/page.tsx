@@ -57,7 +57,7 @@ export default function Collaboratives() {
                         <Image src={anthVol1} alt="Comics Publishing" width={700} height={700} className="rounded-box w-1/2"/>
                         <Image src={anthVol2} alt="Comics Publishing" width={700} height={700} className="rounded-box w-1/2"/>
                     </div>
-                    <Link href="/publishing/anthology" className="bg-primary text-black p-2 px-3 mt-12 border-b-accent border-b-4 rounded-full block w-34 mx-1 text-center active:mt-5 active:border-0">Apply Here!</Link>
+                    <Link href="/publishing/anthology" className="bg-primary text-black p-2 px-3 mt-12 border-b-accent border-b-4 rounded-full block w-34 mx-1 text-center active:mt-5 active:border-0">Join In!</Link>
                 </div>
                 <div className="flex flex-col text-black items-center justify-center mt-12 rounded-3xl bg-base-200 w-11/12 p-5">
                     <h2 className="bg-secondary rounded-3xl text-lg font-bold py-2 px-8">The Stubby Stories!</h2>
@@ -71,7 +71,7 @@ export default function Collaboratives() {
                     <Link href="/publishing/anthology" className="bg-primary text-black p-2 px-4 border-b-accent border-b-4 rounded-full block w-34 mx-1 text-center active:mt-5 active:border-0">Apply Here :)</Link>
                 </div>
                 <h2 className="text-md w-3/4 text-center border border-base-200 text-lg rounded-3xl mt-12 p-3">If you want to learn more about past projects, check out our Anthology Page!<br/><br/>Questions? Email us!</h2>
-                <Link href="/publishing/anthology" className="bg-primary text-black p-2 px-4 mt-4 border-b-accent border-b-4 rounded-full block w-34 mx-1 text-center active:mt-5 active:border-0">Projects</Link>
+                <Link href="/projects/allscherry-anthology" className="bg-primary text-black p-2 px-4 mt-4 border-b-accent border-b-4 rounded-full block w-34 mx-1 text-center active:mt-5 active:border-0">Projects</Link>
                 <div className="flex flex-col items-center justify-center mx-1 mt-14 gap-5">
                     <Link href="/info/contact#contactForm" className="flex flex-row items-center justify-center gap-5 bg-white rounded-3xl px-5 py-1">
                         <Image src={mailLogo} alt="Mail Logo" width={100} height={100} className="w-10"/>
