@@ -50,7 +50,7 @@ export default function Events() {
                         <EventList />
                     </section>
                     <section className="flex flex-col items-center justify-center mt-6">
-                        <h2 className="text-lg w-3/4 text-center border border-base-200 rounded-full px-3 py-1 mt-5">Have a show you want to see us at? Email us your suggestions!</h2>
+                        <h2 className="text-lg w-3/4 text-center border border-base-200 rounded-3xl px-3 py-1 mt-5">Have a show you want to see us at? Email us your suggestions!</h2>
                         <Link href="/info/contact#contactForm" className="flex flex-row items-center mt-6 justify-center gap-5 bg-white rounded-3xl px-5 py-1">
                             <Image src={mailLogo} alt="Mail Logo" width={100} height={100} className="w-10"/>
                             <h2 className="text-black">Email us here!</h2>

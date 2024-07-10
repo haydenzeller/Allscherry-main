@@ -42,8 +42,14 @@ export default function Contact() {
                 <Header/>
                 <PageTitle title="Questions? Email us! But who is us?"/>
                 <div className="flex flex-col text-center mt-14 ml-12 mr-12 items-center justify-center">
-                    <h2 className="text-md text-center border border-base-200 rounded-full px-10 py-4">AllsCherry was founded by Eric Olcsvary, as a way to bring artists together, and to... well, make art!</h2>
-                    <div className="mt-4 rounded-xl">
+                    <h2 className="text-md text-center border border-base-200 rounded-full px-10 py-4">AllsCherry was founded by Eric Olcsvary, if you have questions, feel free to email him!</h2>
+                    <div className="flex flex-col justify-center items-center text-center mt-12 w-full">
+                        <div className="w-52 h-3 bg-base-200 rounded-xl mb-10"/>
+                        <h2 className="text-xl">Send me an email!</h2>
+                        <ContactForm/>
+                        <div className="w-52 h-3 bg-base-200 rounded-xl mt-10"/>
+                    </div>
+                    <div className="mt-20 rounded-xl">
                         <Image src={ericHeadshot} alt="Eric Headshot" className="w-96 rounded-xl"/>
                     </div>
                     <div className="flex flex-col justify-center mt-14 items-center">
@@ -52,12 +58,7 @@ export default function Contact() {
                           <h2 className="p-2 bg-secondary text-black rounded-xl text-center">I am primarily a comic book creator, and have years of experience in graphic design, publishing and web design.<br/><br/>Having founded AllsCherry in 2021, my goal is to help upcoming artists start out in the comic book industry, and create collaborative projects to help build each other up in a community environment!<br/><br/>If you have any questions, feel free to email us, we&apos;d love to have you involved!</h2>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center text-center mt-20 w-full">
-                        <div className="w-52 h-3 bg-base-200 rounded-xl mb-10"/>
-                        <h2 className="text-xl">Send us an email!</h2>
-                        <ContactForm/>
-                        <div className="w-52 h-3 bg-base-200 rounded-xl mt-10"/>
-                    </div>
+                    
                 </div>
                 <Footer/>
             </section>
