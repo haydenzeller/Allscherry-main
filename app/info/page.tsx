@@ -51,7 +51,7 @@ export default function Info() {
           <section className="flex flex-col justify-center mt-14 items-center">
             <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
               <h2 className="p-2 bg-secondary text-black rounded-3xl">More than a Publishing Company</h2>
-              <h2 className="p-2 bg-secondary text-black rounded-xl text-center">AllsCherry is an Indie Publisher that represents community, freedom of the creator, and community.<br/><br/>Want to join in on the fun? Look around the site to learn more about how we do things! Or, email our founder, Eric!</h2>
+              <h2 className="p-2 bg-secondary text-black rounded-xl text-center">AllsCherry is an Indie Publisher that represents community, freedom of the creator, and originality.<br/><br/>Want to join in on the fun? Look around the site to learn more about how we do things! Or, email our founder, Eric!</h2>
             </div>
             <div className="flex flex-col items-center justify-center mx-1 mt-14 gap-5">
               <Link href="/info/contact#contactForm" className="flex flex-row items-center justify-center gap-5 bg-white rounded-3xl px-5 py-1">

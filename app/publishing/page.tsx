@@ -72,7 +72,7 @@ export default function Publushing() {
                     </div>             
                     <div className="mt-2">
                         <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
-                            <h2>3. Origiality is key</h2>
+                            <h2>3. Originality is key</h2>
                         </div>
                         <div className="rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
                             <h2>Creating something new, and truly yours, is what makes for something truly special!</h2>
