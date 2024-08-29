@@ -63,7 +63,7 @@ export default function DotTheRobot() {
                         <Image src={dotmodel} alt="Dot the Robot Model" className="rounded-3xl w-1/2"/>
                     </div>
                     <div className="flex flex-col items-center justify-center relative">
-                        <h1 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Dot the Robot is a story Eric is using as a way to express the character and their experiences as opposed to the plot/one off adventure driven Overflow and Wendy. However lore rich and detailed Dot will be, the characters and their experience are the true story.<br/><br/>Planned to be a trilogy, it&apos;s definitely the biggest and most detailed project Eric has done, and it&apos;ll take some time so be patient!.</h1>
+                        <h1 className="border border-base-200 rounded-3xl p-3 w-5/6 mt-6 text-center">Dot the Robot is a story Eric is using as a way to express the character and their experiences as opposed to the plot/one off adventure driven Overflow and Wendy. However lore rich and detailed Dot will be, the characters and their experience are the true story.<br/><br/>Planned to be a trilogy, it&apos;s definitely the biggest and most detailed project Eric has done, and it&apos;ll take some time so be patient!</h1>
                     </div>
                 </section>
                 <section className="flex flex-col items-center justify-center">
