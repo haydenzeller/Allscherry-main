@@ -10,6 +10,7 @@ import FeaturedProjectsList from "@/app/components/FeaturedProjectsList";
 import underConstruction from "@/public/underConstruction.svg";
 import Image from "next/image";
 import { Metadata } from "next";
+import AnthologyRosterList from "./components/AnthologyRosterList";
 
 export const metadata: Metadata = {
   title: "AllsCherry | Home",
@@ -84,6 +85,9 @@ export default function Home() {
           </section>
           <section className="flex flex-col items-center justify-center w-full h-auto">
             <LandingCarousel />
+          </section>
+          <section className="mt-14 text-center">
+            <AnthologyRosterList />
           </section>
           <section className="text-center mt-14">
             <div className="mb-5 flex items-center justify-center">
