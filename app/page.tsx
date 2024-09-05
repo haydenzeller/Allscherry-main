@@ -100,18 +100,43 @@ export default function Home() {
           <Footer />
         </section>
       </main>
-      <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
-        <div className="flex flex-col items-center justify-center">
-          <Image
-            src={underConstruction}
-            alt="Under Construction"
-            width={400}
-            height={400}
-          />
-          <h1 className="text-2xl w-1/2 text-center">
-            Oop, sorry! Desktop version is under construction, check back later!
-          </h1>
-        </div>
+      <main className="hidden text-xl lg:flex flex-col bg-base-100 max-w-svw ">
+        {/* desktop */}
+        <Header />
+        <PageTitle title={"Welcome to AllsCherry! Take a look around!"} />
+        <section className="flex flex-col items-center justify-center mt-24">
+          <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
+            <h2 className="p-2 bg-secondary text-black rounded-3xl">
+              Sign up for our Mailing List!
+            </h2>
+            <h2 className="p-2 bg-secondary text-black rounded-xl">
+              Get exclusive updates, discounts, and info on newest releases!
+            </h2>
+          </div>
+          <SubscribeBox />
+        </section>
+        <section className="flex flex-col justify-center items-center mt-24">
+          <div className="flex justify-center items-center">
+            <h1 className="text-2xl text-center border border-base-200 rounded-full p-3">
+              Here&apos;s some of our current news!
+            </h1>
+          </div>
+        </section>
+        <section className="flex flex-col items-center justify-center w-full h-auto">
+          <LandingCarousel />
+        </section>
+        <section className="mt-14 text-center">
+          <AnthologyRosterList />
+        </section>
+        <section className="text-center mt-14">
+          <div className="mb-5 flex items-center justify-center">
+            <h2 className="text-2xl border border-base-200 rounded-full p-3">
+              Our featured projects
+            </h2>
+          </div>
+          <FeaturedProjectsList />
+        </section>
+        <Footer /> 
       </main>
     </>
   );

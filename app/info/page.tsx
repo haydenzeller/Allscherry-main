@@ -80,6 +80,7 @@ export default function Info() {
                 Look around the site to learn more about how we do things!
               </h2>
             </div>
+
             <div className="flex flex-col items-center justify-center mx-1 mt-14 gap-5">
               <Link
                 href="/info/contact#contactForm"

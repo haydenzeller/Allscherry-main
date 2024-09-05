@@ -109,6 +109,8 @@ export default function Footer() {
           </p>
         </div>
       </section>
+      {/* desktop */}
+      
     </>
   );
 }
