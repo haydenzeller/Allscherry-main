@@ -55,18 +55,18 @@ export default function Events() {
   const year = new Date().getFullYear();
   return (
     <>
-      <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">
+      <main className="flex max-w-screen min-h-screen flex-col bg-base-100">
         <section className="">
           <Header />
           <PageTitle title="AllsCherry loves local events!" />
-          <div className="flex flex-col justify-center items-center mt-14 text-center">
-            <h1 className="text-lg w-3/4 text-center border border-base-200 rounded-full px-3 py-1 mb-5">
+          <div className="flex flex-col justify-center items-center mt-14 text-center w-full">
+            <h1 className="text-lg  text-center border border-base-200 rounded-full px-12 lg:text-2xl py-1 mb-5">
               Scroll down for a list
               <br />
               of our events for {year}!
             </h1>
             <Image
-              className="w-96 rounded-box"
+              className="rounded-box w-96 lg:w-1/2"
               src={ericBooth}
               alt="Erics Booth"
             />
@@ -76,7 +76,7 @@ export default function Events() {
             <EventList />
           </section>
           <section className="flex flex-col items-center justify-center mt-6">
-            <h2 className="text-lg w-3/4 text-center border border-base-200 rounded-3xl px-3 py-1 mt-5">
+            <h2 className="text-2xl text-center border border-base-200 rounded-3xl px-3 py-2 mt-12">
               Have a show you want to see us at? Email us your suggestions!
             </h2>
             <Link
@@ -95,19 +95,6 @@ export default function Events() {
           </section>
         </section>
         <Footer />
-      </main>
-      <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
-        <div className="flex flex-col items-center justify-center">
-          <Image
-            src={underConstruction}
-            alt="Under Construction"
-            width={400}
-            height={400}
-          />
-          <h1 className="text-2xl w-1/2 text-center">
-            Oop, sorry! Desktop version is under construction, check back later!
-          </h1>
-        </div>
       </main>
     </>
   );

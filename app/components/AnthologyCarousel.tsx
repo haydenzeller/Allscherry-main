@@ -53,8 +53,9 @@ export default function CarouselIndicatorsOutside() {
     }
 
     return () => {
-      if (carouselRef.current) {
-        carouselRef.current.removeEventListener("scroll", handleScroll);
+      const currentRef = carouselRef!.current;
+      if (currentRef) {
+        currentRef.removeEventListener("scroll", handleScroll);
       }
     };
   }, []);
