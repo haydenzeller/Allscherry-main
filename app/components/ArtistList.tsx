@@ -44,10 +44,10 @@ export default function ArtistList() {
                 </div>
             ) : (
                 artists.length > 0 ? (
-                    <ul className="grid grid-cols-2 gap-4">
+                    <ul className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:text-xl">
                         {artists.map((artist, index) => (
                             <li key={index} className="flex flex-col items-center space-y-4">
-                                <div className="w-48 h-48 relative">
+                                <div className="w-48 h-48 lg:w-96 lg:h-96 relative">
                                     <Image
                                         src={"https://api.allscherry.com/assets/"+artist.image}
                                         alt={artist.name}
@@ -57,7 +57,7 @@ export default function ArtistList() {
                                         className="rounded-box"
                                     />
                                 </div>
-                                <div className="bg-white rounded-xl text-black p-2 w-48">
+                                <div className="bg-white rounded-xl text-black p-2 w-1/2">
                                     <h3 className="font-bold">{artist.name}</h3>
                                     <p>{artist.description}</p>
                                 </div>
