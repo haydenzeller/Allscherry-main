@@ -68,7 +68,7 @@ export default function ContactForm() {
     return (
         <form 
             onSubmit={handleSubmit} 
-            className="flex flex-col justify-center items-center w-full text-black"
+            className="flex flex-col justify-center items-center lg:w-1/2 text-black"
         >
             <input 
                 type="text"
@@ -76,7 +76,7 @@ export default function ContactForm() {
                 aria-label="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="input bg-white w-full m-5 rounded-2xl"
+                className="input text-xl bg-white w-full m-5 lg:h-20 rounded-2xl"
             />
             <input 
                 type="email"
@@ -84,14 +84,14 @@ export default function ContactForm() {
                 aria-label="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="input bg-white w-full m-5 rounded-2xl"
+                className="input text-xl bg-white w-full m-5 lg:h-20 rounded-2xl"
             />
             <textarea 
                 placeholder="What's the reason for your email? Be nice!" 
                 aria-label="Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="textarea bg-white w-full m-5 rounded-2xl h-32"
+                className="textarea lg:text-lg bg-white w-full m-5 rounded-2xl h-32"
             />
 
             <Turnstile  className="cf-turnstile" siteKey={key} onSuccess={() => setCloudflareStatus('solved')}  />
