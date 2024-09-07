@@ -26,12 +26,11 @@ export default function PageTitle({ title = "" }) {
           <div className="absolute inset-0 flex justify-center items-center p-8 mb-7">
             {" "}
             {/* Center the text */}
-            <h2 className="text-white text-center text-xl">{title}</h2>{" "}
+            <h2 className="text-white text-center text-2xl">{title}</h2>{" "}
             {/* Adjust text styling as needed */}
           </div>
         </div>
       </section>
-
     </>
   );
 }

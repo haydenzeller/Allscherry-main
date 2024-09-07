@@ -59,15 +59,12 @@ export const metadata: Metadata = {
 export default function Info() {
   return (
     <>
-      <main
-        id="main"
-        className="flex min-h-screen flex-col bg-base-100 lg:hidden"
-      >
+      <main id="main" className="flex min-h-screen flex-col bg-base-100">
         {/* MOBILE */}
         <section className="">
           <Header />
           <PageTitle title="So what is AllsCherry anyway?" />
-          <section className="flex flex-col justify-center mt-14 items-center">
+          <section className="lg:text-xl flex flex-col justify-center mt-14 items-center">
             <div className="bg-base-200 gap-5 rounded-3xl flex flex-col items-center justify-center mx-5 p-5 ">
               <h2 className="p-2 bg-secondary text-black rounded-3xl">
                 More than Just Publishing
@@ -97,7 +94,7 @@ export default function Info() {
               </Link>
             </div>
           </section>
-          <section className="flex flex-col items-center justify-center gap-16 mt-14">
+          <section className="flex flex-col items-center justify-center gap-16 mt-14 lg:hidden">
             <h2 className="text-xl text-center border border-base-200 rounded-3xl p-4">
               What does AllsCherry do?
             </h2>
@@ -173,21 +170,85 @@ export default function Info() {
               </div>
             </div>
           </section>
+          <section className="lg:flex flex-col items-center justify-center mt-14">
+            <h2 className="text-3xl text-center border border-base-200 rounded-3xl p-4">
+              What does AllsCherry do?
+            </h2>
+            {/* same as above but all in a row */}
+            <div className="lg:flex hidden flex-row text-xl mt-12 text-center">
+              <div className="flex flex-col items-center w-1/3 justify-center gap-4 text-center">
+                <div className="">
+                  <Image
+                    src={groupPhoto}
+                    alt="Group photo"
+                    className="w-80 h-80 rounded-box object-cover"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 w-1/2">
+                  <h2 className="text-md text-center border border-base-200 rounded-3xl p-3">
+                    New to books? We bring artists together to create something
+                    original and special, start here!
+                  </h2>
+                  <div>
+                    <Link
+                      href="/publishing/collaboratives"
+                      className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0"
+                    >
+                      Collab!
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col w-1/3 items-center justify-center gap-4 text-center">
+                <div className="">
+                  <Image
+                    src={printBundle}
+                    className="w-80 h-80 object-cover rounded-box"
+                    alt="Eric UVFS"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 w-1/2">
+                  <h2 className="text-md text-center border border-base-200 rounded-3xl p-3">
+                    Not sure how to get your book printed or published?
+                    We&apos;ve got you covered.
+                  </h2>
+                  <div>
+                    <Link
+                      className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0"
+                      href="/publishing"
+                    >
+                      Publishing!
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center w-1/3 justify-center gap-4 text-center">
+                <div className="">
+                  <Image
+                    src={ckEvent}
+                    className="w-80 h-80 object-cover rounded-box"
+                    alt="Eric UVFS"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 w-1/2">
+                  <h2 className="text-md text-center border border-base-200 rounded-3xl p-3">
+                    We go to many shows throughout the year, click below to keep
+                    up tp date!
+                  </h2>
+                  <div>
+                    <Link
+                      className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-1 active:border-0"
+                      href="/info/events"
+                    >
+                      Events!
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <Footer />
         </section>
-      </main>
-      <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
-        <div className="flex flex-col items-center justify-center">
-          <Image
-            src={underConstruction}
-            alt="Under Construction"
-            width={400}
-            height={400}
-          />
-          <h1 className="text-2xl w-1/2 text-center">
-            Oop, sorry! Desktop version is under construction, check back later!
-          </h1>
-        </div>
       </main>
     </>
   );
