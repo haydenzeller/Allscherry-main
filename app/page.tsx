@@ -136,7 +136,7 @@ export default function Home() {
           </div>
           <FeaturedProjectsList />
         </section>
-        <Footer /> 
+        <Footer />
       </main>
     </>
   );
