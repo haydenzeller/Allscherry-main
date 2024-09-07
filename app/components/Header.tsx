@@ -133,7 +133,7 @@ export default function MobileHeader() {
                       Events
                     </Link>
                     <Link
-                      href="/info/affiliates"
+                      href="/info/our-team"
                       className="hover:bg-white p-2 rounded-2xl w-full"
                     >
                       Our Team
@@ -333,7 +333,7 @@ export default function MobileHeader() {
                       Events
                     </Link>
                     <Link
-                      href="/info/affiliates"
+                      href="/info/our-team"
                       className="hover:bg-white p-2 rounded-2xl w-full"
                     >
                       Our Team
