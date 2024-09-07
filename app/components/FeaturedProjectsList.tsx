@@ -37,7 +37,8 @@ export default function FeaturedProjectsList() {
     }, []); // Empty dependency array to run the effect only once on component mount
 
     return (
-        <div className="w-full">
+      <>
+        <div className="w-full lg:hidden">
             {loading ? (
                 <div className="flex flex-col justify-center items-center">
                     <div className="loading spinner bg-base-200"></div>
@@ -68,5 +69,38 @@ export default function FeaturedProjectsList() {
                 )
             )}
         </div>
+        {/* desktop */}
+        {/* bigger images closer together */}
+        <div className="hidden lg:flex justify-center items-center">
+            {loading ? (
+                <div className="loading spinner bg-base-200"></div>
+            ) : (
+                featuredProjects.length > 0 ? (
+                    <ul className="grid grid-cols-3 gap-4">
+                        {featuredProjects.map((project, index) => (
+                            <li key={index} className="flex flex-col items-center space-y-4">
+                                <Link href={project.link || ""} className="w-80 h-80 relative object-contain">
+                                    <Image
+                                        src={"https://api.allscherry.com/assets/"+project.image}
+                                        alt={project.name}
+                                        fill
+                                        sizes="(max-width: 600px) 480px, 800px"
+                                        style={{ objectFit: 'cover' }}  // Instead of objectFit prop
+                                        className="rounded-box"
+                                    />
+                                </Link>
+                                <div>
+                                    <h3>{project.name}</h3>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p className="w-full  mb-14">No featured projects available</p>
+                )
+            )}
+        </div>
+
+      </>
     );
 }

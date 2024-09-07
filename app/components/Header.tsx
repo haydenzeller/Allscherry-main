@@ -187,19 +187,20 @@ export default function MobileHeader() {
           </div>
         </div>
       </section>
-      <section className="flex-col items-center text-2xl justify-center hidden lg:flex min-w-screen ">
-        <div className="flex flex-row text-black text-opacity-70 h-44 gap-80 w-screen items-center justify-center">
-          <div className="flex flex-col items-center justify-center">
-            <h2>Feel the Wonder,</h2>
-            <div className="h-2 opacity-80 rounded-3xl w-48 bg-black" />
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <h2>Crave Adventure!</h2>
-            <div className="h-2 opacity-80 rounded-3xl w-48 bg-black" />
-          </div>
-        </div>
-        <div className="w-screen flex bg-base-100 z-10 flex-col items-center justify-center">
-          <Link href="/" className="flex flex-col items-center justify-center">
+      <section className="flex-col items-center text-xl justify-center hidden lg:flex min-w-screen">
+        <section className=" h-40 w-full bg-base-200 ">
+          {/* <div className="flex flex-row-reverse w-full pt-9">
+                    <div className="z-30 flex flex-row justify-center pr-4 pt-2">
+                        <FontAwesomeIcon icon={faSearch}  className='text-black absolute mr-8 pointer-events-none'/>
+                    </div>
+                    <input className="input text-black input-sm bg-white rounded-3xl focus:w-full focus:ml-4 z-20 w-8 pl-5" placeholder="Search something... anything!"/>
+                </div> */}
+        </section>
+        <div className="w-screen flex bg-base-100 z-10 flex-col items-center justify-center pb-12">
+          <Link
+            href="/"
+            className="flex flex-col items-center justify-center pt-12"
+          >
             <Image
               priority
               className="w-80 -mt-44"
@@ -208,9 +209,20 @@ export default function MobileHeader() {
             />
           </Link>
         </div>
-        <div className="flex w-screen -mt-24 flex-row items-center gap-96 justify-center bg-base-100">
-          <div className="flex flex-row items-center justify-self-center mr-52">
-            <ul className="grid grid-cols-2 grid-rows-2 gap-40 z-10">
+        <div className="flex flex-row items-center justify-center bg-base-100 w-full pb-12">
+          <div className="bg-white h-3 rounded-xl w-60" />
+          <div className="mx-12 text-2xl">
+            <h1>
+              Feel the Wonder,
+              <br />
+              Crave Adventure!
+            </h1>
+          </div>
+          <div className="bg-white h-3 rounded-xl w-60" />
+        </div>
+        <div className="flex w-screen flex-row items-center gap-0 justify-center bg-base-100">
+          <div className="flex flex-row items-center justify-self-center mr-0">
+            <ul className="grid grid-cols-2 gap-40 z-10">
               <li className="flex justify-center ">
                 <div className="dropdown gap-4">
                   <div
@@ -279,8 +291,16 @@ export default function MobileHeader() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-row items-center justify-center ml-52">
-            <ul className="grid grid-cols-2 grid-rows-2 z-10 gap-40">
+          <div className="items-center justify-center flex mx-24">
+            <Link
+              href="/"
+              className="bg-primary text-black p-1 border-b-accent border-b-4 rounded-full flex w-12 items-center justify-center text-center active:mt-1 active:border-0"
+            >
+              <Image src={homeLogo} alt="Home Logo" className="w-8" />
+            </Link>
+          </div>
+          <div className="flex flex-row items-center justify-center">
+            <ul className="grid grid-cols-2 z-10 gap-40">
               <li className="flex justify-center">
                 <div className="dropdown gap-4">
                   <div
