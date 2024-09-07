@@ -59,32 +59,34 @@ export const metadata: Metadata = {
 export default function Publushing() {
   return (
     <main>
-      <section className="flex flex-col min-h-screen bg-base-100">
+      <section className="flex flex-col bg-base-100 lg:text-xl items-center justify-center w-full">
         <Header />
         <PageTitle title={"We collab, publish and print!"} />
         <div className="flex flex-col items-center justify-center mt-6">
-          <h2 className="text-md w-10/12 text-center border border-base-200 rounded-3xl p-3">
+          <h2 className="text-md w-10/12 lg:w-auto lg:text-2xl lg:rounded-full lg:px-12 text-center border border-base-200 rounded-3xl p-3">
             What Separates us from the rest?
             <br />
             <br />
             Community, passion, and artistic freedom!
           </h2>
         </div>
-        <section className="flex bg-base-200 flex-col items-center justify-center mt-6 mx-5 rounded-3xl">
-          <div className="rounded-3xl text-black bg-[#FFDBDB] p-3 px-5 m-3">
+        <section className="flex bg-base-200 lg:w-1/2 flex-col items-center justify-center mt-6 mx-5 rounded-3xl">
+          <div className="rounded-3xl text-2xl text-black bg-[#FFDBDB] p-3 px-5 m-3">
             <h2>AllsCherry has 3 core values...</h2>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 lg:w-3/4">
             <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
-              <h2>1. Tyranny is not Art</h2>
+              <h2 className="font-bold">1. Tyranny is not Art</h2>
             </div>
             <div className=" rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
               <h2>Have an idea? Let&apos;s make it happen! Your way</h2>
             </div>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 lg:w-3/4">
             <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
-              <h2>2. A strong community builds strong projects</h2>
+              <h2 className="font-bold">
+                2. A strong community builds strong projects
+              </h2>
             </div>
             <div className="rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
               <h2>
@@ -93,9 +95,9 @@ export default function Publushing() {
               </h2>
             </div>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 lg:w-3/4">
             <div className="rounded-xl text-black bg-white p-3 px-5 m-3">
-              <h2>3. Originality is key</h2>
+              <h2 className="font-bold">3. Originality is key</h2>
             </div>
             <div className="rounded-xl text-black p-3 px-5 m-3 bg-[#FFDBDB]">
               <h2>
@@ -105,8 +107,8 @@ export default function Publushing() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col justify-center items-center text-center mx-1 mt-14 gap-5">
-          <div className="flex flex-row items-center justify-center gap-3">
+        <section className="flex flex-col lg:flex-row justify-center items-center text-center mx-1 mt-14 gap-5">
+          <div className="flex flex-row lg:flex-col lg:w-3/4 items-center justify-center gap-3">
             <div className="w-1/2 flex flex-col justify-center">
               <Image
                 src={comicsPublishing}
@@ -134,7 +136,7 @@ export default function Publushing() {
               </h2>
             </div>
           </div>
-          <div className="flex flex-row-reverse items-center justify-center gap-3">
+          <div className="flex flex-row-reverse lg:w-3/4 lg:flex-col items-center justify-center gap-3">
             <div className="w-1/2 flex flex-col justify-center">
               <Image
                 src={anthCarousel}
@@ -162,7 +164,7 @@ export default function Publushing() {
               </h2>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center gap-3">
+          <div className="flex flex-row lg:flex-col lg:w-3/4 items-center justify-center gap-3">
             <div className="w-1/2 flex flex-col justify-center">
               <Image
                 src={indieSign}
@@ -192,18 +194,18 @@ export default function Publushing() {
         </section>
         <section className="flex flex-col justify-center items-center text-center mx-1 mt-14 gap-5">
           <div className="flex flex-col items-center justify-center mx-1">
-            <h2 className="text-md w-10/12 text-center border border-base-200 rounded-3xl p-3">
+            <h2 className="text-md lg:text-2xl w-10/12 lg:w-1/2 text-center border border-base-200 rounded-3xl p-3">
               AllsCherry is a proud Ambassador of Canadian Printer and Comic
               Shop, StudioComix Press!
             </h2>
             <Image
               src={studioComix}
               alt="StudioComix"
-              className="rounded-3xl w-3/4 mt-6"
+              className="rounded-3xl w-3/4 mt-6 lg:w-1/3"
             />
           </div>
           <div className="flex flex-col items-center justify-center mx-1 mt-6">
-            <h2 className="text-md w-10/12 text-center border border-base-200 rounded-3xl p-3">
+            <h2 className="text-md lg:text-2xl w-10/12 text-center border border-base-200 rounded-3xl p-3">
               Don&apos;t know where to start? Check out our application form, or
               simply email us! We&apos;re happy to help!
             </h2>

@@ -30,7 +30,7 @@ export default function Footer() {
           ></Image>
         </div>
       </section>
-      <section className="flex flex-col bg-base-200">
+      <section className="flex flex-col bg-base-200 w-full">
         <div className="mb-10">
           <SubscribeBox showOrbs={true} />
         </div>
