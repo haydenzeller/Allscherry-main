@@ -72,44 +72,7 @@ export default function CarouselIndicatorsOutside() {
 
   return (
     <>
-      <section className="flex flex-col lg:hidden">
-        {loading && <div className="loading spinner bg-base-200"></div>}
-        <div
-          ref={carouselRef}
-          className=" carousel w-auto h-auto rounded-box my-5 overflow-x-scroll scroll-smooth "
-        >
-          {images.map((img, index) => (
-            <div
-              key={img.id}
-              id={`item${index + 1}`}
-              className="carousel-item w-full justify-center items-center h-full"
-            >
-              <Image
-                priority
-                src={"http://api.allscherry.com/assets/" + img.image}
-                alt={`Image ${index + 1}`}
-                height={350}
-                width={350}
-                className="rounded-box h-auto w-auto"
-              />
-            </div>
-          ))}
-        </div>
-        <div className="w-full flex justify-center gap-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => handleIndicatorClick(index)}
-              className={`rounded-full w-3 h-5 border border-base-200 ${
-                currentIndex === index
-                  ? "bg-base-200 text-black"
-                  : "bg-base-100"
-              }`}
-            ></button>
-          ))}
-        </div>
-      </section>
-      <section className="hidden lg:flex flex-col">
+      <section className="flex flex-col">
         {loading && <div className="loading spinner bg-base-200"></div>}
         <div
           ref={carouselRef}
