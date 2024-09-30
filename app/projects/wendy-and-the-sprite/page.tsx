@@ -82,9 +82,9 @@ export const metadata: Metadata = {
 export default function WendyAndTheSprite() {
   return (
     <>
-      <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">
+      <main className="flex min-h-screen flex-col bg-base-100 ">
         <Header />
-        <section>
+        <section className="lg:hidden">
           <div className="flex flex-col items-center justify-center mt-14">
             <Image
               priority
@@ -137,16 +137,72 @@ export default function WendyAndTheSprite() {
             </Link>
           </div>
         </section>
+        <section className="hidden text-xl lg:flex flex-row items-center justify-center mt-14">
+          <div className="flex w-1/2 flex-col justify-center items-center">
+            {/* banner */}
+            <Image
+              src={watsBanner}
+              alt="Wendy and the Sprite Banner"
+              width={500}
+              height={500}
+              className="rounded-box h-auto w-1/2"
+            />
+          </div>
+          <div className="flex w-1/2 flex-col items-center justify-center">
+            <div className="flex flex-row items-center w-1/2 justify-center gap-2">
+              {/* 3 images */}
+              <Image
+                src={wats0}
+                alt="Wendy and the Sprite Chapter 0"
+                width={200}
+                height={500}
+                className="rounded-box h-auto w-1/2"
+              />
+              <Image
+                src={wats1}
+                alt="Wendy and the Sprite Chapter 1"
+                width={200}
+                height={500}
+                className="rounded-box h-auto w-1/2"
+              />
+              <Image
+                src={wats2}
+                alt="Wendy and the Sprite Chapter 2"
+                width={200}
+                height={500}
+                className="rounded-box h-auto w-1/2"
+              />
+            </div>
+            {/* paragraph,  */}
+            <h1 className="w-3/4 text-md text-center mt-6 border border-base-200 rounded-3xl p-3">
+              Wendy and the Sprite is the adventure of a Snow Nymph and an Ice
+              Sprite, traversing an old, frozen planet. Along their adventure,
+              they discover a phenomenon called, “The Fading”, making the planet
+              and it&apos;s inhabitants lose their colour and memory.
+            </h1>
+            {/* heading */}
+            <h2 className="mt-6 text-xl border border-base-200 rounded-3xl p-3">
+              Check out the series here!
+            </h2>
+            {/* link */}
+            <Link
+              className="mt-3 bg-primary text-black p-1 border-b-accent border-b-4 rounded-2xl block w-44 px-3 text-center active:mt-4 active:border-0"
+              href="https://shop.allscherry.com/collections/allscherry-comics"
+            >
+              Wendy Series!
+            </Link>
+          </div>
+        </section>
         <section>
-          <div className="flex flex-row justify-center items-center gap-3 text-center mx-3 mt-14">
+          <div className="flex flex-row justify-center items-center gap-3 lg:gap-5 text-center mx-5 mt-14 lg:m-28">
             <Image
               src={watsBackstorySketch}
               alt="Wendy and the Sprite Backstory Sketch"
-              width={150}
-              height={150}
+              width={500}
+              height={500}
               className="rounded-box"
             />
-            <h2 className="border border-base-200 rounded-3xl p-3">
+            <h2 className="border border-base-200 rounded-3xl lg:w-1/4 lg:text-xl p-3">
               The Wendy and the Sprite series started as a post-secondary
               animation project. With the characters in mind, Eric made an
               animation that would ultimately become Chapter 1: Awakening
@@ -163,46 +219,46 @@ export default function WendyAndTheSprite() {
               unoptimized
               src={animationGif}
               alt="Wendy and the Sprite Animation"
-              width={200}
-              height={200}
-              className="w-48 h-48 rounded-box object-cover"
+              width={500}
+              height={500}
+              className="w-48 h-48 lg:w-96 lg:h-96 rounded-box object-cover"
             />
             <Image
               src={watsGrid1}
               alt="Wendy and the Sprite Grid 1"
-              width={200}
-              height={200}
-              className="w-48 h-48 rounded-box object-cover"
+              width={500}
+              height={500}
+              className="w-48 h-48 lg:w-96 lg:h-96 rounded-box object-cover"
             />
             <Image
               src={watsGrid2}
               alt="Wendy and the Sprite Grid 2"
-              width={200}
-              height={200}
-              className="w-48 h-48 rounded-box object-cover"
+              width={500}
+              height={500}
+              className="w-48 h-48 lg:w-96 lg:h-96 rounded-box object-cover"
             />
             <Image
               src={watsGrid3}
               alt="Wendy and the Sprite Grid 3"
-              width={200}
-              height={200}
-              className="w-48 h-48 rounded-box object-cover"
+              width={500}
+              height={500}
+              className="w-48 h-48 lg:w-96 lg:h-96 rounded-box object-cover"
             />
           </div>
         </section>
-        <section className="flex flex-col items-center justify-center text-center mt-16">
-          <h2 className="border border-base-200 rounded-3xl p-3 w-3/4">
+        <section className="flex flex-col items-center justify-center lg:text-xl text-center mt-16">
+          <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 lg:w-1/2">
             After switching to a comic book format, Chapter 0 was created as a
             way to have context to what would have been an animated story
           </h2>
           <Image
             src={wendy0zine}
             alt="Wendy and the Sprite Chapter 0"
-            width={300}
-            height={300}
-            className="rounded-box mt-6 w-auto h-auto"
+            width={1000}
+            height={1000}
+            className="rounded-box mt-6 w-1/2 h-auto"
           />
-          <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6">
+          <h2 className="border lg:w-1/2 border-base-200 rounded-3xl p-3 w-3/4 mt-6">
             Eric works mostly with coincidence, candidness and spontaneity. As
             the story and lore progresses, the characters and history begin to
             speak for themselves!
@@ -212,32 +268,32 @@ export default function WendyAndTheSprite() {
             creator!
           </h2>
         </section>
-        <section className="flex flex-col items-center justify-center mt-16">
-          <div className="flex flex-row items-start justify-center gap-3 text-center text-sm">
-            <div className="flex flex-col items-center justify-center w-1/2">
+        <section className="flex flex-col items-center justify-center mt-16 lg:text-xl">
+          <div className="flex flex-row items-start justify-center gap-3 w-full text-center text-sm">
+            <div className="flex flex-col items-center justify-center w-1/4">
               <Image
                 src={raze}
                 alt="Raze"
-                width={400}
-                height={400}
-                className="rounded-box h-auto w-3/4"
+                width={1000}
+                height={1000}
+                className="rounded-box h-auto w-3/4 lg:w-full"
               />
               <p className="opacity-50">Raze Cub, Wendy Chapter 2</p>
             </div>
-            <div className="flex flex-col items-center justify-center w-1/2">
+            <div className="flex flex-col items-center justify-center w-1/4">
               <Image
                 src={gribble}
                 alt="Gribble"
-                width={400}
-                height={400}
-                className="rounded-box h-auto w-3/4"
+                width={1000}
+                height={1000}
+                className="rounded-box h-auto w-3/4 lg:w-full"
               />
               <p className="opacity-50">
                 Gribble and their Grub of Gribblets, Wendy Chapter 2
               </p>
             </div>
           </div>
-          <h2 className="text-center w-3/4 border border-base-200 rounded-3xl p-3 mt-6">
+          <h2 className="text-center w-3/4 lg:w-1/2 border border-base-200 rounded-3xl p-3 mt-6">
             Naturally, the story has grown into something much more than just a
             Snow Person and a Ball of Ice.
             <br />
@@ -252,22 +308,22 @@ export default function WendyAndTheSprite() {
           <Image
             src={mountGenesis}
             alt="Mount Genesis"
-            width={400}
-            height={400}
-            className="rounded-box h-auto w-auto"
+            width={1000}
+            height={1000}
+            className="rounded-box h-auto w-3/4 lg:w-1/2"
           />
           <p className="opacity-50 text-center">Mount Genesis, Era of Fading</p>
           <Image
             src={starlaAndDoom}
             alt="Starla and Doom"
-            width={200}
-            height={200}
-            className="rounded-box h-auto w-auto mt-6"
+            width={1000}
+            height={1000}
+            className="rounded-box h-auto w-2/4 lg:w-1/4 mt-6"
           />
           <p className="opacity-50 w-2/4 text-center">
             Starla the Cosmic Witch and the Doom Sprites
           </p>
-          <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">
+          <h2 className="border border-base-200 rounded-3xl lg:w-1/2 lg:text-xl p-3 w-3/4 mt-6 text-center">
             By this point, 3 comics were released, with Wendy having gone
             through 4 character concepts before finalizing their look
           </h2>
@@ -277,33 +333,33 @@ export default function WendyAndTheSprite() {
             <Image
               src={wendyPortrait2018}
               alt="Wendy Portrait 2018"
-              width={200}
-              height={200}
-              className="rounded-box h-36 w-48 object-cover"
+              width={1000}
+              height={1000}
+              className="rounded-box lg:w-[400px] lg:h-auto h-36 w-48 object-cover"
             />
             <Image
               src={wendyPortrait2019}
               alt="Wendy Portrait 2019"
-              width={200}
-              height={200}
-              className="rounded-box h-36 w-48 object-cover"
+              width={1000}
+              height={1000}
+              className="rounded-box lg:w-[400px] lg:h-auto h-36 w-48 object-cover"
             />
             <Image
               src={wendyPortrait2021}
               alt="Wendy Portrait 2021"
-              width={200}
-              height={200}
-              className="rounded-box h-36 w-48 object-cover"
+              width={1000}
+              height={1000}
+              className="rounded-box lg:w-[400px] lg:h-auto h-36 w-48 object-cover"
             />
             <Image
               src={wendyZoom}
               alt="Wendy Portrait 2021"
-              width={200}
-              height={200}
-              className="rounded-box h-36 w-48 object-cover"
+              width={1000}
+              height={1000}
+              className="rounded-box h-36 w-48 lg:w-[400px] lg:h-[280px] object-cover"
             />
           </div>
-          <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">
+          <h2 className="border lg:text-2xl lg:w-1/2 border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">
             Wendy and the Sprite has 3 graphic novels so far, and is planned to
             continue. However, to build up the story, Eric has started two other
             series to go alongside it.
@@ -314,13 +370,13 @@ export default function WendyAndTheSprite() {
           </h2>
           <div className="flex flex-row gap-3 mt-6">
             <Link
-              className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0"
+              className="bg-primary lg:text-2xl lg:w-48 mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0"
               href="/projects/overflow"
             >
               Overflow
             </Link>
             <Link
-              className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0"
+              className="bg-primary mt-3 lg:text-2xl lg:w-48 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0"
               href="/projects/dot-the-robot"
             >
               Dot the Robot
@@ -328,7 +384,7 @@ export default function WendyAndTheSprite() {
           </div>
         </section>
         <section className="flex flex-col items-center justify-center mt-16">
-          <h2 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">
+          <h2 className="border lg:text-2xl lg:w-1/2 border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">
             Wendy and Sprite quickly became the mascots of Eric&apos;s
             illustrative practice, being on all branding material, every
             sketchbook, and every story he came up with
@@ -336,9 +392,9 @@ export default function WendyAndTheSprite() {
           <Image
             src={wendyEyes}
             alt="Wendy Eyes"
-            width={150}
-            height={150}
-            className="rounded-box h-auto w-auto mt-6"
+            width={250}
+            height={250}
+            className="rounded-box h-auto w-auto lg:w-1/4  mt-6"
           />
           <div className="flex flex-row items-center justify-center gap-5 mt-6">
             <div className="flex items-center">
@@ -347,7 +403,14 @@ export default function WendyAndTheSprite() {
                 alt="Cookie Shirt"
                 width={200}
                 height={200}
-                className="rounded-box object-cover aspect-square"
+                className="rounded-box lg:hidden object-cover aspect-square"
+              />
+              <Image
+                src={cookieShirt}
+                alt="Cookie Shirt"
+                width={400}
+                height={400}
+                className="rounded-box hidden lg:flex object-cover aspect-square"
               />
             </div>
             <div className="flex items-center">
@@ -356,7 +419,14 @@ export default function WendyAndTheSprite() {
                 alt="Finished Shirt"
                 width={200}
                 height={200}
-                className="rounded-box object-cover aspect-square"
+                className="rounded-box lg:hidden object-cover aspect-square"
+              />
+              <Image
+                src={finishedShirt}
+                alt="Finished Shirt"
+                width={400}
+                height={400}
+                className="rounded-box hidden lg:flex object-cover aspect-square"
               />
             </div>
           </div>
@@ -366,14 +436,28 @@ export default function WendyAndTheSprite() {
               alt="Raze Concept"
               width={175}
               height={175}
-              className="rounded-box h-auto w-auto"
+              className="rounded-box lg:hidden h-auto w-auto"
+            />
+            <Image
+              src={razeConcept}
+              alt="Raze Concept"
+              width={350}
+              height={350}
+              className="rounded-box hidden lg:flex h-auto w-auto"
+            />
+            <Image
+              src={gribbleConcept}
+              alt="Gribble Concept"
+              width={350}
+              height={350}
+              className="rounded-box hidden lg:flex h-auto w-auto"
             />
             <Image
               src={gribbleConcept}
               alt="Gribble Concept"
               width={175}
               height={175}
-              className="rounded-box h-auto w-auto"
+              className="rounded-box lg:hidden h-auto w-auto"
             />
           </div>
           <div className="flex flex-row items-center justify-center mt-6">
@@ -382,7 +466,14 @@ export default function WendyAndTheSprite() {
               alt="Shadow Umbra Concept"
               width={177}
               height={175}
-              className="rounded-box h-auto w-auto"
+              className="rounded-box lg:hidden h-auto w-auto"
+            />
+            <Image
+              src={shadowUmbraConcept}
+              alt="Shadow Umbra Concept"
+              width={350}
+              height={350}
+              className="rounded-box hidden lg:flex h-auto w-auto"
             />
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-1 mt-6 mx-1">
@@ -391,28 +482,56 @@ export default function WendyAndTheSprite() {
               alt="Wendy Bio"
               width={200}
               height={200}
-              className="rounded-box h-auto w-auto"
+              className="rounded-box lg:hidden h-auto w-auto"
+            />
+            <Image
+              src={wendyBio}
+              alt="Wendy Bio"
+              width={400}
+              height={400}
+              className="rounded-box hidden lg:flex h-auto w-auto"
+            />
+            <Image
+              src={spriteBio}
+              alt="Sprite Bio"
+              width={400}
+              height={400}
+              className="rounded-box hidden lg:flex h-auto w-auto"
             />
             <Image
               src={spriteBio}
               alt="Sprite Bio"
               width={200}
               height={200}
-              className="rounded-box h-auto w-auto"
+              className="rounded-box lg:hidden h-auto w-auto"
             />
             <Image
               src={starlaBio}
               alt="Starla Bio"
               width={200}
               height={200}
-              className="rounded-box h-auto w-auto"
+              className="rounded-box lg:hidden h-auto w-auto"
+            />
+            <Image
+              src={starlaBio}
+              alt="Starla Bio"
+              width={400}
+              height={400}
+              className="rounded-box hidden lg:flex h-auto w-auto"
+            />
+            <Image
+              src={belleBio}
+              alt="Belle Bio"
+              width={400}
+              height={400}
+              className="rounded-box hidden lg:flex h-auto w-auto"
             />
             <Image
               src={belleBio}
               alt="Belle Bio"
               width={200}
               height={200}
-              className="rounded-box h-auto w-auto"
+              className="rounded-box lg:hidden h-auto w-auto"
             />
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -421,30 +540,24 @@ export default function WendyAndTheSprite() {
               alt="Wendy 2024"
               width={200}
               height={200}
-              className="rounded-box h-auto w-auto mt-6"
+              className="rounded-box lg:hidden h-auto w-auto mt-6"
+            />
+            <Image
+              src={wendy2024}
+              alt="Wendy 2024"
+              width={400}
+              height={400}
+              className="rounded-box hidden lg:flex h-auto w-auto mt-6"
             />
           </div>
           <Link
-            className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0"
+            className="bg-primary lg:text-2xl lg:w-48 mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0"
             href="https://shop.allscherry.com/collections/allscherry-comics"
           >
             Read Now!
           </Link>
         </section>
         <Footer />
-      </main>
-      <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
-        <div className="flex flex-col items-center justify-center">
-          <Image
-            src={underConstruction}
-            alt="Under Construction"
-            width={400}
-            height={400}
-          />
-          <h1 className="text-2xl w-1/2 text-center">
-            Oop, sorry! Desktop version is under construction, check back later!
-          </h1>
-        </div>
       </main>
     </>
   );
