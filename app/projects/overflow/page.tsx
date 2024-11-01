@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 export default function Overflow() {
   return (
     <>
-      <main className="flex min-h-screen flex-col bg-base-100 lg:hidden">
+      <main className="flex min-h-screen flex-col bg-base-100 ">
         <Header />
         <section className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center relative">
@@ -80,7 +80,7 @@ export default function Overflow() {
               height={500}
               className="w-auto h-auto rounded-box"
             />
-            <h1 className="border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">
+            <h1 className="lg:text-xl border border-base-200 rounded-3xl p-3 w-3/4 mt-6 text-center">
               Overflow is a book of discovery, mystery, colourful underwater
               lands, and a complicated series of historical events.
               <br />
@@ -106,11 +106,11 @@ export default function Overflow() {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center mt-6">
-            <h2 className="mt-6 text-xl border border-base-200 rounded-3xl p-3">
+            <h2 className="mt-6 text-xl lg:text-3xl border border-base-200 rounded-3xl p-3">
               Check out the series here!
             </h2>
             <Link
-              className="bg-primary mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0"
+              className="bg-primary lg:text-3xl lg:w-40 mt-3 text-black p-1 border-b-accent border-b-4 rounded-2xl block w-28 text-center active:mt-4 active:border-0"
               href="https://shop.allscherry.com/collections/allscherry-comics"
             >
               Overflow!
@@ -118,7 +118,7 @@ export default function Overflow() {
           </div>
         </section>
         <section className="flex flex-col items-center justify-center mt-6">
-          <div className="flex flex-col items-center justify-center relative mx-3">
+          <div className="flex flex-col lg:gap-5 lg:flex-row items-center justify-center relative mx-3">
             <Image
               src={ofCoverBlank}
               alt="Overflow Cover Blank"
@@ -126,7 +126,7 @@ export default function Overflow() {
               height={500}
               className="w-auto h-auto rounded-box"
             />
-            <h2 className="border border-base-200 rounded-3xl p-3 w-10/12 mt-6 text-center">
+            <h2 className="border lg:w-1/4 lg:text-xl border-base-200 rounded-3xl p-3 w-10/12 mt-6 text-center">
               After Chapters 0-2 of Wendy and the Sprite, Eric had a surge of
               inspiration for a whole new book. It took less than 4 months to
               make said book, the ideas were “Overflowing” and it basically
@@ -140,41 +140,52 @@ export default function Overflow() {
             </h2>
           </div>
           {/* 4x4 */}
-          <div className="grid grid-cols-2 grid-rows-2 items-center justify-center mt-6 gap-5 mx-4">
-            <div className="flex flex-col items-center justify-center bg-base-200 rounded-box">
-              <Image
-                src={ofGrid1}
-                alt="Overflow Grid 1"
-                width={500}
-                height={500}
-                className="rounded-box"
-              />
+          <div className="grid grid-cols-2 grid-rows-2 items-center justify-center mt-6 gap-5 mx-4 lg:px-40">
+            <div className="grid grid-cols-2 grid-rows-2 items-center justify-center mt-6 gap-5 mx-4">
+              <div className="flex flex-col items-center justify-center bg-base-200 rounded-box">
+                <Image
+                  src={ofGrid1}
+                  alt="Overflow Grid 1"
+                  width={500}
+                  height={500}
+                  className="rounded-box"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center bg-base-200 rounded-box">
+                <Image
+                  src={ofGrid2}
+                  alt="Overflow Grid 2"
+                  width={500}
+                  height={500}
+                  className="rounded-box"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center bg-base-200 rounded-box">
+                <Image
+                  src={ofGrid3}
+                  alt="Overflow Grid 3"
+                  width={500}
+                  height={500}
+                  className="rounded-box"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center bg-base-200 rounded-box">
+                <Image
+                  src={ofGrid4}
+                  alt="Overflow Grid 4"
+                  width={500}
+                  height={500}
+                  className="rounded-box"
+                />
+              </div>
             </div>
-            <div className="flex flex-col items-center justify-center bg-base-200 rounded-box">
+            <div>
               <Image
-                src={ofGrid2}
-                alt="Overflow Grid 2"
-                width={500}
-                height={500}
-                className="rounded-box"
-              />
-            </div>
-            <div className="flex flex-col items-center justify-center bg-base-200 rounded-box">
-              <Image
-                src={ofGrid3}
-                alt="Overflow Grid 3"
-                width={500}
-                height={500}
-                className="rounded-box"
-              />
-            </div>
-            <div className="flex flex-col items-center justify-center bg-base-200 rounded-box">
-              <Image
-                src={ofGrid4}
-                alt="Overflow Grid 4"
-                width={500}
-                height={500}
-                className="rounded-box"
+                src={ofGroup}
+                alt="Overflow Group"
+                width={700}
+                height={700}
+                className="w-auto h-auto rounded-box lg:flex"
               />
             </div>
           </div>
@@ -184,7 +195,7 @@ export default function Overflow() {
               alt="Overflow Group"
               width={500}
               height={500}
-              className="w-auto h-auto rounded-box"
+              className="w-auto h-auto rounded-box lg:hidden"
             />
             <p className="border border-base-200 rounded-3xl p-3 w-10/12 mt-6 text-center">
               Since Wendy and most of the creatures in the comic series
@@ -222,19 +233,6 @@ export default function Overflow() {
           </Link>
         </section>
         <Footer />
-      </main>
-      <main className="hidden lg:flex flex-col items-center justify-center min-h-screen">
-        <div className="flex flex-col items-center justify-center">
-          <Image
-            src={underConstruction}
-            alt="Under Construction"
-            width={400}
-            height={400}
-          />
-          <h1 className="text-2xl w-1/2 text-center">
-            Oop, sorry! Desktop version is under construction, check back later!
-          </h1>
-        </div>
       </main>
     </>
   );
